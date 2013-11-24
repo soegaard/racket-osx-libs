@@ -1,0 +1,12 @@
+tstdint.o tstdint.o: tstdint.c ../src/mpfr.h \
+  /Users/soegaard/BuildRacketLibs/include/gmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h
+
+../src/mpfr.h:
+
+/Users/soegaard/BuildRacketLibs/include/gmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:

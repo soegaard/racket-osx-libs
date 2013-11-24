@@ -76,6 +76,10 @@ curl http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz -o bzip2.tgz
 curl -L http://downloads.sourceforge.net/project/expat/expat/2.1.0/expat-2.1.0.tar.gz -o expat.tgz
 curl http://zlib.net/zlib-1.2.8.tar.gz -o zlib.tgz
 curl http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz -o libiconv.tgz
+-- for math libraries --
+curl http://ftp.gmplib.org/gmp/gmp-5.1.3.tar.bz2 -o gmp.tgz
+
+
 
 Fetch cmake if you need openpjeg (recommended for Poppler)
 curl http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz -o cmake.tgz
@@ -138,6 +142,8 @@ tar zxf openjpeg.tgz
 mv openjpeg-2.0.0/ openjpeg
 tar zxf cmake.tgz 
 mv cmake-2.8.12.1/ cmake
+-- Math Libraries --
+
 
 
 3. Install Mac OS X SDKs
@@ -445,6 +451,34 @@ export CXXFLAGS="-I${BuildRacketLibs}/include"
 
 cd poppler
 ./configure --prefix=${BuildRacketLibs} --enable-poppler-glib --disable-poppler-qt4 --disable-silent-rules --disable-splash-output --disable-static --disable-poppler-cpp
+
+
+Math Libraries
+==============
+
+gmp
+---
+curl ftp://gnu.mirror.iweb.com/gmp/gmp-5.0.5.tar.bz2 -o gmp.tgz
+tar zxf gmp.tgz
+mv gmp-5.0.5/ gmp
+cd gmp
+./configure --prefix=${BuildRacketLibs}
+make
+make install
+make check
+
+mpfr
+----
+Note: Build gmp before mpfr
+
+curl http://www.mpfr.org/mpfr-3.1.1/mpfr-3.1.1.tar.gz -o mpfr.tgz
+tar zxf mpfr.tgz 
+mv mpfr-3.1.1/ mpfr
+./configure --prefix=${BuildRacketLibs}
+make
+make install
+make check
+
 
 
 
