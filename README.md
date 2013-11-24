@@ -400,7 +400,13 @@ make install
 
 cairo
 -----
+
+Patch if you are using version 1.10.2 (the patch generates better pdfs).
+See http://goo.gl/dWB11w
+
 cd cairo
+patch <../patches/cairo.patch
+
 ./autogen.sh
 ./configure --prefix=${BuildRacketLibs} --disable-xlib
 make

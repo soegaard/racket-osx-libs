@@ -37,7 +37,7 @@
 /* #undef CAIRO_HAS_SYMBOL_LOOKUP */
 
 /* Define to 1 to enable cairo's test surfaces feature */
-#define CAIRO_HAS_TEST_SURFACES 1
+/* #undef CAIRO_HAS_TEST_SURFACES */
 
 /* Define to 1 to enable cairo's cairo-trace feature */
 #define CAIRO_HAS_TRACE 1
@@ -336,7 +336,7 @@
 
 
 /* Define to 1 if the X Window System is missing or not being used. */
-#define X_DISPLAY_MISSING 1
+/* #undef X_DISPLAY_MISSING */
 
 /* Enable large inode numbers on Mac OS X 10.5.  */
 #ifndef _DARWIN_USE_64_BIT_INODE

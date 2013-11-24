@@ -97,7 +97,7 @@ am__append_4 = $(quartz_surface_test_sources)
 am__append_5 = $(pdf_surface_test_sources)
 am__append_6 = $(ps_surface_test_sources)
 am__append_7 = $(svg_surface_test_sources)
-am__append_8 = $(test_fallback16_surface_test_sources)
+#am__append_8 = $(test_fallback16_surface_test_sources)
 #am__append_9 = $(xcb_surface_test_sources)
 #am__append_10 = $(xlib_surface_test_sources)
 #am__append_11 = $(xlib_xrender_surface_test_sources)
@@ -326,7 +326,7 @@ am__objects_15 = cairo_test_suite-svg-surface.$(OBJEXT) \
 am__objects_16 = $(am__objects_15)
 am__objects_17 =  \
 	cairo_test_suite-test-fallback16-surface-source.$(OBJEXT)
-am__objects_18 = $(am__objects_17)
+#am__objects_18 = $(am__objects_17)
 am__objects_19 = cairo_test_suite-xcb-surface-source.$(OBJEXT)
 #am__objects_20 = $(am__objects_19)
 am__objects_21 = cairo_test_suite-xlib-surface.$(OBJEXT) \
@@ -1008,14 +1008,14 @@ AWK = awk
 BFD_LIBS = 
 CAIROBOILERPLATE_LIBS = 
 CAIROPERF_LIBS = 
-CAIRO_CFLAGS =    -D_REENTRANT   -I/Users/soegaard/BuildRacketLibs/include/pixman-1      -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/libpng15      -Wall -Wextra -Wold-style-definition -Wdeclaration-after-statement -Wmissing-declarations -Werror-implicit-function-declaration -Wnested-externs -Wpointer-arith -Wwrite-strings -Wsign-compare -Wstrict-prototypes -Wmissing-prototypes -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wbad-function-cast -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2                 
+CAIRO_CFLAGS =    -D_REENTRANT   -I/Users/soegaard/BuildRacketLibs/include/pixman-1     -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/libpng15      -Wall -Wextra -Wold-style-definition -Wdeclaration-after-statement -Wmissing-declarations -Werror-implicit-function-declaration -Wnested-externs -Wpointer-arith -Wwrite-strings -Wsign-compare -Wstrict-prototypes -Wmissing-prototypes -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wbad-function-cast -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2                
 CAIRO_LDFLAGS = 
-CAIRO_LIBS =       -L/Users/soegaard/BuildRacketLibs/lib -lpixman-1      -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lpng15   -Xlinker -framework -Xlinker ApplicationServices           -lz -lz      
+CAIRO_LIBS =       -L/Users/soegaard/BuildRacketLibs/lib -lpixman-1     -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lpng15   -Xlinker -framework -Xlinker ApplicationServices          -lz -lz      
 CAIRO_LIBTOOL_VERSION_INFO = 11002:2:11000
-CAIRO_NONPKGCONFIG_CFLAGS =                 
-CAIRO_NONPKGCONFIG_LIBS =          -lz -lz      
+CAIRO_NONPKGCONFIG_CFLAGS =                
+CAIRO_NONPKGCONFIG_LIBS =         -lz -lz      
 CAIRO_RELEASE_STATUS = release
-CAIRO_REQUIRES =   gobject-2.0 glib-2.0    pixman-1 >= 0.18.4     fontconfig >= 2.2.95 freetype2 >= 9.7.3  libpng   
+CAIRO_REQUIRES =   gobject-2.0 glib-2.0    pixman-1 >= 0.18.4    fontconfig >= 2.2.95 freetype2 >= 9.7.3  libpng   
 CAIRO_TEST_MODE = 
 CAIRO_TEST_UNDEFINED_LDFLAGS = 
 CAIRO_VERSION_MAJOR = 1

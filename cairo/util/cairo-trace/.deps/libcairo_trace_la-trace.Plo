@@ -83,9 +83,7 @@ libcairo_trace_la-trace.lo libcairo_trace_la-trace.o: trace.c \
   /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrdef.h \
   /Users/soegaard/BuildRacketLibs/include/fontconfig/fontconfig.h \
   /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h \
-  ../../src/cairo-ps.h ../../src/cairo-pdf.h ../../src/cairo-svg.h \
-  ../../src/test-fallback-surface.h ../../src/test-paginated-surface.h \
-  ../../src/test-null-surface.h
+  ../../src/cairo-ps.h ../../src/cairo-pdf.h ../../src/cairo-svg.h
 
 ../../config.h:
 
@@ -270,9 +268,3 @@ libcairo_trace_la-trace.lo libcairo_trace_la-trace.o: trace.c \
 ../../src/cairo-pdf.h:
 
 ../../src/cairo-svg.h:
-
-../../src/test-fallback-surface.h:
-
-../../src/test-paginated-surface.h:
-
-../../src/test-null-surface.h:

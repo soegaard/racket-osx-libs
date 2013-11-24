@@ -219,9 +219,9 @@ am__append_121 = $(cairo_boilerplate_svg_headers)
 am__append_122 = $(cairo_boilerplate_svg_private)
 am__append_123 = $(cairo_boilerplate_svg_cxx_sources)
 am__append_124 = $(cairo_boilerplate_svg_sources)
-am__append_125 = $(cairo_boilerplate_test_surfaces_private) $(cairo_boilerplate_test_surfaces_headers)
-am__append_126 = $(cairo_boilerplate_test_surfaces_cxx_sources)
-am__append_127 = $(cairo_boilerplate_test_surfaces_sources)
+#am__append_125 = $(cairo_boilerplate_test_surfaces_private) $(cairo_boilerplate_test_surfaces_headers)
+#am__append_126 = $(cairo_boilerplate_test_surfaces_cxx_sources)
+#am__append_127 = $(cairo_boilerplate_test_surfaces_sources)
 #am__append_128 = $(cairo_boilerplate_tee_headers)
 #am__append_129 = $(cairo_boilerplate_tee_private)
 #am__append_130 = $(cairo_boilerplate_tee_cxx_sources)
@@ -358,7 +358,7 @@ am__objects_33 = $(am__objects_32)
 am__objects_34 = cairo-boilerplate-svg.lo
 am__objects_35 = $(am__objects_34)
 am__objects_36 = cairo-boilerplate-test-surfaces.lo
-am__objects_37 = $(am__objects_36)
+#am__objects_37 = $(am__objects_36)
 am__objects_38 = $(am__objects_5) $(am__objects_7) $(am__objects_1) \
 	$(am__objects_9) $(am__objects_1) $(am__objects_1) \
 	$(am__objects_1) $(am__objects_11) $(am__objects_1) \
@@ -710,14 +710,14 @@ AWK = awk
 BFD_LIBS = 
 CAIROBOILERPLATE_LIBS = 
 CAIROPERF_LIBS = 
-CAIRO_CFLAGS =    -D_REENTRANT   -I/Users/soegaard/BuildRacketLibs/include/pixman-1      -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/libpng15      -Wall -Wextra -Wold-style-definition -Wdeclaration-after-statement -Wmissing-declarations -Werror-implicit-function-declaration -Wnested-externs -Wpointer-arith -Wwrite-strings -Wsign-compare -Wstrict-prototypes -Wmissing-prototypes -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wbad-function-cast -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2                 
+CAIRO_CFLAGS =    -D_REENTRANT   -I/Users/soegaard/BuildRacketLibs/include/pixman-1     -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include/libpng15      -Wall -Wextra -Wold-style-definition -Wdeclaration-after-statement -Wmissing-declarations -Werror-implicit-function-declaration -Wnested-externs -Wpointer-arith -Wwrite-strings -Wsign-compare -Wstrict-prototypes -Wmissing-prototypes -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wbad-function-cast -Wvolatile-register-var -Wstrict-aliasing=2 -Winit-self -Wunsafe-loop-optimizations -Wno-missing-field-initializers -Wno-unused-parameter -Wno-attributes -Wno-long-long -Winline -fno-strict-aliasing -fno-common -Wp,-D_FORTIFY_SOURCE=2                
 CAIRO_LDFLAGS = 
-CAIRO_LIBS =       -L/Users/soegaard/BuildRacketLibs/lib -lpixman-1      -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lpng15   -Xlinker -framework -Xlinker ApplicationServices           -lz -lz      
+CAIRO_LIBS =       -L/Users/soegaard/BuildRacketLibs/lib -lpixman-1     -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lpng15   -Xlinker -framework -Xlinker ApplicationServices          -lz -lz      
 CAIRO_LIBTOOL_VERSION_INFO = 11002:2:11000
-CAIRO_NONPKGCONFIG_CFLAGS =                 
-CAIRO_NONPKGCONFIG_LIBS =          -lz -lz      
+CAIRO_NONPKGCONFIG_CFLAGS =                
+CAIRO_NONPKGCONFIG_LIBS =         -lz -lz      
 CAIRO_RELEASE_STATUS = release
-CAIRO_REQUIRES =   gobject-2.0 glib-2.0    pixman-1 >= 0.18.4     fontconfig >= 2.2.95 freetype2 >= 9.7.3  libpng   
+CAIRO_REQUIRES =   gobject-2.0 glib-2.0    pixman-1 >= 0.18.4    fontconfig >= 2.2.95 freetype2 >= 9.7.3  libpng   
 CAIRO_TEST_MODE = 
 CAIRO_TEST_UNDEFINED_LDFLAGS = 
 CAIRO_VERSION_MAJOR = 1

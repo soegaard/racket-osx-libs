@@ -1,0 +1,11 @@
+--- pango/modules.c.old	2013-11-24 20:37:41.000000000 +0100
++++ pango/modules.c	2013-11-24 20:38:26.000000000 +0100
+@@ -570,7 +570,7 @@
+ 
+   for (i = 0; _pango_included_lang_modules[i].list; i++)
+     pango_module_register (&_pango_included_lang_modules[i]);
+-  read_modules ();
++  // read_modules ();
+ }
+ 
+ static void
