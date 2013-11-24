@@ -1,0 +1,1 @@
+#hash((#"mzc.1" . ("compiler")) (#"drracket.1" . ("drracket")) (#"racket.1" . ("racket")) (#"mzscheme.1" . ("mzscheme")) (#"gracket.1" . ("racket" "gui")) (#"plt-help.1" . ("help")) (#"mred.1" . ("mred")) (#"raco.1" . ("raco")) (#"setup-plt.1" . ("setup")))

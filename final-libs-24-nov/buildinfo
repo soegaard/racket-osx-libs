@@ -1,0 +1,6 @@
+CC=gcc
+CFLAGS=-g -O2  -DOS_X -D_DARWIN_UNLIMITED_SELECT -pthread  -Wall
+OPTIONS= -fno-common
+MZOPTIONS=
+LDFLAGS= -pthread
+LIBS=-ldl -lm  -liconv 

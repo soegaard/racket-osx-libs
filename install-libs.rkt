@@ -2,9 +2,11 @@
 (provide main)
 (require racket/path racket/system)
 
-(define (main . xs)
+; require this file, and run (main) 
 
-; (define from (vector-ref (current-command-line-arguments) 0))
+(define (main)
+
+; Note: Use the exact folder you build the libs in (even if you move them afterwards)
 (define from "/Users/soegaard/BuildRacketLibs/lib")
 
 (define to
@@ -28,8 +30,8 @@
     ; "libcairo.2"
     "libpixman-1.0"
     ; "libpng15.15"
-    ; x "libgmp.10"
-    ; x "libmpfr.4"
+    "libgmp.10"
+    "libmpfr.4"
     ; x "libjpeg.62"
     ; -- added for Poppler and friends --
     "libasprintf.0"
