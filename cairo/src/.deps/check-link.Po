@@ -1,0 +1,36 @@
+check-link.o check-link.o: check-link.c cairo.h cairo-version.h \
+  cairo-features.h cairo-deprecated.h ../cairo-version.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_common.h
+
+cairo.h:
+
+cairo-version.h:
+
+cairo-features.h:
+
+cairo-deprecated.h:
+
+../cairo-version.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_common.h:

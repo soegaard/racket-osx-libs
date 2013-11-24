@@ -1,0 +1,32 @@
+#                             -*- compilation -*-
+83. lalib-syntax.at:24: testing syntax of .la files ...
+./lalib-syntax.at:75: case $LIBLTDL in #(
+ */_inst/lib/*) test -f $LIBLTDL || (exit 77) ;;
+esac
+stdout:
+./lalib-syntax.at:81: $CC $CPPFLAGS $CFLAGS -c main.c
+stderr:
+stdout:
+./lalib-syntax.at:82: $LIBTOOL --mode=compile $CC $CPPFLAGS $CFLAGS -c module.c
+stderr:
+stdout:
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -I/Users/soegaard/BuildRacketLibs/libtool/libltdl -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c module.c  -fno-common -DPIC -o .libs/module.o
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -I/Users/soegaard/BuildRacketLibs/libtool/libltdl -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c module.c -o module.o >/dev/null 2>&1
+./lalib-syntax.at:84: $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o module.la module.lo 	 -module -avoid-version -rpath /somewhere
+stderr:
+stdout:
+libtool: link: /usr/bin/gcc-4.2 -Wl,-undefined -Wl,dynamic_lookup -o .libs/module.so -bundle  .libs/module.o   -L/Users/soegaard/BuildRacketLibs/lib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk  
+libtool: link: ar cru .libs/module.a  module.o
+libtool: link: ranlib .libs/module.a
+libtool: link: ( cd ".libs" && rm -f "module.la" && ln -s "../module.la" "module.la" )
+./lalib-syntax.at:86: $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o main main.$OBJEXT $LIBLTDL
+stderr:
+stdout:
+libtool: link: /usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -o main main.o  /Users/soegaard/BuildRacketLibs/libtool/libltdl/.libs/dlopen.a -L/Users/soegaard/BuildRacketLibs/lib /Users/soegaard/BuildRacketLibs/libtool/tests/../libltdl/.libs/libltdlc.a
+./lalib-syntax.at:133: if "$lt_exe" $file; then :; else lt_status=$?; 	   test $lt_status != 1 && 	   test "X$host" != "X$build" && test -x "$lt_exe" && exit 77; 	   exit $lt_status; fi
+stderr:
+Assertion failed: (error != NULL), function main, file main.c, line 27.
+/Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/at-groups/83/test-source: line 178: 83310 Abort trap: 6           "$lt_exe" $file
+stdout:
+./lalib-syntax.at:133: exit code was 134, expected 1
+83. lalib-syntax.at:24: 83. syntax of .la files (lalib-syntax.at:24): expected failure (lalib-syntax.at:133)

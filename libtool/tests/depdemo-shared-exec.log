@@ -1,0 +1,28 @@
+PASS: tests/depdemo-shared-exec.test (exit: 0)
+==============================================
+
+depdemo-shared-exec.test: ===  Running depdemo-shared-exec.test
+depdemo-shared-exec.test: ===  Running depdemo-shared-exec.test
+depdemo-shared-exec.test: ===  Executing uninstalled programs in libtool
+dependencies:
+l1 (0)
+l2 (0)
+ l1 (1)
+l4 (0)
+ l3 (0)
+  l1 (2)
+  l2 (2)
+   l1 (3)
+ libm [sin(1.5) = 0.997495]
+var_l1(4) + var_l2(6) + var_l4(10) == 20
+dependencies:
+l1 (0)
+l2 (0)
+ l1 (1)
+l4 (0)
+ l3 (0)
+  l1 (2)
+  l2 (2)
+   l1 (3)
+ libm [sin(1.5) = 0.997495]
+var_l1(4) + var_l2(6) + var_l4(10) == 20

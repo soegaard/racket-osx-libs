@@ -1,0 +1,1 @@
+libtool: link: /usr/bin/gcc-4.2  -o .libs/module.so -bundle  .libs/a.o   -L/Users/soegaard/BuildRacketLibs/lib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -Wl,-foo  

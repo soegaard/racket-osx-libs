@@ -1,0 +1,58 @@
+pixman-gradient-walker.lo pixman-gradient-walker.o:  \
+ pixman-gradient-walker.c ../config.h pixman-private.h pixman.h \
+  pixman-version.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/assert.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h pixman-compiler.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h
+
+../config.h:
+
+pixman-private.h:
+
+pixman.h:
+
+pixman-version.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/assert.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+pixman-compiler.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h:

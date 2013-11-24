@@ -1,0 +1,7 @@
+PASS: tests/demo-nopic-make.test (exit: 0)
+==========================================
+
+demo-nopic-make.test: ===  Running demo-nopic-make.test
+demo-nopic-make.test: ===  Running demo-nopic-make.test
+demo-nopic-make.test: ===  Running `make ' in demo
+make: Nothing to be done for `all'.

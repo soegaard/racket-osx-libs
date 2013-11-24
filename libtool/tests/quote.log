@@ -1,0 +1,176 @@
+PASS: tests/quote.test (exit: 0)
+================================
+
+quote.test: ===  Running quote.test
+quote.test: ===  Running quote.test
+== compile mode
+= trying: no quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=test foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=test foo.c -o foo.o >/dev/null 2>&1
+= trying: \\ quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\\test\\ foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\\test\\ foo.c -o foo.o >/dev/null 2>&1
+= trying: \" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\"test\" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\"test\" foo.c -o foo.o >/dev/null 2>&1
+= trying: \` quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\`test\` foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\`test\` foo.c -o foo.o >/dev/null 2>&1
+= trying: \$ quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\$test\$ foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c -DVAR=\$test\$ foo.c -o foo.o >/dev/null 2>&1
+= trying: "[" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=[test[" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=[test[" foo.c -o foo.o >/dev/null 2>&1
+= trying: "]" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=]test]" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=]test]" foo.c -o foo.o >/dev/null 2>&1
+= trying: "~" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=~test~" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=~test~" foo.c -o foo.o >/dev/null 2>&1
+= trying: "#" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=#test#" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=#test#" foo.c -o foo.o >/dev/null 2>&1
+= trying: "^" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=^test^" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=^test^" foo.c -o foo.o >/dev/null 2>&1
+= trying: "&" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=&test&" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=&test&" foo.c -o foo.o >/dev/null 2>&1
+= trying: "*" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=*test*" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=*test*" foo.c -o foo.o >/dev/null 2>&1
+= trying: "(" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=(test(" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=(test(" foo.c -o foo.o >/dev/null 2>&1
+= trying: ")" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=)test)" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=)test)" foo.c -o foo.o >/dev/null 2>&1
+= trying: "{" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR={test{" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR={test{" foo.c -o foo.o >/dev/null 2>&1
+= trying: "}" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=}test}" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=}test}" foo.c -o foo.o >/dev/null 2>&1
+= trying: "|" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=|test|" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=|test|" foo.c -o foo.o >/dev/null 2>&1
+= trying: ";" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=;test;" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=;test;" foo.c -o foo.o >/dev/null 2>&1
+= trying: "<" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=<test<" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=<test<" foo.c -o foo.o >/dev/null 2>&1
+= trying: ">" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=>test>" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=>test>" foo.c -o foo.o >/dev/null 2>&1
+= trying: "?" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=?test?" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=?test?" foo.c -o foo.o >/dev/null 2>&1
+= trying: "'" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR='test'" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR='test'" foo.c -o foo.o >/dev/null 2>&1
+= trying: " " quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR= test " foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR= test " foo.c -o foo.o >/dev/null 2>&1
+= trying: "	" quoting
+= passed: libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=	test	" foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -c "-DVAR=	test	" foo.c -o foo.o >/dev/null 2>&1
+== link mode
+= trying: no quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,-someflag=test foo.o 
+= trying: \\ quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,-someflag=\\test\\ foo.o 
+= trying: \" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,-someflag=\"test\" foo.o 
+= trying: \` quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,-someflag=\`test\` foo.o 
+= trying: \$ quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,-someflag=\$test\$ foo.o 
+= trying: "[" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=[test[" foo.o 
+= trying: "]" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=]test]" foo.o 
+= trying: "~" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=~test~" foo.o 
+= trying: "#" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=#test#" foo.o 
+= trying: "^" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=^test^" foo.o 
+= trying: "&" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=&test&" foo.o 
+= trying: "*" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=*test*" foo.o 
+= trying: "(" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=(test(" foo.o 
+= trying: ")" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=)test)" foo.o 
+= trying: "{" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag={test{" foo.o 
+= trying: "}" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=}test}" foo.o 
+= trying: "|" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=|test|" foo.o 
+= trying: ";" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=;test;" foo.o 
+= trying: "<" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=<test<" foo.o 
+= trying: ">" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=>test>" foo.o 
+= trying: "?" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=?test?" foo.o 
+= trying: "'" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag='test'" foo.o 
+= trying: " " quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag= test " foo.o 
+= trying: "	" quoting
+= passed: libtool: link: /usr/bin/gcc-4.2 -o hell -g -O -Wl,"-someflag=	test	" foo.o 
+== install mode
+= trying: no quoting
+= passed: libtool: install: install -c --something=test hell /usr/local/bin/hell
+= trying: \\ quoting
+= passed: libtool: install: install -c --something=\\test\\ hell /usr/local/bin/hell
+= trying: \" quoting
+= passed: libtool: install: install -c --something=\"test\" hell /usr/local/bin/hell
+= trying: \` quoting
+= passed: libtool: install: install -c --something=\`test\` hell /usr/local/bin/hell
+= trying: \$ quoting
+= passed: libtool: install: install -c --something=\$test\$ hell /usr/local/bin/hell
+= trying: "[" quoting
+= passed: libtool: install: install -c "--something=[test[" hell /usr/local/bin/hell
+= trying: "]" quoting
+= passed: libtool: install: install -c "--something=]test]" hell /usr/local/bin/hell
+= trying: "~" quoting
+= passed: libtool: install: install -c "--something=~test~" hell /usr/local/bin/hell
+= trying: "#" quoting
+= passed: libtool: install: install -c "--something=#test#" hell /usr/local/bin/hell
+= trying: "^" quoting
+= passed: libtool: install: install -c "--something=^test^" hell /usr/local/bin/hell
+= trying: "&" quoting
+= passed: libtool: install: install -c "--something=&test&" hell /usr/local/bin/hell
+= trying: "*" quoting
+= passed: libtool: install: install -c "--something=*test*" hell /usr/local/bin/hell
+= trying: "(" quoting
+= passed: libtool: install: install -c "--something=(test(" hell /usr/local/bin/hell
+= trying: ")" quoting
+= passed: libtool: install: install -c "--something=)test)" hell /usr/local/bin/hell
+= trying: "{" quoting
+= passed: libtool: install: install -c "--something={test{" hell /usr/local/bin/hell
+= trying: "}" quoting
+= passed: libtool: install: install -c "--something=}test}" hell /usr/local/bin/hell
+= trying: "|" quoting
+= passed: libtool: install: install -c "--something=|test|" hell /usr/local/bin/hell
+= trying: ";" quoting
+= passed: libtool: install: install -c "--something=;test;" hell /usr/local/bin/hell
+= trying: "<" quoting
+= passed: libtool: install: install -c "--something=<test<" hell /usr/local/bin/hell
+= trying: ">" quoting
+= passed: libtool: install: install -c "--something=>test>" hell /usr/local/bin/hell
+= trying: "?" quoting
+= passed: libtool: install: install -c "--something=?test?" hell /usr/local/bin/hell
+= trying: "'" quoting
+= passed: libtool: install: install -c "--something='test'" hell /usr/local/bin/hell
+= trying: " " quoting
+= passed: libtool: install: install -c "--something= test " hell /usr/local/bin/hell
+= trying: "	" quoting
+= passed: libtool: install: install -c "--something=	test	" hell /usr/local/bin/hell

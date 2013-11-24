@@ -1,0 +1,30 @@
+PASS: tests/suffix.test (exit: 0)
+=================================
+
+suffix.test: ===  Running suffix.test
+recognized foo.C as a valid source file
+recognized foo.F as a valid source file
+recognized foo.S as a valid source file
+recognized foo.ada as a valid source file
+recognized foo.adb as a valid source file
+recognized foo.ads as a valid source file
+recognized foo.asm as a valid source file
+recognized foo.c as a valid source file
+recognized foo.c++ as a valid source file
+recognized foo.cc as a valid source file
+recognized foo.cpp as a valid source file
+recognized foo.cxx as a valid source file
+recognized foo.f as a valid source file
+recognized foo.f90 as a valid source file
+recognized foo.F90 as a valid source file
+recognized foo.f95 as a valid source file
+recognized foo.F95 as a valid source file
+recognized foo.f03 as a valid source file
+recognized foo.F03 as a valid source file
+recognized foo.for as a valid source file
+recognized foo.go as a valid source file
+recognized foo.m as a valid source file
+recognized foo.s as a valid source file
+recognized foo.sx as a valid source file
+recognized foo.ada.ada as a valid source file
+libtool: compile: cannot determine name of library object from `foo.'

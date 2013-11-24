@@ -1,0 +1,9 @@
+PASS: tests/demo-static-exec.test (exit: 0)
+===========================================
+
+demo-static-exec.test: ===  Running demo-static-exec.test
+demo-static-exec.test: ===  Running demo-static-exec.test
+demo-static-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

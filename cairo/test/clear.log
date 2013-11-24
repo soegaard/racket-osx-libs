@@ -1,0 +1,102 @@
+Testing clear with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.test-fallback.argb32.out.png
+REFERENCE: ./clear.argb32.ref.png
+DIFFERENCE: output/clear.test-fallback.argb32.diff.png
+TEST: clear TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.test-fallback.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.test-fallback.rgb24.diff.png
+TEST: clear TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with test-paginated target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.test-paginated.argb32.out.png
+REFERENCE: ./clear.argb32.ref.png
+DIFFERENCE: output/clear.test-paginated.argb32.diff.png
+TEST: clear TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with test-paginated target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.test-paginated.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.test-paginated.rgb24.diff.png
+TEST: clear TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with test-wrapping target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.test-wrapping.argb32.out.png
+REFERENCE: ./clear.argb32.ref.png
+DIFFERENCE: output/clear.test-wrapping.argb32.diff.png
+TEST: clear TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clear TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clear with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clear TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clear with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear.ps2.argb32.out.png
+REFERENCE: ./clear.ps.argb32.ref.png
+DIFFERENCE: output/clear.ps2.argb32.diff.png
+TEST: clear TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear.ps2.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.ps2.rgb24.diff.png
+TEST: clear TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear.ps3.argb32.out.png
+REFERENCE: ./clear.ps.argb32.ref.png
+DIFFERENCE: output/clear.ps3.argb32.diff.png
+TEST: clear TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear.ps3.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.ps3.rgb24.diff.png
+TEST: clear TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear.quartz.argb32.out.png
+REFERENCE: ./clear.quartz.argb32.ref.png
+DIFFERENCE: output/clear.quartz.argb32.diff.png
+TEST: clear TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear.quartz.rgb24.out.png
+REFERENCE: ./clear.quartz.rgb24.ref.png
+DIFFERENCE: output/clear.quartz.rgb24.diff.png
+TEST: clear TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear with image target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.image.argb32.out.png
+REFERENCE: ./clear.argb32.ref.png
+DIFFERENCE: output/clear.image.argb32.diff.png
+TEST: clear TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with image target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.image.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.image.rgb24.diff.png
+TEST: clear TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with image16 target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.image16.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.image16.rgb24.diff.png
+TEST: clear TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with recording target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.recording.argb32.out.png
+REFERENCE: ./clear.argb32.ref.png
+DIFFERENCE: output/clear.recording.argb32.diff.png
+TEST: clear TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear with recording target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear.recording.rgb24.out.png
+REFERENCE: ./clear.rgb24.ref.png
+DIFFERENCE: output/clear.recording.rgb24.diff.png
+TEST: clear TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL

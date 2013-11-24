@@ -1,0 +1,74 @@
+Testing big-trap with test-fallback target (dev offset 0)
+Error: Cannot find reference image for big-trap.test-fallback.argb32
+OUTPUT: output/big-trap.test-fallback.argb32.out.png
+TEST: big-trap TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with test-fallback target (dev offset 0)
+Error: Cannot find reference image for big-trap.test-fallback.rgb24
+OUTPUT: output/big-trap.test-fallback.rgb24.out.png
+TEST: big-trap TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with test-paginated target (dev offset 0)
+Error: Cannot find reference image for big-trap.test-paginated.argb32
+OUTPUT: output/big-trap.test-paginated.argb32.out.png
+TEST: big-trap TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with test-paginated target (dev offset 0)
+Error: Cannot find reference image for big-trap.test-paginated.rgb24
+OUTPUT: output/big-trap.test-paginated.rgb24.out.png
+TEST: big-trap TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with test-wrapping target (dev offset 0)
+Error: Cannot find reference image for big-trap.test-wrapping.argb32
+OUTPUT: output/big-trap.test-wrapping.argb32.out.png
+TEST: big-trap TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with pdf target (dev offset 0)
+Error: Cannot find reference image for big-trap.pdf.argb32
+Error: Failed to write output image: invalid value for an input cairo_status_t
+OUTPUT: output/big-trap.pdf.argb32.out.png
+TEST: big-trap TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with pdf target (dev offset 0)
+Error: Cannot find reference image for big-trap.pdf.rgb24
+Error: Failed to write output image: invalid value for an input cairo_status_t
+OUTPUT: output/big-trap.pdf.rgb24.out.png
+TEST: big-trap TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with ps2 target (dev offset 0)
+Error: Cannot find reference image for big-trap.ps2.argb32
+OUTPUT: output/big-trap.ps2.argb32.out.png
+TEST: big-trap TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with ps2 target (dev offset 0)
+Error: Cannot find reference image for big-trap.ps2.rgb24
+OUTPUT: output/big-trap.ps2.rgb24.out.png
+TEST: big-trap TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with ps3 target (dev offset 0)
+Error: Cannot find reference image for big-trap.ps3.argb32
+OUTPUT: output/big-trap.ps3.argb32.out.png
+TEST: big-trap TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with ps3 target (dev offset 0)
+Error: Cannot find reference image for big-trap.ps3.rgb24
+OUTPUT: output/big-trap.ps3.rgb24.out.png
+TEST: big-trap TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with quartz target (dev offset 0)
+Error: Cannot find reference image for big-trap.quartz.argb32
+OUTPUT: output/big-trap.quartz.argb32.out.png
+TEST: big-trap TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with quartz target (dev offset 0)
+Error: Cannot find reference image for big-trap.quartz.rgb24
+OUTPUT: output/big-trap.quartz.rgb24.out.png
+TEST: big-trap TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with image target (dev offset 0)
+Error: Cannot find reference image for big-trap.image.argb32
+OUTPUT: output/big-trap.image.argb32.out.png
+TEST: big-trap TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with image target (dev offset 0)
+Error: Cannot find reference image for big-trap.image.rgb24
+OUTPUT: output/big-trap.image.rgb24.out.png
+TEST: big-trap TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with image16 target (dev offset 0)
+Error: Cannot find reference image for big-trap.image16.rgb24
+OUTPUT: output/big-trap.image16.rgb24.out.png
+TEST: big-trap TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with recording target (dev offset 0)
+Error: Cannot find reference image for big-trap.recording.argb32
+OUTPUT: output/big-trap.recording.argb32.out.png
+TEST: big-trap TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL
+Testing big-trap with recording target (dev offset 0)
+Error: Cannot find reference image for big-trap.recording.rgb24
+OUTPUT: output/big-trap.recording.rgb24.out.png
+TEST: big-trap TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: XFAIL

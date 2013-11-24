@@ -1,0 +1,50 @@
+#                             -*- compilation -*-
+76. lt_dlopen.at:23: testing lt_dlopen error messages ...
+./lt_dlopen.at:31: test unsupported != "$allow_undefined_flag" || exit 77
+./lt_dlopen.at:85: $CC $CPPFLAGS $CFLAGS -c main.c
+stderr:
+stdout:
+./lt_dlopen.at:87: $LIBTOOL --mode=compile $CC $CPPFLAGS $CFLAGS -c $file
+stderr:
+stdout:
+libtool: compile:  /usr/bin/gcc-4.2 -I/Users/soegaard/BuildRacketLibs/libtool/libltdl -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c good-plugin.c  -fno-common -DPIC -o .libs/good-plugin.o
+libtool: compile:  /usr/bin/gcc-4.2 -I/Users/soegaard/BuildRacketLibs/libtool/libltdl -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c good-plugin.c -o good-plugin.o >/dev/null 2>&1
+./lt_dlopen.at:87: $LIBTOOL --mode=compile $CC $CPPFLAGS $CFLAGS -c $file
+stderr:
+stdout:
+libtool: compile:  /usr/bin/gcc-4.2 -I/Users/soegaard/BuildRacketLibs/libtool/libltdl -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c missing-symbol-plugin.c  -fno-common -DPIC -o .libs/missing-symbol-plugin.o
+libtool: compile:  /usr/bin/gcc-4.2 -I/Users/soegaard/BuildRacketLibs/libtool/libltdl -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c missing-symbol-plugin.c -o missing-symbol-plugin.o >/dev/null 2>&1
+./lt_dlopen.at:90: $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o good-plugin.la -rpath $libdir 	 -module -avoid-version good-plugin.lo
+stderr:
+stdout:
+libtool: link: /usr/bin/gcc-4.2 -Wl,-undefined -Wl,dynamic_lookup -o .libs/good-plugin.so -bundle  .libs/good-plugin.o   -L/Users/soegaard/BuildRacketLibs/lib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk  
+libtool: link: ar cru .libs/good-plugin.a  good-plugin.o
+libtool: link: ranlib .libs/good-plugin.a
+libtool: link: ( cd ".libs" && rm -f "good-plugin.la" && ln -s "../good-plugin.la" "good-plugin.la" )
+./lt_dlopen.at:92: $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o missing-symbol-plugin.la -rpath $libdir	 -module -avoid-version missing-symbol-plugin.lo
+stderr:
+stdout:
+libtool: link: /usr/bin/gcc-4.2 -Wl,-undefined -Wl,dynamic_lookup -o .libs/missing-symbol-plugin.so -bundle  .libs/missing-symbol-plugin.o   -L/Users/soegaard/BuildRacketLibs/lib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk  
+libtool: link: ar cru .libs/missing-symbol-plugin.a  missing-symbol-plugin.o
+libtool: link: ranlib .libs/missing-symbol-plugin.a
+libtool: link: ( cd ".libs" && rm -f "missing-symbol-plugin.la" && ln -s "../missing-symbol-plugin.la" "missing-symbol-plugin.la" )
+./lt_dlopen.at:95: $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o main$EXEEXT main.$OBJEXT 	 -dlopen good-plugin.la -dlopen missing-symbol-plugin.la $LIBLTDL
+stderr:
+stdout:
+libtool: link: rm -f .libs/main.nm .libs/main.nmS .libs/main.nmT
+libtool: link: (cd .libs && /usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c -fno-builtin "mainS.c")
+libtool: link: rm -f ".libs/mainS.c" ".libs/main.nm" ".libs/main.nmS" ".libs/main.nmT"
+libtool: link: /usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -o main main.o .libs/mainS.o  /Users/soegaard/BuildRacketLibs/libtool/libltdl/.libs/dlopen.a -L/Users/soegaard/BuildRacketLibs/lib /Users/soegaard/BuildRacketLibs/libtool/tests/../libltdl/.libs/libltdlc.a
+libtool: link: rm -f ".libs/mainS.o"
+./lt_dlopen.at:99: if "$lt_exe" ./good-plugin.la; then :; else lt_status=$?; 	   	   test "X$host" != "X$build" && test -x "$lt_exe" && exit 77; 	   exit $lt_status; fi
+stderr:
+stdout:
+plugin opened successfully!
+./lt_dlopen.at:100: if "$lt_exe" ./missing-symbol-plugin.la; then :; else lt_status=$?; 	   test $lt_status != 1 && 	   test "X$host" != "X$build" && test -x "$lt_exe" && exit 77; 	   exit $lt_status; fi
+stderr:
+stdout:
+plugin failed to open: file not found
+./lt_dlopen.at:101: grep 'missing symbol' stderr
+stdout:
+./lt_dlopen.at:101: exit code was 1, expected 0
+76. lt_dlopen.at:23: 76. lt_dlopen error messages (lt_dlopen.at:23): expected failure (lt_dlopen.at:101)

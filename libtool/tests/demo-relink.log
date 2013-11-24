@@ -1,0 +1,26 @@
+PASS: tests/demo-relink.test (exit: 0)
+======================================
+
+demo-relink.test: ===  Running demo-relink.test
+cp: .libs/lt-hell: No such file or directory
+Welcome to GNU Hell!
+cos (0.0) = 1
+** This is not GNU Hello.  There is no built-in mail reader. **
+demo-relink.test: ===  removing libhello.la from demo
+demo-relink.test: ===  running demo/hell
+Welcome to GNU Hell!
+cos (0.0) = 1
+** This is not GNU Hello.  There is no built-in mail reader. **
+demo-relink.test: ===  linking a broken demo/libhello.la
+demo-relink.test: ===  Running `make libhello.la libhello_la_OBJECTS=hello.lo' in demo
+/bin/sh ./libtool --tag=CC   --mode=link /usr/bin/gcc-4.2  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -no-undefined -version-info 3:12:1 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o libhello.la -rpath /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib hello.lo  
+libtool: link: /usr/bin/gcc-4.2 -dynamiclib  -o .libs/libhello.2.dylib  .libs/hello.o   -L/Users/soegaard/BuildRacketLibs/lib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk   -install_name  /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.2.dylib -compatibility_version 4 -current_version 4.12 -Wl,-single_module
+libtool: link: (cd ".libs" && rm -f "libhello.dylib" && ln -s "libhello.2.dylib" "libhello.dylib")
+libtool: link: ( cd ".libs" && rm -f "libhello.la" && ln -s "../libhello.la" "libhello.la" )
+demo-relink.test: ===  running demo/hell with broken libhello.la
+dyld: Symbol not found: _nothing
+  Referenced from: /Users/soegaard/BuildRacketLibs/libtool/tests/demo/.libs/hell
+  Expected in: /Users/soegaard/BuildRacketLibs/libtool/tests/demo/.libs/libhello.2.dylib
+ in /Users/soegaard/BuildRacketLibs/libtool/tests/demo/.libs/hell
+./tests/demo-relink.test: line 86: 11669 Trace/BPT trap: 5       ( ./hell ) 2>&1
+demo-relink.test: ===  Failed, as expected

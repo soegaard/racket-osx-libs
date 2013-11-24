@@ -1,0 +1,1 @@
+libtoolize: AC_CONFIG_MACRO_DIR([m4]) conflicts with ACLOCAL_AMFLAGS=-I me2.

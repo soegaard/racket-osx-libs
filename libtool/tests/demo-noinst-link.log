@@ -1,0 +1,22 @@
+PASS: tests/demo-noinst-link.test (exit: 0)
+===========================================
+
+demo-noinst-link.test: ===  Running demo-noinst-link.test
+cp: .libs/temp is a directory (not copied).
+demo-noinst-link.test: ===  removing `libhello.la' and `hell' from demo
+demo-noinst-link.test: ===  linking `hell' with a broken `demo/libhello.la'
+/bin/sh ./libtool --tag=CC   --mode=link /usr/bin/gcc-4.2  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -no-undefined -version-info 3:12:1 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o libhello.la -rpath /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib hello.lo  
+libtool: link: rm -fr  .libs/libhello.2.dylib .libs/libhello.dylib .libs/libhello.la .libs/libhello.lai
+libtool: link: /usr/bin/gcc-4.2 -dynamiclib  -o .libs/libhello.2.dylib  .libs/hello.o   -L/Users/soegaard/BuildRacketLibs/lib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk   -install_name  /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.2.dylib -compatibility_version 4 -current_version 4.12 -Wl,-single_module
+libtool: link: (cd ".libs" && rm -f "libhello.dylib" && ln -s "libhello.2.dylib" "libhello.dylib")
+libtool: link: ( cd ".libs" && rm -f "libhello.la" && ln -s "../libhello.la" "libhello.la" )
+/bin/sh ./libtool --tag=CC   --mode=link /usr/bin/gcc-4.2  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include  -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o hell main.o libhello.la 
+libtool: link: /usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -o .libs/hell main.o  -L/Users/soegaard/BuildRacketLibs/lib ./.libs/libhello.dylib
+Undefined symbols:
+  "_nothing", referenced from:
+      _main in main.o
+  "_foo", referenced from:
+      _main in main.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+make: *** [hell] Error 1

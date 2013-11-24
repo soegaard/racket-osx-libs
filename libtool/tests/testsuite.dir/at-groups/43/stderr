@@ -1,0 +1,9 @@
+dyld: lazy symbol binding failed: Symbol not found: _a3
+  Referenced from: /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/043/inst/bin/m-static-libtool-libs
+  Expected in: /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/043/inst3/lib/liba3.0.dylib
+
+dyld: Symbol not found: _a3
+  Referenced from: /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/043/inst/bin/m-static-libtool-libs
+  Expected in: /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/043/inst3/lib/liba3.0.dylib
+
+/Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/at-groups/43/test-source: line 217: 45153 Trace/BPT trap: 5       "$lt_exe"

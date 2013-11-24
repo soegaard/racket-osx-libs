@@ -1,0 +1,5 @@
+SKIP: tests/demo-nopic.test (exit: 77)
+======================================
+
+demo-nopic.test: ===  Running demo-nopic.test
+demo-nopic.test: x86_64-apple-darwin13.0.0 doesn't like non-PIC shared libs

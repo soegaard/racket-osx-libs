@@ -1,0 +1,165 @@
+--------------------
+./configure --prefix=/Users/soegaard/BuildRacketLibs
+Sat Nov 23 11:18:51 CET 2013
+=== ztest80335.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+/usr/bin/gcc-4.2 -c ztest80335.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest80335.c ===
+int foo() { return 0; }
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include ztest80335.c
+
+Checking for shared library support...
+=== ztest80335.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+/usr/bin/gcc-4.2 -w -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -fPIC ztest80335.c
+/usr/bin/gcc-4.2 -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -fPIC -o ztest80335.dylib ztest80335.o
+Building shared library libz.1.2.8.dylib with /usr/bin/gcc-4.2.
+
+=== ztest80335.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -D_LARGEFILE64_SOURCE=1 ztest80335.c
+ztest80335.c:2: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘dummy’
+(exit code 1)
+Checking for off64_t... No.
+
+=== ztest80335.c ===
+#include <stdio.h>
+int main(void) {
+  fseeko(NULL, 0, 0);
+  return 0;
+}
+===
+/usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -o ztest80335 ztest80335.c
+Checking for fseeko... Yes.
+
+=== ztest80335.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -o ztest80335 ztest80335.c
+Checking for strerror... Yes.
+
+=== ztest80335.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include ztest80335.c
+Checking for unistd.h... Yes.
+
+=== ztest80335.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include ztest80335.c
+Checking for stdarg.h... Yes.
+
+=== ztest80335.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include ztest80335.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest80335.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -o ztest80335 ztest80335.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest80335.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include ztest80335.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest80335.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+/usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include ztest80335.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared
+AR = libtool
+ARFLAGS = -o
+CC = /usr/bin/gcc-4.2
+CFLAGS = -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -DHAVE_HIDDEN
+CPP = /usr/bin/gcc-4.2 -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib
+LDSHARED = /usr/bin/gcc-4.2 -dynamiclib -install_name ${exec_prefix}/lib/libz.1.dylib -compatibility_version 1 -current_version 1.2.8
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -fPIC -DHAVE_HIDDEN
+SHAREDLIB = libz.dylib
+SHAREDLIBM = libz.1.dylib
+SHAREDLIBV = libz.1.2.8.dylib
+STATICLIB = libz.a
+TEST = all teststatic testshared
+VER = 1.2.8
+Z_U4 =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /Users/soegaard/BuildRacketLibs
+sharedlibdir = ${libdir}
+uname = Darwin
+--------------------
+
+

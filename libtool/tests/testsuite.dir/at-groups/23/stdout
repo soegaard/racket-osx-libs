@@ -1,0 +1,3 @@
++ func_split_long_opt --mode=clean
++ set dummy --mode clean rm -f /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/023/inst/bin/main /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/023/inst/lib/libb.la /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/023/inst/lib/liba.la
++ help='Try `libtool --help --mode=clean'\'' for more information.'

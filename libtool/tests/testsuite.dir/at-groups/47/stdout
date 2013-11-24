@@ -1,0 +1,1 @@
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c gc.c  -fno-common -DPIC -o .libs/gc.o

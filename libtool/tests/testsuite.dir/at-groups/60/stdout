@@ -1,0 +1,2 @@
+libtool: compile:  g++ -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -I/Users/soegaard/BuildRacketLibs/include -c a.cpp  -fno-common -DPIC -o .libs/a.o
+libtool: compile:  g++ -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -I/Users/soegaard/BuildRacketLibs/include -c a.cpp -o a.o >/dev/null 2>&1

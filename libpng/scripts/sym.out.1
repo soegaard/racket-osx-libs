@@ -1,0 +1,1206 @@
+# 1 "scripts/sym.out.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "scripts/sym.out.c"
+# 1 "./scripts/sym.dfn" 1
+# 15 "./scripts/sym.dfn"
+# 1 "./scripts/../png.h" 1
+# 454 "./scripts/../png.h"
+# 1 "./scripts/../pnglibconf.h" 1
+# 455 "./scripts/../png.h" 2
+# 477 "./scripts/../png.h"
+# 1 "./scripts/../pngconf.h" 1
+# 447 "./scripts/../pngconf.h"
+typedef unsigned long png_uint_32;
+typedef long png_int_32;
+
+typedef unsigned short png_uint_16;
+typedef short png_int_16;
+typedef unsigned char png_byte;
+
+
+
+
+typedef size_t png_size_t;
+# 524 "./scripts/../pngconf.h"
+typedef png_int_32 png_fixed_point;
+
+
+typedef void * png_voidp;
+typedef const void * png_const_voidp;
+typedef png_byte * png_bytep;
+typedef const png_byte * png_const_bytep;
+typedef png_uint_32 * png_uint_32p;
+typedef const png_uint_32 * png_const_uint_32p;
+typedef png_int_32 * png_int_32p;
+typedef const png_int_32 * png_const_int_32p;
+typedef png_uint_16 * png_uint_16p;
+typedef const png_uint_16 * png_const_uint_16p;
+typedef png_int_16 * png_int_16p;
+typedef const png_int_16 * png_const_int_16p;
+typedef char * png_charp;
+typedef const char * png_const_charp;
+typedef png_fixed_point * png_fixed_point_p;
+typedef const png_fixed_point * png_const_fixed_point_p;
+typedef png_size_t * png_size_tp;
+typedef const png_size_t * png_const_size_tp;
+
+
+typedef FILE * png_FILE_p;
+
+
+
+typedef double * png_doublep;
+typedef const double * png_const_doublep;
+
+
+
+typedef png_byte * * png_bytepp;
+typedef png_uint_32 * * png_uint_32pp;
+typedef png_int_32 * * png_int_32pp;
+typedef png_uint_16 * * png_uint_16pp;
+typedef png_int_16 * * png_int_16pp;
+typedef const char * * png_const_charpp;
+typedef char * * png_charpp;
+typedef png_fixed_point * * png_fixed_point_pp;
+
+typedef double * * png_doublepp;
+
+
+
+typedef char * * * png_charppp;
+# 594 "./scripts/../pngconf.h"
+       typedef png_size_t png_alloc_size_t;
+# 478 "./scripts/../png.h" 2
+# 567 "./scripts/../png.h"
+typedef char* png_libpng_version_1_5_17;
+
+
+
+
+
+typedef struct png_color_struct
+{
+   png_byte red;
+   png_byte green;
+   png_byte blue;
+} png_color;
+typedef png_color * png_colorp;
+typedef const png_color * png_const_colorp;
+typedef png_color * * png_colorpp;
+
+typedef struct png_color_16_struct
+{
+   png_byte index;
+   png_uint_16 red;
+   png_uint_16 green;
+   png_uint_16 blue;
+   png_uint_16 gray;
+} png_color_16;
+typedef png_color_16 * png_color_16p;
+typedef const png_color_16 * png_const_color_16p;
+typedef png_color_16 * * png_color_16pp;
+
+typedef struct png_color_8_struct
+{
+   png_byte red;
+   png_byte green;
+   png_byte blue;
+   png_byte gray;
+   png_byte alpha;
+} png_color_8;
+typedef png_color_8 * png_color_8p;
+typedef const png_color_8 * png_const_color_8p;
+typedef png_color_8 * * png_color_8pp;
+
+
+
+
+
+typedef struct png_sPLT_entry_struct
+{
+   png_uint_16 red;
+   png_uint_16 green;
+   png_uint_16 blue;
+   png_uint_16 alpha;
+   png_uint_16 frequency;
+} png_sPLT_entry;
+typedef png_sPLT_entry * png_sPLT_entryp;
+typedef const png_sPLT_entry * png_const_sPLT_entryp;
+typedef png_sPLT_entry * * png_sPLT_entrypp;
+
+
+
+
+
+
+typedef struct png_sPLT_struct
+{
+   png_charp name;
+   png_byte depth;
+   png_sPLT_entryp entries;
+   png_int_32 nentries;
+} png_sPLT_t;
+typedef png_sPLT_t * png_sPLT_tp;
+typedef const png_sPLT_t * png_const_sPLT_tp;
+typedef png_sPLT_t * * png_sPLT_tpp;
+# 657 "./scripts/../png.h"
+typedef struct png_text_struct
+{
+   int compression;
+
+
+
+
+   png_charp key;
+   png_charp text;
+
+   png_size_t text_length;
+   png_size_t itxt_length;
+   png_charp lang;
+
+   png_charp lang_key;
+
+} png_text;
+typedef png_text * png_textp;
+typedef const png_text * png_const_textp;
+typedef png_text * * png_textpp;
+# 695 "./scripts/../png.h"
+typedef struct png_time_struct
+{
+   png_uint_16 year;
+   png_byte month;
+   png_byte day;
+   png_byte hour;
+   png_byte minute;
+   png_byte second;
+} png_time;
+typedef png_time * png_timep;
+typedef const png_time * png_const_timep;
+typedef png_time * * png_timepp;
+# 715 "./scripts/../png.h"
+typedef struct png_unknown_chunk_t
+{
+    png_byte name[5];
+    png_byte *data;
+    png_size_t size;
+
+
+    png_byte location;
+}
+
+
+png_unknown_chunk;
+typedef png_unknown_chunk * png_unknown_chunkp;
+typedef const png_unknown_chunk * png_const_unknown_chunkp;
+typedef png_unknown_chunk * * png_unknown_chunkpp;
+# 742 "./scripts/../png.h"
+typedef struct png_info_def png_info;
+typedef png_info * png_infop;
+typedef const png_info * png_const_infop;
+typedef png_info * * png_infopp;
+# 852 "./scripts/../png.h"
+typedef struct png_row_info_struct
+{
+   png_uint_32 width;
+   png_size_t rowbytes;
+   png_byte color_type;
+   png_byte bit_depth;
+   png_byte channels;
+   png_byte pixel_depth;
+} png_row_info;
+
+typedef png_row_info * png_row_infop;
+typedef png_row_info * * png_row_infopp;
+
+
+
+
+
+typedef struct png_struct_def png_struct;
+typedef const png_struct * png_const_structp;
+typedef png_struct * png_structp;
+# 881 "./scripts/../png.h"
+typedef void ( *png_error_ptr) (png_structp, png_const_charp);
+typedef void ( *png_rw_ptr) (png_structp, png_bytep, png_size_t);
+typedef void ( *png_flush_ptr) (png_structp);
+typedef void ( *png_read_status_ptr) (png_structp, png_uint_32, int);
+
+typedef void ( *png_write_status_ptr) (png_structp, png_uint_32, int);
+
+
+
+typedef void ( *png_progressive_info_ptr) (png_structp, png_infop);
+typedef void ( *png_progressive_end_ptr) (png_structp, png_infop);
+# 903 "./scripts/../png.h"
+typedef void ( *png_progressive_row_ptr) (png_structp, png_bytep, png_uint_32, int);
+
+
+
+
+
+typedef void ( *png_user_transform_ptr) (png_structp, png_row_infop, png_bytep);
+
+
+
+
+typedef int ( *png_user_chunk_ptr) (png_structp, png_unknown_chunkp);
+
+
+
+typedef void ( *png_unknown_chunk_ptr) (png_structp);
+# 933 "./scripts/../png.h"
+typedef void ( *png_longjmp_ptr) (jmp_buf, int);
+# 970 "./scripts/../png.h"
+typedef png_voidp ( *png_malloc_ptr) (png_structp, png_alloc_size_t);
+
+typedef void ( *png_free_ptr) (png_structp, png_voidp);
+
+typedef png_struct * * png_structpp;
+# 1006 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_access_version_number "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_sig_bytes "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_sig_cmp "@";
+# 1027 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_create_read_struct "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_create_write_struct "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_compression_buffer_size "@";
+
+
+PNG_DFN "@" "@@" png_set_compression_buffer_size "@";
+# 1055 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_longjmp_fn "@";
+# 1068 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_longjmp "@";
+
+
+
+
+PNG_DFN "@" "@@" png_reset_zstream "@";
+
+
+
+
+PNG_DFN "@" "@@" png_create_read_struct_2 "@";
+
+
+
+
+PNG_DFN "@" "@@" png_create_write_struct_2 "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_write_sig "@";
+
+
+PNG_DFN "@" "@@" png_write_chunk "@";
+
+
+
+PNG_DFN "@" "@@" png_write_chunk_start "@";
+
+
+
+PNG_DFN "@" "@@" png_write_chunk_data "@";
+
+
+
+PNG_DFN "@" "@@" png_write_chunk_end "@";
+
+
+PNG_DFN "@" "@@" png_create_info_struct "@";
+
+
+PNG_DFN "@" "@@" png_info_init_3 "@";
+
+
+
+PNG_DFN "@" "@@" png_write_info_before_PLTE "@";
+
+PNG_DFN "@" "@@" png_write_info "@";
+
+
+
+
+PNG_DFN "@" "@@" png_read_info "@";
+
+
+
+
+PNG_DFN "@" "@@" png_convert_to_rfc1123 "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_convert_from_struct_tm "@";
+
+
+
+PNG_DFN "@" "@@" png_convert_from_time_t "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_expand "@";
+PNG_DFN "@" "@@" png_set_expand_gray_1_2_4_to_8 "@";
+PNG_DFN "@" "@@" png_set_palette_to_rgb "@";
+PNG_DFN "@" "@@" png_set_tRNS_to_alpha "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_expand_16 "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_bgr "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_gray_to_rgb "@";
+# 1175 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_rgb_to_gray "@";
+
+PNG_DFN "@" "@@" png_set_rgb_to_gray_fixed "@";
+
+
+PNG_DFN "@" "@@" png_get_rgb_to_gray_status "@";
+
+
+
+
+PNG_DFN "@" "@@" png_build_grayscale_palette "@";
+# 1245 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_alpha_mode "@";
+
+PNG_DFN "@" "@@" png_set_alpha_mode_fixed "@";
+# 1399 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_strip_alpha "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_swap_alpha "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_invert_alpha "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_filler "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_add_alpha "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_swap "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_packing "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_packswap "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_shift "@";
+# 1455 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_interlace_handling "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_invert_mono "@";
+# 1469 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_background "@";
+
+
+PNG_DFN "@" "@@" png_set_background_fixed "@";
+# 1485 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_scale_16 "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_strip_16 "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_quantize "@";
+# 1521 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_gamma "@";
+
+
+PNG_DFN "@" "@@" png_set_gamma_fixed "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_flush "@";
+
+PNG_DFN "@" "@@" png_write_flush "@";
+
+
+
+PNG_DFN "@" "@@" png_start_read_image "@";
+
+
+PNG_DFN "@" "@@" png_read_update_info "@";
+
+
+
+
+PNG_DFN "@" "@@" png_read_rows "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_read_row "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_read_image "@";
+
+
+
+PNG_DFN "@" "@@" png_write_row "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_write_rows "@";
+
+
+
+PNG_DFN "@" "@@" png_write_image "@";
+
+
+
+PNG_DFN "@" "@@" png_write_end "@";
+
+
+
+
+PNG_DFN "@" "@@" png_read_end "@";
+
+
+
+PNG_DFN "@" "@@" png_destroy_info_struct "@";
+
+
+
+PNG_DFN "@" "@@" png_destroy_read_struct "@";
+
+
+
+PNG_DFN "@" "@@" png_destroy_write_struct "@";
+
+
+
+PNG_DFN "@" "@@" png_set_crc_action "@";
+# 1627 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_filter "@";
+# 1683 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_filter_heuristics "@";
+
+
+PNG_DFN "@" "@@" png_set_filter_heuristics_fixed "@";
+# 1708 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_compression_level "@";
+
+
+PNG_DFN "@" "@@" png_set_compression_mem_level "@";
+
+
+PNG_DFN "@" "@@" png_set_compression_strategy "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_compression_window_bits "@";
+
+
+PNG_DFN "@" "@@" png_set_compression_method "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_text_compression_level "@";
+
+
+PNG_DFN "@" "@@" png_set_text_compression_mem_level "@";
+
+
+PNG_DFN "@" "@@" png_set_text_compression_strategy "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_text_compression_window_bits "@";
+
+
+PNG_DFN "@" "@@" png_set_text_compression_method "@";
+# 1759 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_init_io "@";
+# 1770 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_error_fn "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_error_ptr "@";
+# 1787 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_write_fn "@";
+
+
+
+PNG_DFN "@" "@@" png_set_read_fn "@";
+
+
+
+PNG_DFN "@" "@@" png_get_io_ptr "@";
+
+PNG_DFN "@" "@@" png_set_read_status_fn "@";
+
+
+PNG_DFN "@" "@@" png_set_write_status_fn "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_mem_fn "@";
+
+
+PNG_DFN "@" "@@" png_get_mem_ptr "@";
+
+
+
+PNG_DFN "@" "@@" png_set_read_user_transform_fn "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_write_user_transform_fn "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_user_transform_info "@";
+
+
+
+PNG_DFN "@" "@@" png_get_user_transform_ptr "@";
+# 1842 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_get_current_row_number "@";
+PNG_DFN "@" "@@" png_get_current_pass_number "@";
+
+
+
+PNG_DFN "@" "@@" png_set_read_user_chunk_fn "@";
+
+PNG_DFN "@" "@@" png_get_user_chunk_ptr "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_progressive_read_fn "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_progressive_ptr "@";
+
+
+PNG_DFN "@" "@@" png_process_data "@";
+# 1875 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_process_data_pause "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_process_data_skip "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_progressive_combine_row "@";
+
+
+
+
+PNG_DFN "@" "@@" png_malloc "@";
+
+
+
+PNG_DFN "@" "@@" png_calloc "@";
+
+
+
+
+PNG_DFN "@" "@@" png_malloc_warn "@";
+
+
+
+PNG_DFN "@" "@@" png_free "@";
+
+
+PNG_DFN "@" "@@" png_free_data "@";
+
+
+
+
+PNG_DFN "@" "@@" png_data_freer "@";
+# 1940 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_malloc_default "@";
+
+PNG_DFN "@" "@@" png_free_default "@";
+
+
+
+
+PNG_DFN "@" "@@" png_error "@";
+
+
+
+
+PNG_DFN "@" "@@" png_chunk_error "@";
+# 1962 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_warning "@";
+
+
+
+PNG_DFN "@" "@@" png_chunk_warning "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_benign_error "@";
+
+
+
+
+PNG_DFN "@" "@@" png_chunk_benign_error "@";
+
+
+PNG_DFN "@" "@@" png_set_benign_errors "@";
+# 2007 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_get_valid "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_rowbytes "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_rows "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_rows "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_channels "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_image_width "@";
+
+
+
+PNG_DFN "@" "@@" png_get_image_height "@";
+
+
+
+PNG_DFN "@" "@@" png_get_bit_depth "@";
+
+
+
+PNG_DFN "@" "@@" png_get_color_type "@";
+
+
+
+PNG_DFN "@" "@@" png_get_filter_type "@";
+
+
+
+PNG_DFN "@" "@@" png_get_interlace_type "@";
+
+
+
+PNG_DFN "@" "@@" png_get_compression_type "@";
+
+
+
+PNG_DFN "@" "@@" png_get_pixels_per_meter "@";
+
+PNG_DFN "@" "@@" png_get_x_pixels_per_meter "@";
+
+PNG_DFN "@" "@@" png_get_y_pixels_per_meter "@";
+
+
+
+PNG_DFN "@" "@@" png_get_pixel_aspect_ratio "@";
+
+PNG_DFN "@" "@@" png_get_pixel_aspect_ratio_fixed "@";
+
+
+
+PNG_DFN "@" "@@" png_get_x_offset_pixels "@";
+
+PNG_DFN "@" "@@" png_get_y_offset_pixels "@";
+
+PNG_DFN "@" "@@" png_get_x_offset_microns "@";
+
+PNG_DFN "@" "@@" png_get_y_offset_microns "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_signature "@";
+
+
+
+PNG_DFN "@" "@@" png_get_bKGD "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_bKGD "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_cHRM "@";
+
+
+
+PNG_DFN "@" "@@" png_get_cHRM_XYZ "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_cHRM_fixed "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_cHRM_XYZ_fixed "@";
+# 2130 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_cHRM "@";
+
+
+
+PNG_DFN "@" "@@" png_set_cHRM_XYZ "@";
+
+
+
+PNG_DFN "@" "@@" png_set_cHRM_fixed "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_cHRM_XYZ_fixed "@";
+# 2153 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_get_gAMA "@";
+
+
+PNG_DFN "@" "@@" png_get_gAMA_fixed "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_gAMA "@";
+
+PNG_DFN "@" "@@" png_set_gAMA_fixed "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_hIST "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_hIST "@";
+
+
+
+PNG_DFN "@" "@@" png_get_IHDR "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_IHDR "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_oFFs "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_oFFs "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_pCAL "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_pCAL "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_pHYs "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_pHYs "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_PLTE "@";
+
+
+
+PNG_DFN "@" "@@" png_set_PLTE "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_sBIT "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_sBIT "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_sRGB "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_sRGB "@";
+
+PNG_DFN "@" "@@" png_set_sRGB_gAMA_and_cHRM "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_iCCP "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_iCCP "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_sPLT "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_sPLT "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_text "@";
+# 2300 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_text "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_tIME "@";
+
+
+
+
+PNG_DFN "@" "@@" png_set_tIME "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_tRNS "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_tRNS "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_sCAL "@";
+# 2338 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_get_sCAL_fixed "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_sCAL_s "@";
+
+
+
+PNG_DFN "@" "@@" png_set_sCAL "@";
+
+
+PNG_DFN "@" "@@" png_set_sCAL_fixed "@";
+
+
+PNG_DFN "@" "@@" png_set_sCAL_s "@";
+# 2370 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_keep_unknown_chunks "@";
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_handle_as_unknown "@";
+
+
+
+PNG_DFN "@" "@@" png_set_unknown_chunks "@";
+
+
+PNG_DFN "@" "@@" png_set_unknown_chunk_location "@";
+
+PNG_DFN "@" "@@" png_get_unknown_chunks "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_set_invalid "@";
+
+
+
+
+PNG_DFN "@" "@@" png_read_png "@";
+
+PNG_DFN "@" "@@" png_write_png "@";
+
+
+
+PNG_DFN "@" "@@" png_get_copyright "@";
+
+PNG_DFN "@" "@@" png_get_header_ver "@";
+
+PNG_DFN "@" "@@" png_get_header_version "@";
+
+PNG_DFN "@" "@@" png_get_libpng_ver "@";
+
+
+
+PNG_DFN "@" "@@" png_permit_mng_features "@";
+# 2436 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_user_limits "@";
+
+PNG_DFN "@" "@@" png_get_user_width_max "@";
+
+PNG_DFN "@" "@@" png_get_user_height_max "@";
+
+
+PNG_DFN "@" "@@" png_set_chunk_cache_max "@";
+
+PNG_DFN "@" "@@" png_get_chunk_cache_max "@";
+
+
+PNG_DFN "@" "@@" png_set_chunk_malloc_max "@";
+
+PNG_DFN "@" "@@" png_get_chunk_malloc_max "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_pixels_per_inch "@";
+
+
+PNG_DFN "@" "@@" png_get_x_pixels_per_inch "@";
+
+
+PNG_DFN "@" "@@" png_get_y_pixels_per_inch "@";
+
+
+PNG_DFN "@" "@@" png_get_x_offset_inches "@";
+
+
+PNG_DFN "@" "@@" png_get_x_offset_inches_fixed "@";
+
+
+
+PNG_DFN "@" "@@" png_get_y_offset_inches "@";
+
+
+PNG_DFN "@" "@@" png_get_y_offset_inches_fixed "@";
+
+
+
+
+PNG_DFN "@" "@@" png_get_pHYs_dpi "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_get_io_state "@";
+
+PNG_DFN "@" "@@" png_get_io_chunk_name "@";
+
+PNG_DFN "@" "@@" png_get_io_chunk_type "@";
+# 2611 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_get_uint_32 "@";
+PNG_DFN "@" "@@" png_get_uint_16 "@";
+PNG_DFN "@" "@@" png_get_int_32 "@";
+
+
+PNG_DFN "@" "@@" png_get_uint_31 "@";
+
+
+
+
+
+PNG_DFN "@" "@@" png_save_uint_32 "@";
+
+
+PNG_DFN "@" "@@" png_save_int_32 "@";
+
+
+
+
+
+
+
+PNG_DFN "@" "@@" png_save_uint_16 "@";
+# 2663 "./scripts/../png.h"
+PNG_DFN "@" "@@" png_set_check_for_invalid_index "@";
+
+
+PNG_DFN "@" "@@" png_get_palette_max "@";
+# 15 "./scripts/sym.dfn" 2
+# 1 "scripts/sym.out.c" 2

@@ -1,0 +1,477 @@
+libgio_2_0_la-gresolver.lo .libs/libgio_2_0_la-gresolver.o: gresolver.c \
+  ../config.h ../glib/glib.h ../glib/galloca.h ../glib/gtypes.h \
+  ../glib/glibconfig.h ../glib/gmacros.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h \
+  ../glib/garray.h ../glib/gasyncqueue.h ../glib/gthread.h \
+  ../glib/gatomic.h ../glib/gerror.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h \
+  ../glib/gquark.h ../glib/gbacktrace.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/appleapiopts.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/mach/i386/_structs.h \
+  ../glib/gbase64.h ../glib/gbitlock.h ../glib/gbookmarkfile.h \
+  ../glib/gbytes.h ../glib/gcharset.h ../glib/gchecksum.h \
+  ../glib/gconvert.h ../glib/gdataset.h ../glib/gdate.h \
+  ../glib/gdatetime.h ../glib/gtimezone.h ../glib/gdir.h \
+  ../glib/genviron.h ../glib/gfileutils.h ../glib/ggettext.h \
+  ../glib/ghash.h ../glib/glist.h ../glib/gmem.h ../glib/ghmac.h \
+  ../glib/gchecksum.h ../glib/ghook.h ../glib/ghostutils.h \
+  ../glib/giochannel.h ../glib/gmain.h ../glib/gpoll.h ../glib/gslist.h \
+  ../glib/gstring.h ../glib/gunicode.h ../glib/gutils.h \
+  ../glib/gkeyfile.h ../glib/gmappedfile.h ../glib/gmarkup.h \
+  ../glib/gmessages.h ../glib/gnode.h ../glib/goption.h \
+  ../glib/gpattern.h ../glib/gprimes.h ../glib/gqsort.h ../glib/gqueue.h \
+  ../glib/grand.h ../glib/gregex.h ../glib/gscanner.h ../glib/gsequence.h \
+  ../glib/gshell.h ../glib/gslice.h ../glib/gspawn.h ../glib/gstrfuncs.h \
+  ../glib/gstringchunk.h ../glib/gtestutils.h ../glib/gthreadpool.h \
+  ../glib/gtimer.h ../glib/gtrashstack.h ../glib/gtree.h \
+  ../glib/gurifuncs.h ../glib/gvarianttype.h ../glib/gvariant.h \
+  ../glib/gversion.h ../glib/deprecated/gallocator.h \
+  ../glib/deprecated/gcache.h ../glib/deprecated/gcompletion.h \
+  ../glib/deprecated/gmain.h ../glib/deprecated/grel.h \
+  ../glib/deprecated/gthread.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h ../glib/glibintl.h \
+  /Users/soegaard/BuildRacketLibs/include/libintl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/locale.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_locale.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_xlocale.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale/_time.h gresolver.h \
+  ../gio/giotypes.h ../gio/gioenums.h ../glib/glib-object.h \
+  ../gobject/gbinding.h ../gobject/gobject.h ../gobject/gtype.h \
+  ../gobject/gvalue.h ../gobject/gparam.h ../gobject/gclosure.h \
+  ../gobject/gsignal.h ../gobject/gmarshal.h ../gobject/gboxed.h \
+  ../gobject/glib-types.h ../gobject/genums.h ../gobject/gparamspecs.h \
+  ../gobject/gsourceclosure.h ../gobject/gtypemodule.h \
+  ../gobject/gtypeplugin.h ../gobject/gvaluearray.h \
+  ../gobject/gvaluetypes.h gnetworkingprivate.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/netdb.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/netinet/in.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/socket.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/netinet6/in6.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/netinet/tcp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/resolv.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale/_stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/arpa/nameser.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/un.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/arpa/inet.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/arpa/nameser_compat.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/net/if.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/net/if_var.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_select.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/queue.h gasyncresult.h \
+  ginetaddress.h ginetsocketaddress.h ../gio/gsocketaddress.h \
+  gsimpleasyncresult.h gsrvtarget.h gthreadedresolver.h \
+  ../gio/gresolver.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/available.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/wait.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/resource.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/alloca.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale/_stdlib.h
+
+../config.h:
+
+../glib/glib.h:
+
+../glib/galloca.h:
+
+../glib/gtypes.h:
+
+../glib/glibconfig.h:
+
+../glib/gmacros.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h:
+
+../glib/garray.h:
+
+../glib/gasyncqueue.h:
+
+../glib/gthread.h:
+
+../glib/gatomic.h:
+
+../glib/gerror.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h:
+
+../glib/gquark.h:
+
+../glib/gbacktrace.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/appleapiopts.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/mach/i386/_structs.h:
+
+../glib/gbase64.h:
+
+../glib/gbitlock.h:
+
+../glib/gbookmarkfile.h:
+
+../glib/gbytes.h:
+
+../glib/gcharset.h:
+
+../glib/gchecksum.h:
+
+../glib/gconvert.h:
+
+../glib/gdataset.h:
+
+../glib/gdate.h:
+
+../glib/gdatetime.h:
+
+../glib/gtimezone.h:
+
+../glib/gdir.h:
+
+../glib/genviron.h:
+
+../glib/gfileutils.h:
+
+../glib/ggettext.h:
+
+../glib/ghash.h:
+
+../glib/glist.h:
+
+../glib/gmem.h:
+
+../glib/ghmac.h:
+
+../glib/gchecksum.h:
+
+../glib/ghook.h:
+
+../glib/ghostutils.h:
+
+../glib/giochannel.h:
+
+../glib/gmain.h:
+
+../glib/gpoll.h:
+
+../glib/gslist.h:
+
+../glib/gstring.h:
+
+../glib/gunicode.h:
+
+../glib/gutils.h:
+
+../glib/gkeyfile.h:
+
+../glib/gmappedfile.h:
+
+../glib/gmarkup.h:
+
+../glib/gmessages.h:
+
+../glib/gnode.h:
+
+../glib/goption.h:
+
+../glib/gpattern.h:
+
+../glib/gprimes.h:
+
+../glib/gqsort.h:
+
+../glib/gqueue.h:
+
+../glib/grand.h:
+
+../glib/gregex.h:
+
+../glib/gscanner.h:
+
+../glib/gsequence.h:
+
+../glib/gshell.h:
+
+../glib/gslice.h:
+
+../glib/gspawn.h:
+
+../glib/gstrfuncs.h:
+
+../glib/gstringchunk.h:
+
+../glib/gtestutils.h:
+
+../glib/gthreadpool.h:
+
+../glib/gtimer.h:
+
+../glib/gtrashstack.h:
+
+../glib/gtree.h:
+
+../glib/gurifuncs.h:
+
+../glib/gvarianttype.h:
+
+../glib/gvariant.h:
+
+../glib/gversion.h:
+
+../glib/deprecated/gallocator.h:
+
+../glib/deprecated/gcache.h:
+
+../glib/deprecated/gcompletion.h:
+
+../glib/deprecated/gmain.h:
+
+../glib/deprecated/grel.h:
+
+../glib/deprecated/gthread.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h:
+
+../glib/glibintl.h:
+
+/Users/soegaard/BuildRacketLibs/include/libintl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/locale.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_locale.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_xlocale.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale/_time.h:
+
+gresolver.h:
+
+../gio/giotypes.h:
+
+../gio/gioenums.h:
+
+../glib/glib-object.h:
+
+../gobject/gbinding.h:
+
+../gobject/gobject.h:
+
+../gobject/gtype.h:
+
+../gobject/gvalue.h:
+
+../gobject/gparam.h:
+
+../gobject/gclosure.h:
+
+../gobject/gsignal.h:
+
+../gobject/gmarshal.h:
+
+../gobject/gboxed.h:
+
+../gobject/glib-types.h:
+
+../gobject/genums.h:
+
+../gobject/gparamspecs.h:
+
+../gobject/gsourceclosure.h:
+
+../gobject/gtypemodule.h:
+
+../gobject/gtypeplugin.h:
+
+../gobject/gvaluearray.h:
+
+../gobject/gvaluetypes.h:
+
+gnetworkingprivate.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/_OSByteOrder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/i386/_OSByteOrder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/netdb.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/netinet/in.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/socket.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/netinet6/in6.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/netinet/tcp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/resolv.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale/_stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/arpa/nameser.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/un.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/arpa/inet.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/arpa/nameser_compat.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/net/if.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/net/if_var.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_select.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/queue.h:
+
+gasyncresult.h:
+
+ginetaddress.h:
+
+ginetsocketaddress.h:
+
+../gio/gsocketaddress.h:
+
+gsimpleasyncresult.h:
+
+gsrvtarget.h:
+
+gthreadedresolver.h:
+
+../gio/gresolver.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/available.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/wait.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/resource.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/alloca.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/xlocale/_stdlib.h:

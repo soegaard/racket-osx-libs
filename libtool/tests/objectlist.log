@@ -1,0 +1,5 @@
+PASS: tests/objectlist.test (exit: 0)
+=====================================
+
+objectlist.test: ===  Running objectlist.test
+objectlist.test: ===  objectlist.test: error message contains -objectlist argument as expected

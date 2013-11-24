@@ -1,0 +1,5 @@
+libtoolize: putting auxiliary files in `.'.
+libtoolize: copying file `./ltmain.sh'
+libtoolize: Consider adding `AC_CONFIG_MACRO_DIR([m4])' to configure.ac and
+libtoolize: rerunning libtoolize, to keep the correct libtool macros in-tree.
+libtoolize: Consider adding `-I m4' to ACLOCAL_AMFLAGS in Makefile.am.

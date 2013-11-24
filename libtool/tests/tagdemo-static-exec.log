@@ -1,0 +1,15 @@
+PASS: tests/tagdemo-static-exec.test (exit: 0)
+==============================================
+
+tagdemo-static-exec.test: ===  Running tagdemo-static-exec.test
+tagdemo-static-exec.test: ===  Running tagdemo-static-exec.test
+tagdemo-static-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU libtool tagdemo C++!
+** This is libfoo (tagdemo) **
+foobar::hello returned: 57616
+foobar::hello is ok!
+cos (0.0) = 1
+foobar::foo is ok!
+cos (0.0) = 1
+barbaz::baz is ok!
+convenience is ok!

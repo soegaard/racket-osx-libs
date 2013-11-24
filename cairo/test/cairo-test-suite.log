@@ -1,0 +1,128 @@
+Compiled against cairo 1.10.2, running on 1.10.2.
+Compiled against pixman 0.24.4, running on 0.24.4.
+
+composite-integer-translate-source: CRASH! (pdf)
+
+close-path-current-point: CRASH! (pdf)
+
+close-path: CRASH! (pdf)
+
+clipped-surface: CRASH! (pdf)
+
+clipped-group: CRASH! (pdf)
+clip-zero: PASS
+
+clip-unbounded: CRASH! (pdf)
+
+clip-twice-rectangle: CRASH! (pdf)
+
+clip-twice: CRASH! (pdf)
+
+clip-text: CRASH! (pdf)
+
+clip-stroke-no-op: CRASH! (pdf)
+
+clip-stroke: CRASH! (pdf)
+
+clip-shape: CRASH! (pdf)
+
+clip-push-group: CRASH! (pdf)
+
+clip-operator: CRASH! (pdf)
+
+clip-nesting: CRASH! (pdf)
+
+clip-image: CRASH! (pdf)
+
+clip-group-shapes-circles: CRASH! (pdf)
+clip-group-shapes-unaligned-rectangles: FAIL (test-fallback)
+
+clip-group-shapes-aligned-rectangles: CRASH! (pdf)
+
+clip-fill-rule-pixel-aligned: CRASH! (pdf)
+
+clip-fill-rule: CRASH! (pdf)
+
+clip-fill-no-op: CRASH! (pdf)
+
+clip-fill: CRASH! (pdf)
+
+clip-empty-save: CRASH! (pdf)
+
+clip-empty-group: CRASH! (pdf)
+
+clip-empty: CRASH! (pdf)
+
+clip-fill-eo-unbounded: CRASH! (pdf)
+
+clip-fill-nz-unbounded: CRASH! (pdf)
+
+clip-stroke-unbounded: CRASH! (pdf)
+
+clip-device-offset: CRASH! (pdf)
+
+clip-disjoint: CRASH! (pdf)
+
+clip-contexts: CRASH! (pdf)
+
+clip-all: CRASH! (pdf)
+
+clear-source: CRASH! (pdf)
+
+clear: CRASH! (pdf)
+
+caps-sub-paths: CRASH! (pdf)
+
+caps-joins-curve: CRASH! (pdf)
+
+caps-joins-alpha: CRASH! (pdf)
+
+caps-joins: CRASH! (pdf)
+
+caps: CRASH! (pdf)
+bug-seams: FAIL (test-fallback, test-wrapping, quartz, image, image16, recording)
+
+bug-extents: CRASH! (pdf)
+
+bug-bo-rectangular: CRASH! (pdf)
+
+bilevel-image: CRASH! (pdf)
+big-trap: XFAIL
+
+big-line: CRASH! (pdf)
+
+api-special-cases: CRASH!
+
+alpha-similar: CRASH! (pdf)
+aliasing: FAIL (test-fallback, quartz)
+
+a8-mask: CRASH!
+
+a8-clear: CRASH! (pdf)
+a1-rasterisation-triangles: FAIL (quartz)
+a1-rasterisation-rectangles: FAIL (quartz)
+a1-traps-sample: XFAIL
+a1-mask-sample: XFAIL
+
+a1-mask: CRASH!
+a1-image-sample: XFAIL
+a1-bug: FAIL (test-fallback, quartz)
+1 Passed, 58 Failed [48 crashed, 4 expected], 0 Skipped
+test-fallback (argb32): 22 failed - clip-twice clip-text clip-stroke clip-shape clip-push-group clip-operator clip-group-shapes-circles clip-group-shapes-unaligned-rectangles clip-fill clip-fill-eo-unbounded clip-fill-nz-unbounded clip-stroke-unbounded clip-disjoint clear caps-joins-curve caps-joins-alpha bug-seams bug-extents big-line aliasing a8-clear a1-bug
+test-fallback (rgb24): 24 failed - clip-twice clip-text clip-stroke clip-shape clip-push-group clip-operator clip-nesting clip-group-shapes-circles clip-group-shapes-unaligned-rectangles clip-fill-rule clip-fill clip-fill-eo-unbounded clip-fill-nz-unbounded clip-stroke-unbounded clip-disjoint clear caps-joins-curve caps-joins-alpha bug-seams bug-extents big-line aliasing a8-clear a1-bug
+test-paginated (argb32): 3 failed - clip-text clip-operator clear
+test-paginated (rgb24): 3 failed - clip-text clip-operator clear
+test-wrapping (argb32): 4 failed - clip-text clip-operator clear bug-seams
+pdf (argb32): 48 crashed! - composite-integer-translate-source close-path-current-point close-path clipped-surface clipped-group clip-unbounded clip-twice-rectangle clip-twice clip-text clip-stroke-no-op clip-stroke clip-shape clip-push-group clip-operator clip-nesting clip-image clip-group-shapes-circles clip-group-shapes-aligned-rectangles clip-fill-rule-pixel-aligned clip-fill-rule clip-fill-no-op clip-fill clip-empty-save clip-empty-group clip-empty clip-fill-eo-unbounded clip-fill-nz-unbounded clip-stroke-unbounded clip-device-offset clip-disjoint clip-contexts clip-all clear-source clear caps-sub-paths caps-joins-curve caps-joins-alpha caps-joins caps bug-extents bug-bo-rectangular bilevel-image big-line api-special-cases alpha-similar a8-mask a8-clear a1-mask
+pdf (rgb24): 48 crashed! - composite-integer-translate-source close-path-current-point close-path clipped-surface clipped-group clip-unbounded clip-twice-rectangle clip-twice clip-text clip-stroke-no-op clip-stroke clip-shape clip-push-group clip-operator clip-nesting clip-image clip-group-shapes-circles clip-group-shapes-aligned-rectangles clip-fill-rule-pixel-aligned clip-fill-rule clip-fill-no-op clip-fill clip-empty-save clip-empty-group clip-empty clip-fill-eo-unbounded clip-fill-nz-unbounded clip-stroke-unbounded clip-device-offset clip-disjoint clip-contexts clip-all clear-source clear caps-sub-paths caps-joins-curve caps-joins-alpha caps-joins caps bug-extents bug-bo-rectangular bilevel-image big-line api-special-cases alpha-similar a8-mask a8-clear a1-mask
+ps2 (argb32): 13 failed - clipped-group clip-text clip-stroke-no-op clip-stroke clip-operator clip-group-shapes-circles clip-fill-no-op clip-fill clip-fill-eo-unbounded clip-fill-nz-unbounded clip-stroke-unbounded clear-source clear
+ps2 (rgb24): 10 failed - clipped-group clip-text clip-stroke-no-op clip-stroke clip-operator clip-group-shapes-circles clip-fill-no-op clip-fill clear-source clear
+ps3 (argb32): 13 failed - clipped-group clip-text clip-stroke-no-op clip-stroke clip-operator clip-group-shapes-circles clip-fill-no-op clip-fill clip-fill-eo-unbounded clip-fill-nz-unbounded clip-stroke-unbounded clear-source clear
+ps3 (rgb24): 10 failed - clipped-group clip-text clip-stroke-no-op clip-stroke clip-operator clip-group-shapes-circles clip-fill-no-op clip-fill clear-source clear
+quartz (argb32): 10 failed - clip-text clip-disjoint clear-source bug-seams bug-extents aliasing a8-clear a1-rasterisation-triangles a1-rasterisation-rectangles a1-bug
+quartz (rgb24): 10 failed - clip-text clip-disjoint clear-source bug-seams bug-extents aliasing a8-clear a1-rasterisation-triangles a1-rasterisation-rectangles a1-bug
+image (argb32): 4 failed - clip-text clip-operator clear bug-seams
+image (rgb24): 4 failed - clip-text clip-operator clear bug-seams
+image16 (rgb24): 5 failed - clip-text clip-operator clear caps-joins-curve bug-seams
+recording (argb32): 4 failed - clip-text clip-operator clear bug-seams
+recording (rgb24): 4 failed - clip-text clip-operator clear bug-seams

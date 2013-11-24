@@ -1,0 +1,102 @@
+Testing clip-text with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.test-fallback.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.test-fallback.argb32.diff.png
+TEST: clip-text TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.test-fallback.rgb24.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.test-fallback.rgb24.diff.png
+TEST: clip-text TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with test-paginated target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.test-paginated.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.test-paginated.argb32.diff.png
+TEST: clip-text TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with test-paginated target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.test-paginated.rgb24.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.test-paginated.rgb24.diff.png
+TEST: clip-text TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with test-wrapping target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.test-wrapping.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.test-wrapping.argb32.diff.png
+TEST: clip-text TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-text TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-text with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-text TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-text with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-text.ps2.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.ps2.argb32.diff.png
+TEST: clip-text TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-text.ps2.rgb24.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.ps2.rgb24.diff.png
+TEST: clip-text TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-text.ps3.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.ps3.argb32.diff.png
+TEST: clip-text TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-text.ps3.rgb24.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.ps3.rgb24.diff.png
+TEST: clip-text TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.quartz.argb32.out.png
+REFERENCE: ./clip-text.quartz.ref.png
+DIFFERENCE: output/clip-text.quartz.argb32.diff.png
+TEST: clip-text TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.quartz.rgb24.out.png
+REFERENCE: ./clip-text.quartz.ref.png
+DIFFERENCE: output/clip-text.quartz.rgb24.diff.png
+TEST: clip-text TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with image target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.image.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.image.argb32.diff.png
+TEST: clip-text TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with image target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.image.rgb24.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.image.rgb24.diff.png
+TEST: clip-text TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with image16 target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.image16.rgb24.out.png
+REFERENCE: ./clip-text.image16.ref.png
+DIFFERENCE: output/clip-text.image16.rgb24.diff.png
+TEST: clip-text TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with recording target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.recording.argb32.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.recording.argb32.diff.png
+TEST: clip-text TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-text with recording target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-text.recording.rgb24.out.png
+REFERENCE: ./clip-text.ref.png
+DIFFERENCE: output/clip-text.recording.rgb24.diff.png
+TEST: clip-text TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL

@@ -1,0 +1,102 @@
+Testing clip-empty-group with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.test-fallback.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.test-fallback.argb32.diff.png
+TEST: clip-empty-group TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.test-fallback.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.test-fallback.rgb24.diff.png
+TEST: clip-empty-group TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.test-paginated.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.test-paginated.argb32.diff.png
+TEST: clip-empty-group TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.test-paginated.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.test-paginated.rgb24.diff.png
+TEST: clip-empty-group TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.test-wrapping.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.test-wrapping.argb32.diff.png
+TEST: clip-empty-group TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-empty-group TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-empty-group with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-empty-group TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-empty-group with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.ps2.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.ps2.argb32.diff.png
+TEST: clip-empty-group TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.ps2.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.ps2.rgb24.diff.png
+TEST: clip-empty-group TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.ps3.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.ps3.argb32.diff.png
+TEST: clip-empty-group TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.ps3.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.ps3.rgb24.diff.png
+TEST: clip-empty-group TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.quartz.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.quartz.argb32.diff.png
+TEST: clip-empty-group TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.quartz.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.quartz.rgb24.diff.png
+TEST: clip-empty-group TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.image.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.image.argb32.diff.png
+TEST: clip-empty-group TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.image.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.image.rgb24.diff.png
+TEST: clip-empty-group TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.image16.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.image16.rgb24.diff.png
+TEST: clip-empty-group TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.recording.argb32.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.recording.argb32.diff.png
+TEST: clip-empty-group TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-group with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-empty-group.recording.rgb24.out.png
+REFERENCE: ./clip-empty-group.ref.png
+DIFFERENCE: output/clip-empty-group.recording.rgb24.diff.png
+TEST: clip-empty-group TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

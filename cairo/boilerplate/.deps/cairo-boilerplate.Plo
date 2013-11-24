@@ -1,0 +1,243 @@
+cairo-boilerplate.lo cairo-boilerplate.o: cairo-boilerplate.c \
+  cairo-boilerplate-private.h cairo-boilerplate.h ../config.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_common.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/available.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/wait.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/appleapiopts.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/mach/i386/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/resource.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/alloca.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/architecture/i386/math.h \
+  ../src/cairo.h ../src/cairo-version.h ../src/cairo-features.h \
+  ../src/cairo-deprecated.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_string.h \
+  ../src/cairo-compiler-private.h ../src/cairo.h ../config.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  cairo-boilerplate-system.h cairo-boilerplate-scaled-font.h \
+  /Users/soegaard/BuildRacketLibs/include/pixman-1/pixman.h \
+  /Users/soegaard/BuildRacketLibs/include/pixman-1/pixman-version.h \
+  ../src/cairo-types-private.h ../src/cairo-fixed-type-private.h \
+  ../src/cairo-wideint-type-private.h ../src/cairo-list-private.h \
+  ../src/cairo-compiler-private.h ../src/cairo-reference-count-private.h \
+  ../src/cairo-atomic-private.h ../src/cairo-scaled-font-private.h \
+  ../src/cairo-types-private.h ../src/cairo-mutex-type-private.h \
+  ../src/cairo-mutex-impl-private.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h \
+  ../cairo-version.h /Developer/SDKs/MacOSX10.5.sdk/usr/include/ctype.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/runetype.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/assert.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/errno.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/errno.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/dlfcn.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/AvailabilityMacros.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/unistd.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/unistd.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/select.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_select.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/fcntl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/fcntl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/socket.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_param.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/un.h
+
+cairo-boilerplate-private.h:
+
+cairo-boilerplate.h:
+
+../config.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_common.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/available.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/wait.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/appleapiopts.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/mach/i386/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/resource.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/_OSByteOrder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/i386/_OSByteOrder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/alloca.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/architecture/i386/math.h:
+
+../src/cairo.h:
+
+../src/cairo-version.h:
+
+../src/cairo-features.h:
+
+../src/cairo-deprecated.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_string.h:
+
+../src/cairo-compiler-private.h:
+
+../src/cairo.h:
+
+../config.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+cairo-boilerplate-system.h:
+
+cairo-boilerplate-scaled-font.h:
+
+/Users/soegaard/BuildRacketLibs/include/pixman-1/pixman.h:
+
+/Users/soegaard/BuildRacketLibs/include/pixman-1/pixman-version.h:
+
+../src/cairo-types-private.h:
+
+../src/cairo-fixed-type-private.h:
+
+../src/cairo-wideint-type-private.h:
+
+../src/cairo-list-private.h:
+
+../src/cairo-compiler-private.h:
+
+../src/cairo-reference-count-private.h:
+
+../src/cairo-atomic-private.h:
+
+../src/cairo-scaled-font-private.h:
+
+../src/cairo-types-private.h:
+
+../src/cairo-mutex-type-private.h:
+
+../src/cairo-mutex-impl-private.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h:
+
+../cairo-version.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/ctype.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/runetype.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/assert.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/errno.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/errno.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/dlfcn.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/AvailabilityMacros.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/unistd.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/unistd.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/select.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_select.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/fcntl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/fcntl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/socket.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_param.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/un.h:

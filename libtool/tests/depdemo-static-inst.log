@@ -1,0 +1,66 @@
+PASS: tests/depdemo-static-inst.test (exit: 0)
+==============================================
+
+depdemo-static-inst.test: ===  Running depdemo-static-inst.test
+depdemo-static-inst.test: ===  Running depdemo-static-inst.test
+depdemo-static-inst.test: ===  Running `make install' in depdemo
+Making install in l1
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib" || ../../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libl1.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib'
+libtool: install: /usr/bin/install -c .libs/libl1.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.la
+libtool: install: /usr/bin/install -c .libs/libl1.a /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.a
+make[2]: Nothing to be done for `install-data-am'.
+Making install in l2
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib" || ../../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libl2.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib'
+libtool: install: /usr/bin/install -c .libs/libl2.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.la
+libtool: install: /usr/bin/install -c .libs/libl2.a /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.a
+make[2]: Nothing to be done for `install-data-am'.
+Making install in l3
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib" || ../../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libl3.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib'
+libtool: install: /usr/bin/install -c .libs/libl3.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.la
+libtool: install: /usr/bin/install -c .libs/libl3.a /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.a
+make[2]: Nothing to be done for `install-data-am'.
+Making install in l4
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib" || ../../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libl4.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib'
+libtool: install: /usr/bin/install -c .libs/libl4.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.la
+libtool: install: /usr/bin/install -c .libs/libl4.a /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.a
+make[2]: Nothing to be done for `install-data-am'.
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/bin" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/bin"
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c depdemo depdemo_static '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/bin'
+libtool: install: /usr/bin/install -c depdemo /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/bin/depdemo
+libtool: install: /usr/bin/install -c depdemo_static /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/bin/depdemo_static
+make[2]: Nothing to be done for `install-data-am'.
+depdemo-static-inst.test: ===  Executing installed programs in depdemo
+dependencies:
+l1 (0)
+l2 (0)
+ l1 (1)
+l4 (0)
+ l3 (0)
+  l1 (2)
+  l2 (2)
+   l1 (3)
+ libm [sin(1.5) = 0.997495]
+var_l1(4) + var_l2(6) + var_l4(10) == 20
+dependencies:
+l1 (0)
+l2 (0)
+ l1 (1)
+l4 (0)
+ l3 (0)
+  l1 (2)
+  l2 (2)
+   l1 (3)
+ libm [sin(1.5) = 0.997495]
+var_l1(4) + var_l2(6) + var_l4(10) == 20

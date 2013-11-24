@@ -1,0 +1,12 @@
+PASS: tests/cdemo-shared-exec.test (exit: 0)
+============================================
+
+cdemo-shared-exec.test: ===  Running cdemo-shared-exec.test
+cdemo-shared-exec.test: ===  Running cdemo-shared-exec.test
+cdemo-shared-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU libtool cdemo!
+** This is libfoo **
+hello returned: 57616
+hello is ok!
+cos (0.0) = 1
+foo is ok!

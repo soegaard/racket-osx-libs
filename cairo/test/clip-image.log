@@ -1,0 +1,94 @@
+Testing clip-image with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.test-fallback.argb32.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.test-fallback.argb32.diff.png
+TEST: clip-image TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.test-fallback.rgb24.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.test-fallback.rgb24.diff.png
+TEST: clip-image TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.test-paginated.argb32.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.test-paginated.argb32.diff.png
+TEST: clip-image TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.test-paginated.rgb24.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.test-paginated.rgb24.diff.png
+TEST: clip-image TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.test-wrapping.argb32.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.test-wrapping.argb32.diff.png
+TEST: clip-image TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-image TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-image with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-image TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-image with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-image.ps2.argb32.out.png
+TEST: clip-image TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-image.ps2.rgb24.out.png
+TEST: clip-image TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-image.ps3.argb32.out.png
+TEST: clip-image TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-image.ps3.rgb24.out.png
+TEST: clip-image TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.quartz.argb32.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.quartz.argb32.diff.png
+TEST: clip-image TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.quartz.rgb24.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.quartz.rgb24.diff.png
+TEST: clip-image TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.image.argb32.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.image.argb32.diff.png
+TEST: clip-image TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.image.rgb24.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.image.rgb24.diff.png
+TEST: clip-image TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-image.image16.rgb24.out.png
+REFERENCE: ./clip-image.image16.ref.png
+DIFFERENCE: output/clip-image.image16.rgb24.diff.png
+TEST: clip-image TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.recording.argb32.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.recording.argb32.diff.png
+TEST: clip-image TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-image with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-image.recording.rgb24.out.png
+REFERENCE: ./clip-image.ref.png
+DIFFERENCE: output/clip-image.recording.rgb24.diff.png
+TEST: clip-image TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

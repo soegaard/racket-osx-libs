@@ -1,0 +1,169 @@
+at_fn_group_banner 93 'subproject.at:89' \
+  "installable libltdl" "                            " 9
+at_xfail=no
+      test "$ACLOCAL" = no && at_xfail=yes
+      test "$AUTOMAKE" = no && at_xfail=yes
+      test "$AUTOCONF" = no && at_xfail=yes
+(
+  $as_echo "93. $at_setup_line: testing $at_desc ..."
+  $at_traceon
+
+
+prefix=`pwd`/_inst
+
+cat >configure.ac <<'_ATEOF'
+AC_INIT([subproject-demo], 2.4.2, bug-libtool@gnu.org)
+LT_CONFIG_LTDL_DIR([sub/ltdl])
+AC_CONFIG_AUX_DIR([sub/ltdl/config])
+AC_CONFIG_MACRO_DIR([sub/ltdl/m4])
+AM_INIT_AUTOMAKE([foreign])
+LT_INIT
+LT_WITH_LTDL
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
+_ATEOF
+
+
+cat >Makefile.am <<'_ATEOF'
+ACLOCAL_AMFLAGS = -I sub/ltdl/m4
+AUTOMAKE_OPTIONS = 1.9
+SUBDIRS = sub/ltdl
+lib_LTLIBRARIES = foo.la
+foo_la_LDFLAGS = -module -avoid-version -no-undefined
+_ATEOF
+
+
+echo 'int dummy = 0;' > foo.c
+
+
+$LIBTOOLIZE --copy --ltdl
+
+
+{ set +x
+$as_echo "$at_srcdir/subproject.at:95: \$ACLOCAL -I sub/ltdl/m4"
+at_fn_check_prepare_dynamic "$ACLOCAL -I sub/ltdl/m4" "subproject.at:95"
+( $at_check_trace; $ACLOCAL -I sub/ltdl/m4
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:95"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+
+
+
+{ set +x
+$as_echo "$at_srcdir/subproject.at:95: \$AUTOMAKE --add-missing --copy"
+at_fn_check_prepare_dynamic "$AUTOMAKE --add-missing --copy" "subproject.at:95"
+( $at_check_trace; $AUTOMAKE --add-missing --copy
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; tee stderr <"$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:95"
+if $at_failed; then :
+  { set +x
+$as_echo "$at_srcdir/subproject.at:95: grep 'require .*but have' stderr && (exit 77)"
+at_fn_check_prepare_trace "subproject.at:95"
+( $at_check_trace; grep 'require .*but have' stderr && (exit 77)
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+at_fn_diff_devnull "$at_stderr" || at_failed=:
+at_fn_diff_devnull "$at_stdout" || at_failed=:
+at_fn_check_status 1 $at_status "$at_srcdir/subproject.at:95"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+fi
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+
+
+{ set +x
+$as_echo "$at_srcdir/subproject.at:95: \$AUTOCONF "
+at_fn_check_prepare_dynamic "$AUTOCONF " "subproject.at:95"
+( $at_check_trace; $AUTOCONF
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:95"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+
+
+{ set +x
+$as_echo "$at_srcdir/subproject.at:95: : \${CONFIG_SHELL=/bin/sh}; export CONFIG_SHELL; 	  \$CONFIG_SHELL ./configure \$configure_options --enable-ltdl-install --prefix=\$prefix"
+at_fn_check_prepare_notrace 'a ${...} parameter expansion' "subproject.at:95"
+( $at_check_trace; : ${CONFIG_SHELL=/bin/sh}; export CONFIG_SHELL; 	  $CONFIG_SHELL ./configure $configure_options --enable-ltdl-install --prefix=$prefix
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:95"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+for target in all install $tst_dist
+do
+  { set +x
+$as_echo "$at_srcdir/subproject.at:95: \$unset LIBTOOL LIBTOOLIZE; \$MAKE \$target "
+at_fn_check_prepare_dynamic "$unset LIBTOOL LIBTOOLIZE; $MAKE $target " "subproject.at:95"
+( $at_check_trace; $unset LIBTOOL LIBTOOLIZE; $MAKE $target
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:95"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+done
+
+
+
+{ set +x
+$as_echo "$at_srcdir/subproject.at:99: test -f \$prefix/lib/libltdl.la"
+at_fn_check_prepare_dynamic "test -f $prefix/lib/libltdl.la" "subproject.at:99"
+( $at_check_trace; test -f $prefix/lib/libltdl.la
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+at_fn_diff_devnull "$at_stderr" || at_failed=:
+at_fn_diff_devnull "$at_stdout" || at_failed=:
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:99"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+{ set +x
+$as_echo "$at_srcdir/subproject.at:100: test -f \$prefix/include/ltdl.h"
+at_fn_check_prepare_dynamic "test -f $prefix/include/ltdl.h" "subproject.at:100"
+( $at_check_trace; test -f $prefix/include/ltdl.h
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+at_fn_diff_devnull "$at_stderr" || at_failed=:
+at_fn_diff_devnull "$at_stdout" || at_failed=:
+at_fn_check_status 0 $at_status "$at_srcdir/subproject.at:100"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+  set +x
+  $at_times_p && times >"$at_times_file"
+) 5>&1 2>&1 7>&- | eval $at_tee_pipe
+read at_status <"$at_status_file"

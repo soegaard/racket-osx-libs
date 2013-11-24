@@ -1,0 +1,15 @@
+Log file for Pango test programs.
+
+Tests are: testboundaries testcolor testboundaries_ucd
+
+
+Output of testboundaries:
+testboundaries passed
+
+Output of testcolor:
+
+Output of testboundaries_ucd:
+./GraphemeBreakTest.txt not found.  Skipping test.
+./WordBreakTest.txt not found.  Skipping test.
+./SentenceBreakTest.txt not found.  Skipping test.
+./LineBreakTest.txt not found.  Skipping test.

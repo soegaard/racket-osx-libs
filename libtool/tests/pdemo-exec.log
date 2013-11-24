@@ -1,0 +1,8 @@
+PASS: tests/pdemo-exec.test (exit: 0)
+=====================================
+
+pdemo-exec.test: ===  Running pdemo-exec.test
+pdemo-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

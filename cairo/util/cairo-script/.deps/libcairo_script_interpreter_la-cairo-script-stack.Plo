@@ -1,0 +1,82 @@
+libcairo_script_interpreter_la-cairo-script-stack.lo \
+  libcairo_script_interpreter_la-cairo-script-stack.o:  \
+ cairo-script-stack.c cairo-script-private.h ../../config.h \
+  cairo-script-interpreter.h ../../src/cairo.h ../../src/cairo-version.h \
+  ../../src/cairo-features.h ../../src/cairo-deprecated.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_common.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/setjmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/setjmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/setjmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_string.h
+
+cairo-script-private.h:
+
+../../config.h:
+
+cairo-script-interpreter.h:
+
+../../src/cairo.h:
+
+../../src/cairo-version.h:
+
+../../src/cairo-features.h:
+
+../../src/cairo-deprecated.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_common.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/setjmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/setjmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/setjmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/secure/_string.h:

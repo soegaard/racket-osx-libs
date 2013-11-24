@@ -1,0 +1,19 @@
+PASS: tests/demo-hardcode.test (exit: 0)
+========================================
+
+demo-hardcode.test: ===  Running demo-hardcode.test
+demo-hardcode.test: ===  Running `make hardcode' in demo
+You may ignore any linking errors from the following command:
+/usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o hc-direct main.o ./.libs/libhello.dylib    || echo unsupported > hc-direct
+echo unsupported > hc-libflag
+You may ignore any linking errors from the following command:
+DYLD_LIBRARY_PATH=./.libs /usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o hc-libpath main.o -lhello    || echo unsupported > hc-libpath
+ld: library not found for -lhello
+collect2: ld returned 1 exit status
+/usr/bin/gcc-4.2 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o hc-minusL main.o -L./.libs -lhello    || echo unsupported > hc-minusL
+demo-hardcode.test: ===  Finding libtool.m4's guesses at hardcoding values
+= Searching for hardcoded library directories in each program
+.libs was not hardcoded in `hc-direct', as libtool expected
+`hc-libflag' was not linked properly, as libtool expected
+`hc-libpath' was not linked properly, as libtool expected
+.libs was not hardcoded in `hc-minusL', as libtool expected

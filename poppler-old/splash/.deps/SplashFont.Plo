@@ -1,0 +1,55 @@
+SplashFont.lo SplashFont.o: SplashFont.cc ../config.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h ../goo/gmem.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  ../poppler/poppler-config.h SplashMath.h ../poppler/poppler-config.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/architecture/i386/math.h \
+  SplashTypes.h ../goo/gtypes.h SplashGlyphBitmap.h SplashFontFile.h \
+  SplashFont.h SplashClip.h SplashXPathScanner.h
+
+../config.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+../goo/gmem.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+../poppler/poppler-config.h:
+
+SplashMath.h:
+
+../poppler/poppler-config.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/architecture/i386/math.h:
+
+SplashTypes.h:
+
+../goo/gtypes.h:
+
+SplashGlyphBitmap.h:
+
+SplashFontFile.h:
+
+SplashFont.h:
+
+SplashClip.h:
+
+SplashXPathScanner.h:

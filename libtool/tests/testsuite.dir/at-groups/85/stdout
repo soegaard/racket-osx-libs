@@ -1,0 +1,55 @@
+list as inserted:
+foo9
+foo8
+foo7
+foo6
+foo5
+foo4
+foo3
+foo2
+foo1
+foo0
+reversed list:
+foo0
+foo1
+foo2
+foo3
+foo4
+foo5
+foo6
+foo7
+foo8
+foo9
+list after no-op sort:
+foo0
+foo1
+foo2
+foo3
+foo4
+foo5
+foo6
+foo7
+foo8
+foo9
+reversed list:
+foo9
+foo8
+foo7
+foo6
+foo5
+foo4
+foo3
+foo2
+foo1
+foo0
+sorting reversed list:
+foo0
+foo1
+foo2
+foo3
+foo4
+foo5
+foo6
+foo7
+foo8
+foo9

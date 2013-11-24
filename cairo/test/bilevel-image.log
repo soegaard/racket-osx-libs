@@ -1,0 +1,94 @@
+Testing bilevel-image with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.test-fallback.argb32.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.test-fallback.argb32.diff.png
+TEST: bilevel-image TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.test-fallback.rgb24.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.test-fallback.rgb24.diff.png
+TEST: bilevel-image TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.test-paginated.argb32.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.test-paginated.argb32.diff.png
+TEST: bilevel-image TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.test-paginated.rgb24.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.test-paginated.rgb24.diff.png
+TEST: bilevel-image TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.test-wrapping.argb32.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.test-wrapping.argb32.diff.png
+TEST: bilevel-image TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: bilevel-image TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing bilevel-image with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: bilevel-image TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing bilevel-image with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bilevel-image.ps2.argb32.out.png
+TEST: bilevel-image TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bilevel-image.ps2.rgb24.out.png
+TEST: bilevel-image TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bilevel-image.ps3.argb32.out.png
+TEST: bilevel-image TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bilevel-image.ps3.rgb24.out.png
+TEST: bilevel-image TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.quartz.argb32.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.quartz.argb32.diff.png
+TEST: bilevel-image TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.quartz.rgb24.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.quartz.rgb24.diff.png
+TEST: bilevel-image TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.image.argb32.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.image.argb32.diff.png
+TEST: bilevel-image TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.image.rgb24.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.image.rgb24.diff.png
+TEST: bilevel-image TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with image16 target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.image16.rgb24.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.image16.rgb24.diff.png
+TEST: bilevel-image TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.recording.argb32.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.recording.argb32.diff.png
+TEST: bilevel-image TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bilevel-image with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bilevel-image.recording.rgb24.out.png
+REFERENCE: ./bilevel-image.ref.png
+DIFFERENCE: output/bilevel-image.recording.rgb24.diff.png
+TEST: bilevel-image TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

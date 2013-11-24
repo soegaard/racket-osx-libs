@@ -1,0 +1,43 @@
+GooTimer.lo GooTimer.o: GooTimer.cc ../config.h GooTimer.h \
+  ../poppler/poppler-config.h gtypes.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_select.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h
+
+../config.h:
+
+GooTimer.h:
+
+../poppler/poppler-config.h:
+
+gtypes.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_select.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:

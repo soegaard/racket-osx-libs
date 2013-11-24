@@ -1,0 +1,94 @@
+Testing bug-extents with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/bug-extents.test-fallback.argb32.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.test-fallback.argb32.diff.png
+TEST: bug-extents TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing bug-extents with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/bug-extents.test-fallback.rgb24.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.test-fallback.rgb24.diff.png
+TEST: bug-extents TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing bug-extents with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.test-paginated.argb32.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.test-paginated.argb32.diff.png
+TEST: bug-extents TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.test-paginated.rgb24.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.test-paginated.rgb24.diff.png
+TEST: bug-extents TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.test-wrapping.argb32.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.test-wrapping.argb32.diff.png
+TEST: bug-extents TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: bug-extents TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing bug-extents with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: bug-extents TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing bug-extents with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bug-extents.ps2.argb32.out.png
+TEST: bug-extents TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bug-extents.ps2.rgb24.out.png
+TEST: bug-extents TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bug-extents.ps3.argb32.out.png
+TEST: bug-extents TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/bug-extents.ps3.rgb24.out.png
+TEST: bug-extents TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/bug-extents.quartz.argb32.out.png
+REFERENCE: ./bug-extents.quartz.ref.png
+DIFFERENCE: output/bug-extents.quartz.argb32.diff.png
+TEST: bug-extents TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing bug-extents with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/bug-extents.quartz.rgb24.out.png
+REFERENCE: ./bug-extents.quartz.ref.png
+DIFFERENCE: output/bug-extents.quartz.rgb24.diff.png
+TEST: bug-extents TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing bug-extents with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.image.argb32.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.image.argb32.diff.png
+TEST: bug-extents TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.image.rgb24.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.image.rgb24.diff.png
+TEST: bug-extents TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/bug-extents.image16.rgb24.out.png
+REFERENCE: ./bug-extents.image16.ref.png
+DIFFERENCE: output/bug-extents.image16.rgb24.diff.png
+TEST: bug-extents TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.recording.argb32.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.recording.argb32.diff.png
+TEST: bug-extents TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing bug-extents with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/bug-extents.recording.rgb24.out.png
+REFERENCE: ./bug-extents.ref.png
+DIFFERENCE: output/bug-extents.recording.rgb24.diff.png
+TEST: bug-extents TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

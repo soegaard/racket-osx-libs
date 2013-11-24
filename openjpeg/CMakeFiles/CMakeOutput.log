@@ -1,0 +1,27 @@
+The system is: Darwin - 13.0.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc-4.2 
+Build flags: -Os;-arch;x86_64;-isysroot;/Developer/SDKs/MacOSX10.5.sdk;-I/Users/soegaard/BuildRacketLibs/include
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/soegaard/BuildRacketLibs/openjpeg/CMakeFiles/2.8.12/CompilerIdC/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc-4.2 
+Build flags: -Os;-arch;x86_64;-isysroot;/Developer/SDKs/MacOSX10.5.sdk;-I/Users/soegaard/BuildRacketLibs/include
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/soegaard/BuildRacketLibs/openjpeg/CMakeFiles/2.8.12/CompilerIdC/a.out"
+

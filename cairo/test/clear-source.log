@@ -1,0 +1,102 @@
+Testing clear-source with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.test-fallback.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.test-fallback.argb32.diff.png
+TEST: clear-source TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.test-fallback.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.test-fallback.rgb24.diff.png
+TEST: clear-source TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.test-paginated.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.test-paginated.argb32.diff.png
+TEST: clear-source TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.test-paginated.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.test-paginated.rgb24.diff.png
+TEST: clear-source TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.test-wrapping.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.test-wrapping.argb32.diff.png
+TEST: clear-source TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clear-source TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clear-source with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clear-source TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clear-source with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear-source.ps2.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.ps2.argb32.diff.png
+TEST: clear-source TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear-source with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear-source.ps2.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.ps2.rgb24.diff.png
+TEST: clear-source TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear-source with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear-source.ps3.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.ps3.argb32.diff.png
+TEST: clear-source TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear-source with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clear-source.ps3.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.ps3.rgb24.diff.png
+TEST: clear-source TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear-source with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear-source.quartz.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.quartz.argb32.diff.png
+TEST: clear-source TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear-source with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clear-source.quartz.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.quartz.rgb24.diff.png
+TEST: clear-source TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clear-source with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.image.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.image.argb32.diff.png
+TEST: clear-source TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.image.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.image.rgb24.diff.png
+TEST: clear-source TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.image16.rgb24.out.png
+REFERENCE: ./clear-source.image16.ref.png
+DIFFERENCE: output/clear-source.image16.rgb24.diff.png
+TEST: clear-source TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.recording.argb32.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.recording.argb32.diff.png
+TEST: clear-source TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clear-source with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clear-source.recording.rgb24.out.png
+REFERENCE: ./clear-source.ref.png
+DIFFERENCE: output/clear-source.recording.rgb24.diff.png
+TEST: clear-source TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

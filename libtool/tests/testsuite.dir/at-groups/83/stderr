@@ -1,0 +1,2 @@
+Assertion failed: (error != NULL), function main, file main.c, line 27.
+/Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/at-groups/83/test-source: line 178: 83310 Abort trap: 6           "$lt_exe" $file

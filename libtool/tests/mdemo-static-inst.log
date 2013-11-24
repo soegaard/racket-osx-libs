@@ -1,0 +1,124 @@
+PASS: tests/mdemo-static-inst.test (exit: 0)
+============================================
+
+mdemo-static-inst.test: ===  Running mdemo-static-inst.test
+mdemo-static-inst.test: ===  Running mdemo-static-inst.test
+mdemo-static-inst.test: ===  Running `make install' in mdemo
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib"
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libsub.la foo1.la libfoo2.la libmlib.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib'
+libtool: install: /usr/bin/install -c .libs/libsub.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.la
+libtool: install: /usr/bin/install -c .libs/foo1.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.la
+libtool: install: /usr/bin/install -c .libs/libfoo2.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.la
+libtool: install: /usr/bin/install -c .libs/libmlib.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.la
+libtool: install: /usr/bin/install -c .libs/libsub.a /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.a
+libtool: install: /usr/bin/install -c .libs/foo1.a /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.a
+libtool: install: /usr/bin/install -c .libs/libfoo2.a /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.a
+libtool: install: /usr/bin/install -c .libs/libmlib.a /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.a
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/bin" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/bin"
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c mdemo mdemo_static '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/bin'
+libtool: install: /usr/bin/install -c mdemo /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/bin/mdemo
+libtool: install: /usr/bin/install -c mdemo_static /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/bin/mdemo_static
+make[1]: Nothing to be done for `install-data-am'.
+mdemo-static-inst.test: ===  Executing installed programs in mdemo
+Welcome to GNU libtool mdemo!
+module name: foo1
+module filename: foo1.a
+module reference count: 1
+** This is foolib 1 **
+hello returned: 57616
+hello is ok!
+cos (0.0) = 1
+sub() called
+foo1 is ok!
+module name: foo1
+module filename: foo1.a
+module reference count: 1
+** This is foolib 1 **
+hello returned: 57616
+hello is ok!
+cos (0.0) = 1
+sub() called
+foo1 is ok!
+module name: libfoo2
+module filename: libfoo2.a
+module reference count: 1
+** This is foolib 2 **
+hello returned: 57616
+hello is ok!
+sin (0.0) = 0
+sub() called
+foo2 is ok!
+module name: libfoo2
+module filename: libfoo2.a
+module reference count: 1
+** This is foolib 2 **
+hello returned: 57616
+hello is ok!
+sin (0.0) = 0
+sub() called
+foo2 is ok!
+myfunc returned: 57616
+myfunc is ok!
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub
+Welcome to GNU libtool mdemo!
+module name: foo1
+module filename: foo1.a
+module reference count: 1
+** This is foolib 1 **
+hello returned: 57616
+hello is ok!
+cos (0.0) = 1
+sub() called
+foo1 is ok!
+module name: foo1
+module filename: foo1.a
+module reference count: 1
+** This is foolib 1 **
+hello returned: 57616
+hello is ok!
+cos (0.0) = 1
+sub() called
+foo1 is ok!
+module name: libfoo2
+module filename: libfoo2.a
+module reference count: 1
+** This is foolib 2 **
+hello returned: 57616
+hello is ok!
+sin (0.0) = 0
+sub() called
+foo2 is ok!
+module name: libfoo2
+module filename: libfoo2.a
+module reference count: 1
+** This is foolib 2 **
+hello returned: 57616
+hello is ok!
+sin (0.0) = 0
+sub() called
+foo2 is ok!
+myfunc returned: 57616
+myfunc is ok!
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib
+try_iterate: /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub

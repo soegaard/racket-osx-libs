@@ -1,0 +1,19 @@
+first_init: first_ctx
+Found loader "first"
+last_init: last_ctx
+Found loader "last"
+first_open ("/libltdl_dlloader_api_test_first"): first_ctx
+first_sym (first): first_ctx
+result: first_symbol
+first_close (first): first_ctx
+first_open denies a request
+result: module_symbol
+first_open denies a request
+last_open ("/libltdl_dlloader_api_test_last"): last_ctx
+last_sym (last): last_ctx
+result: last_symbol
+first_open denies a request
+last_open denies a request
+first_exit: first_ctx
+last_close (last): last_ctx
+last_exit: last_ctx

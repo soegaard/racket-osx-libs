@@ -1,0 +1,94 @@
+Testing clip-empty-save with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.test-fallback.argb32.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.test-fallback.argb32.diff.png
+TEST: clip-empty-save TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.test-fallback.rgb24.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.test-fallback.rgb24.diff.png
+TEST: clip-empty-save TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.test-paginated.argb32.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.test-paginated.argb32.diff.png
+TEST: clip-empty-save TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.test-paginated.rgb24.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.test-paginated.rgb24.diff.png
+TEST: clip-empty-save TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.test-wrapping.argb32.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.test-wrapping.argb32.diff.png
+TEST: clip-empty-save TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-empty-save TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-empty-save with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-empty-save TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-empty-save with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-empty-save.ps2.argb32.out.png
+TEST: clip-empty-save TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-empty-save.ps2.rgb24.out.png
+TEST: clip-empty-save TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-empty-save.ps3.argb32.out.png
+TEST: clip-empty-save TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-empty-save.ps3.rgb24.out.png
+TEST: clip-empty-save TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.quartz.argb32.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.quartz.argb32.diff.png
+TEST: clip-empty-save TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.quartz.rgb24.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.quartz.rgb24.diff.png
+TEST: clip-empty-save TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.image.argb32.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.image.argb32.diff.png
+TEST: clip-empty-save TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.image.rgb24.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.image.rgb24.diff.png
+TEST: clip-empty-save TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with image16 target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.image16.rgb24.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.image16.rgb24.diff.png
+TEST: clip-empty-save TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.recording.argb32.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.recording.argb32.diff.png
+TEST: clip-empty-save TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-empty-save with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-empty-save.recording.rgb24.out.png
+REFERENCE: ./clip-empty-save.ref.png
+DIFFERENCE: output/clip-empty-save.recording.rgb24.diff.png
+TEST: clip-empty-save TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

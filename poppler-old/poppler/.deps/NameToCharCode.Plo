@@ -1,0 +1,33 @@
+NameToCharCode.lo .libs/NameToCharCode.o: NameToCharCode.cc ../config.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h ../goo/gmem.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h poppler-config.h \
+  NameToCharCode.h CharTypes.h
+
+../config.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+../goo/gmem.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+poppler-config.h:
+
+NameToCharCode.h:
+
+CharTypes.h:

@@ -1,0 +1,9 @@
+PASS: tests/demo-nopic-exec.test (exit: 0)
+==========================================
+
+demo-nopic-exec.test: ===  Running demo-nopic-exec.test
+demo-nopic-exec.test: ===  Running demo-nopic-exec.test
+demo-nopic-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

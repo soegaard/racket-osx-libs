@@ -1,0 +1,102 @@
+Testing clip-stroke with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-stroke.test-fallback.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.test-fallback.argb32.diff.png
+TEST: clip-stroke TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-stroke.test-fallback.rgb24.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.test-fallback.rgb24.diff.png
+TEST: clip-stroke TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.test-paginated.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.test-paginated.argb32.diff.png
+TEST: clip-stroke TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.test-paginated.rgb24.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.test-paginated.rgb24.diff.png
+TEST: clip-stroke TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.test-wrapping.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.test-wrapping.argb32.diff.png
+TEST: clip-stroke TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-stroke TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-stroke with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-stroke TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-stroke with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-stroke.ps2.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.ps2.argb32.diff.png
+TEST: clip-stroke TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-stroke.ps2.rgb24.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.ps2.rgb24.diff.png
+TEST: clip-stroke TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-stroke.ps3.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.ps3.argb32.diff.png
+TEST: clip-stroke TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-stroke.ps3.rgb24.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.ps3.rgb24.diff.png
+TEST: clip-stroke TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.quartz.argb32.out.png
+REFERENCE: ./clip-stroke.quartz.ref.png
+DIFFERENCE: output/clip-stroke.quartz.argb32.diff.png
+TEST: clip-stroke TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.quartz.rgb24.out.png
+REFERENCE: ./clip-stroke.quartz.ref.png
+DIFFERENCE: output/clip-stroke.quartz.rgb24.diff.png
+TEST: clip-stroke TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.image.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.image.argb32.diff.png
+TEST: clip-stroke TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.image.rgb24.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.image.rgb24.diff.png
+TEST: clip-stroke TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.image16.rgb24.out.png
+REFERENCE: ./clip-stroke.image16.ref.png
+DIFFERENCE: output/clip-stroke.image16.rgb24.diff.png
+TEST: clip-stroke TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.recording.argb32.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.recording.argb32.diff.png
+TEST: clip-stroke TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke.recording.rgb24.out.png
+REFERENCE: ./clip-stroke.ref.png
+DIFFERENCE: output/clip-stroke.recording.rgb24.diff.png
+TEST: clip-stroke TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

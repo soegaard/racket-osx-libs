@@ -1,0 +1,9 @@
+PASS: tests/demo-nofast-exec.test (exit: 0)
+===========================================
+
+demo-nofast-exec.test: ===  Running demo-nofast-exec.test
+demo-nofast-exec.test: ===  Running demo-nofast-exec.test
+demo-nofast-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

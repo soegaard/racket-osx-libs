@@ -1,0 +1,94 @@
+Testing clip-disjoint with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-disjoint.test-fallback.argb32.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.test-fallback.argb32.diff.png
+TEST: clip-disjoint TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-disjoint with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-disjoint.test-fallback.rgb24.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.test-fallback.rgb24.diff.png
+TEST: clip-disjoint TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-disjoint with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.test-paginated.argb32.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.test-paginated.argb32.diff.png
+TEST: clip-disjoint TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.test-paginated.rgb24.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.test-paginated.rgb24.diff.png
+TEST: clip-disjoint TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.test-wrapping.argb32.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.test-wrapping.argb32.diff.png
+TEST: clip-disjoint TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-disjoint TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-disjoint with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-disjoint TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-disjoint with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-disjoint.ps2.argb32.out.png
+TEST: clip-disjoint TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-disjoint.ps2.rgb24.out.png
+TEST: clip-disjoint TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-disjoint.ps3.argb32.out.png
+TEST: clip-disjoint TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-disjoint.ps3.rgb24.out.png
+TEST: clip-disjoint TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-disjoint.quartz.argb32.out.png
+REFERENCE: ./clip-disjoint.quartz.ref.png
+DIFFERENCE: output/clip-disjoint.quartz.argb32.diff.png
+TEST: clip-disjoint TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-disjoint with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-disjoint.quartz.rgb24.out.png
+REFERENCE: ./clip-disjoint.quartz.ref.png
+DIFFERENCE: output/clip-disjoint.quartz.rgb24.diff.png
+TEST: clip-disjoint TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-disjoint with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.image.argb32.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.image.argb32.diff.png
+TEST: clip-disjoint TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.image.rgb24.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.image.rgb24.diff.png
+TEST: clip-disjoint TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.image16.rgb24.out.png
+REFERENCE: ./clip-disjoint.image16.ref.png
+DIFFERENCE: output/clip-disjoint.image16.rgb24.diff.png
+TEST: clip-disjoint TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.recording.argb32.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.recording.argb32.diff.png
+TEST: clip-disjoint TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-disjoint with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-disjoint.recording.rgb24.out.png
+REFERENCE: ./clip-disjoint.ref.png
+DIFFERENCE: output/clip-disjoint.recording.rgb24.diff.png
+TEST: clip-disjoint TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

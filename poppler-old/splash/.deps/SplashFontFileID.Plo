@@ -1,0 +1,10 @@
+SplashFontFileID.lo SplashFontFileID.o: SplashFontFileID.cc ../config.h \
+  SplashFontFileID.h ../goo/gtypes.h ../poppler/poppler-config.h
+
+../config.h:
+
+SplashFontFileID.h:
+
+../goo/gtypes.h:
+
+../poppler/poppler-config.h:

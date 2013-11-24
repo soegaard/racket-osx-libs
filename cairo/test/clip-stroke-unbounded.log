@@ -1,0 +1,102 @@
+Testing clip-stroke-unbounded with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-stroke-unbounded.test-fallback.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.test-fallback.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke-unbounded with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-stroke-unbounded.test-fallback.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.test-fallback.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke-unbounded with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.test-paginated.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.test-paginated.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.test-paginated.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.test-paginated.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.test-wrapping.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.test-wrapping.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-stroke-unbounded TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-stroke-unbounded with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-stroke-unbounded TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-stroke-unbounded with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-stroke-unbounded.ps2.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.ps2.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke-unbounded with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.ps2.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.ps2.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-stroke-unbounded.ps3.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.ps3.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-stroke-unbounded with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.ps3.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.ps3.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.quartz.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.quartz.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.quartz.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.quartz.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.quartz.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.quartz.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.image.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.image.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.image.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.image.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.image16.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.image16.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.image16.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.recording.argb32.out.png
+REFERENCE: ./clip-stroke-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.recording.argb32.diff.png
+TEST: clip-stroke-unbounded TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-stroke-unbounded with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-stroke-unbounded.recording.rgb24.out.png
+REFERENCE: ./clip-stroke-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-stroke-unbounded.recording.rgb24.diff.png
+TEST: clip-stroke-unbounded TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

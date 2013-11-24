@@ -1,0 +1,1 @@
+dependency_libs=' -R/Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/042/foobar -L/Users/soegaard/BuildRacketLibs/lib /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/042/inst/lib/liba.la'

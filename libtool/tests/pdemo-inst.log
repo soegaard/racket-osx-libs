@@ -1,0 +1,25 @@
+PASS: tests/pdemo-inst.test (exit: 0)
+=====================================
+
+pdemo-inst.test: ===  Running pdemo-inst.test
+pdemo-inst.test: ===  Running `make install' in pdemo
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib"
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libhello.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib'
+libtool: install: /usr/bin/install -c .libs/libhello.2.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib/libhello.2.dylib
+libtool: install: (cd /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib && { ln -s -f libhello.2.dylib libhello.dylib || { rm -f libhello.dylib && ln -s libhello.2.dylib libhello.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libhello.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib/libhello.la
+libtool: install: /usr/bin/install -c .libs/libhello.a /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib/libhello.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib/libhello.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/lib/libhello.a
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin"
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c hell hell_static helldl '/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin'
+libtool: install: /usr/bin/install -c .libs/hell /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin/hell
+libtool: install: /usr/bin/install -c hell_static /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin/hell_static
+libtool: install: /usr/bin/install -c .libs/helldl /Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin/helldl
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/bin"
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/include" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/include"
+ /usr/bin/install -c -m 644 foo.h '/Users/soegaard/BuildRacketLibs/libtool/_inst-pdemo/include'
+pdemo-inst.test: ===  Executing installed programs in pdemo
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

@@ -1,0 +1,50 @@
+FoFiIdentifier.lo .libs/FoFiIdentifier.o: FoFiIdentifier.cc \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h \
+  ../goo/gtypes.h ../poppler/poppler-config.h FoFiIdentifier.h
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h:
+
+../goo/gtypes.h:
+
+../poppler/poppler-config.h:
+
+FoFiIdentifier.h:

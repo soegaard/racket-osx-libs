@@ -1,0 +1,102 @@
+Testing clip-fill-nz-unbounded with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-fill-nz-unbounded.test-fallback.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.test-fallback.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-nz-unbounded with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-fill-nz-unbounded.test-fallback.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.test-fallback.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-nz-unbounded with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.test-paginated.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.test-paginated.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.test-paginated.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.test-paginated.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.test-wrapping.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.test-wrapping.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill-nz-unbounded TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill-nz-unbounded with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill-nz-unbounded TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill-nz-unbounded with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill-nz-unbounded.ps2.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.ps2.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-nz-unbounded with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.ps2.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.ps2.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill-nz-unbounded.ps3.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.ps3.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-nz-unbounded with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.ps3.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.ps3.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.quartz.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.quartz.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.quartz.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.quartz.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.quartz.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.quartz.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.image.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.image.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.image.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.image.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.image16.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.image16.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.image16.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.recording.argb32.out.png
+REFERENCE: ./clip-fill-nz-unbounded.argb32.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.recording.argb32.diff.png
+TEST: clip-fill-nz-unbounded TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-nz-unbounded with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-nz-unbounded.recording.rgb24.out.png
+REFERENCE: ./clip-fill-nz-unbounded.rgb24.ref.png
+DIFFERENCE: output/clip-fill-nz-unbounded.recording.rgb24.diff.png
+TEST: clip-fill-nz-unbounded TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

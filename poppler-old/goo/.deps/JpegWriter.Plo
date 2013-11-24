@@ -1,0 +1,6 @@
+JpegWriter.lo .libs/JpegWriter.o: JpegWriter.cc JpegWriter.h \
+  ../poppler/poppler-config.h
+
+JpegWriter.h:
+
+../poppler/poppler-config.h:

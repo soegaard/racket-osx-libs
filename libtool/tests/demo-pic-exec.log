@@ -1,0 +1,9 @@
+PASS: tests/demo-pic-exec.test (exit: 0)
+========================================
+
+demo-pic-exec.test: ===  Running demo-pic-exec.test
+demo-pic-exec.test: ===  Running demo-pic-exec.test
+demo-pic-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

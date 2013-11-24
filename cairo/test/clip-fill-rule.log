@@ -1,0 +1,102 @@
+Testing clip-fill-rule with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.test-fallback.argb32.out.png
+REFERENCE: ./clip-fill-rule.ref.png
+DIFFERENCE: output/clip-fill-rule.test-fallback.argb32.diff.png
+TEST: clip-fill-rule TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-fill-rule.test-fallback.rgb24.out.png
+REFERENCE: ./clip-fill-rule.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.test-fallback.rgb24.diff.png
+TEST: clip-fill-rule TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-rule with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.test-paginated.argb32.out.png
+REFERENCE: ./clip-fill-rule.ref.png
+DIFFERENCE: output/clip-fill-rule.test-paginated.argb32.diff.png
+TEST: clip-fill-rule TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.test-paginated.rgb24.out.png
+REFERENCE: ./clip-fill-rule.test-paginated.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.test-paginated.rgb24.diff.png
+TEST: clip-fill-rule TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.test-wrapping.argb32.out.png
+REFERENCE: ./clip-fill-rule.ref.png
+DIFFERENCE: output/clip-fill-rule.test-wrapping.argb32.diff.png
+TEST: clip-fill-rule TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill-rule TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill-rule with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill-rule TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill-rule with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-rule.ps2.argb32.out.png
+REFERENCE: ./clip-fill-rule.ps.argb32.ref.png
+DIFFERENCE: output/clip-fill-rule.ps2.argb32.diff.png
+TEST: clip-fill-rule TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-rule.ps2.rgb24.out.png
+REFERENCE: ./clip-fill-rule.ps.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.ps2.rgb24.diff.png
+TEST: clip-fill-rule TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-rule.ps3.argb32.out.png
+REFERENCE: ./clip-fill-rule.ps.argb32.ref.png
+DIFFERENCE: output/clip-fill-rule.ps3.argb32.diff.png
+TEST: clip-fill-rule TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-rule.ps3.rgb24.out.png
+REFERENCE: ./clip-fill-rule.ps.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.ps3.rgb24.diff.png
+TEST: clip-fill-rule TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with quartz target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.quartz.argb32.out.png
+REFERENCE: ./clip-fill-rule.ref.png
+DIFFERENCE: output/clip-fill-rule.quartz.argb32.diff.png
+TEST: clip-fill-rule TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-rule.quartz.rgb24.out.png
+REFERENCE: ./clip-fill-rule.quartz.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.quartz.rgb24.diff.png
+TEST: clip-fill-rule TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.image.argb32.out.png
+REFERENCE: ./clip-fill-rule.ref.png
+DIFFERENCE: output/clip-fill-rule.image.argb32.diff.png
+TEST: clip-fill-rule TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.image.rgb24.out.png
+REFERENCE: ./clip-fill-rule.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.image.rgb24.diff.png
+TEST: clip-fill-rule TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-rule.image16.rgb24.out.png
+REFERENCE: ./clip-fill-rule.image16.ref.png
+DIFFERENCE: output/clip-fill-rule.image16.rgb24.diff.png
+TEST: clip-fill-rule TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.recording.argb32.out.png
+REFERENCE: ./clip-fill-rule.ref.png
+DIFFERENCE: output/clip-fill-rule.recording.argb32.diff.png
+TEST: clip-fill-rule TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-rule with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill-rule.recording.rgb24.out.png
+REFERENCE: ./clip-fill-rule.rgb24.ref.png
+DIFFERENCE: output/clip-fill-rule.recording.rgb24.diff.png
+TEST: clip-fill-rule TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

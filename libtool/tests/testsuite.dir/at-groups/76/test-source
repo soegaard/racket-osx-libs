@@ -1,0 +1,200 @@
+at_fn_group_banner 76 'lt_dlopen.at:23' \
+  "lt_dlopen error messages" "                       " 7
+at_xfail=yes
+(
+  $as_echo "76. $at_setup_line: testing $at_desc ..."
+  $at_traceon
+
+
+
+# The bug is not fixed:
+
+
+# This test only works if the system allows undefined symbols.
+eval `$LIBTOOL --config | grep '^allow_undefined_flag='`
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:31: test unsupported != \"\$allow_undefined_flag\" || exit 77"
+at_fn_check_prepare_dynamic "test unsupported != \"$allow_undefined_flag\" || exit 77" "lt_dlopen.at:31"
+( $at_check_trace; test unsupported != "$allow_undefined_flag" || exit 77
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+at_fn_diff_devnull "$at_stderr" || at_failed=:
+at_fn_diff_devnull "$at_stdout" || at_failed=:
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:31"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+cat >main.c <<'_ATEOF'
+#include <ltdl.h>
+#include <stdio.h>
+
+int
+main (int argc, char* argv[])
+{
+  int err = 0;
+  lt_dlhandle plugin_handle;
+
+  if (argc < 2)
+    {
+      fprintf (stderr, "usage: %s plugin\n", argv[0]);
+      return 1;
+    }
+
+  lt_dlinit ();
+  plugin_handle = lt_dlopenext (argv[1]);
+  if (NULL != plugin_handle)
+    {
+      printf ("plugin opened successfully!\n");
+      lt_dlclose (plugin_handle);
+    }
+  else
+    {
+      printf ("plugin failed to open: %s\n", lt_dlerror());
+      err = 1;
+    }
+  lt_dlexit ();
+  return err;
+}
+_ATEOF
+
+
+cat >good-plugin.c <<'_ATEOF'
+int foo;
+int *i = &foo;
+_ATEOF
+
+
+cat >missing-symbol-plugin.c <<'_ATEOF'
+/* On systems that allow undefined symbols, this will compile,
+     but the symbol "foo" won't be found at runtime */
+extern int foo;
+int *i = &foo;
+_ATEOF
+
+
+: ${LTDLINCL="-I$abs_top_srcdir/libltdl"}
+: ${LIBLTDL="$abs_builddir/../libltdl/libltdlc.la"}
+
+CPPFLAGS="$LTDLINCL $CPPFLAGS"
+inst=`pwd`/inst
+libdir=$inst/lib
+
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:85: \$CC \$CPPFLAGS \$CFLAGS -c main.c"
+at_fn_check_prepare_dynamic "$CC $CPPFLAGS $CFLAGS -c main.c" "lt_dlopen.at:85"
+( $at_check_trace; $CC $CPPFLAGS $CFLAGS -c main.c
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:85"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+for file in good-plugin.c missing-symbol-plugin.c; do
+  { set +x
+$as_echo "$at_srcdir/lt_dlopen.at:87: \$LIBTOOL --mode=compile \$CC \$CPPFLAGS \$CFLAGS -c \$file"
+at_fn_check_prepare_dynamic "$LIBTOOL --mode=compile $CC $CPPFLAGS $CFLAGS -c $file" "lt_dlopen.at:87"
+( $at_check_trace; $LIBTOOL --mode=compile $CC $CPPFLAGS $CFLAGS -c $file
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:87"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+done
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:90: \$LIBTOOL --mode=link \$CC \$CFLAGS \$LDFLAGS -o good-plugin.la -rpath \$libdir 	 -module -avoid-version good-plugin.lo"
+at_fn_check_prepare_dynamic "$LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o good-plugin.la -rpath $libdir 	 -module -avoid-version good-plugin.lo" "lt_dlopen.at:90"
+( $at_check_trace; $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o good-plugin.la -rpath $libdir 	 -module -avoid-version good-plugin.lo
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:90"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:92: \$LIBTOOL --mode=link \$CC \$CFLAGS \$LDFLAGS -o missing-symbol-plugin.la -rpath \$libdir	 -module -avoid-version missing-symbol-plugin.lo"
+at_fn_check_prepare_dynamic "$LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o missing-symbol-plugin.la -rpath $libdir	 -module -avoid-version missing-symbol-plugin.lo" "lt_dlopen.at:92"
+( $at_check_trace; $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o missing-symbol-plugin.la -rpath $libdir	 -module -avoid-version missing-symbol-plugin.lo
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:92"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:95: \$LIBTOOL --mode=link \$CC \$CFLAGS \$LDFLAGS -o main\$EXEEXT main.\$OBJEXT 	 -dlopen good-plugin.la -dlopen missing-symbol-plugin.la \$LIBLTDL"
+at_fn_check_prepare_dynamic "$LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o main$EXEEXT main.$OBJEXT 	 -dlopen good-plugin.la -dlopen missing-symbol-plugin.la $LIBLTDL" "lt_dlopen.at:95"
+( $at_check_trace; $LIBTOOL --mode=link $CC $CFLAGS $LDFLAGS -o main$EXEEXT main.$OBJEXT 	 -dlopen good-plugin.la -dlopen missing-symbol-plugin.la $LIBLTDL
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:95"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+lt_exe=./main; if test -f "./main$EXEEXT"; then lt_exe=$lt_exe$EXEEXT; fi
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:99: if \"\$lt_exe\" ./good-plugin.la; then :; else lt_status=\$?; 	   	   test \"X\$host\" != \"X\$build\" && test -x \"\$lt_exe\" && exit 77; 	   exit \$lt_status; fi"
+at_fn_check_prepare_dynamic "if \"$lt_exe\" ./good-plugin.la; then :; else lt_status=$?; 	   	   test \"X$host\" != \"X$build\" && test -x \"$lt_exe\" && exit 77; 	   exit $lt_status; fi" "lt_dlopen.at:99"
+( $at_check_trace; if "$lt_exe" ./good-plugin.la; then :; else lt_status=$?; 	   	   test "X$host" != "X$build" && test -x "$lt_exe" && exit 77; 	   exit $lt_status; fi
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:99"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+lt_exe=./main; if test -f "./main$EXEEXT"; then lt_exe=$lt_exe$EXEEXT; fi
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:100: if \"\$lt_exe\" ./missing-symbol-plugin.la; then :; else lt_status=\$?; 	   test \$lt_status != 1 && 	   test \"X\$host\" != \"X\$build\" && test -x \"\$lt_exe\" && exit 77; 	   exit \$lt_status; fi"
+at_fn_check_prepare_dynamic "if \"$lt_exe\" ./missing-symbol-plugin.la; then :; else lt_status=$?; 	   test $lt_status != 1 && 	   test \"X$host\" != \"X$build\" && test -x \"$lt_exe\" && exit 77; 	   exit $lt_status; fi" "lt_dlopen.at:100"
+( $at_check_trace; if "$lt_exe" ./missing-symbol-plugin.la; then :; else lt_status=$?; 	   test $lt_status != 1 && 	   test "X$host" != "X$build" && test -x "$lt_exe" && exit 77; 	   exit $lt_status; fi
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; tee stderr <"$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 1 $at_status "$at_srcdir/lt_dlopen.at:100"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+{ set +x
+$as_echo "$at_srcdir/lt_dlopen.at:101: grep 'missing symbol' stderr"
+at_fn_check_prepare_trace "lt_dlopen.at:101"
+( $at_check_trace; grep 'missing symbol' stderr
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+at_fn_diff_devnull "$at_stderr" || at_failed=:
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/lt_dlopen.at:101"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+
+  set +x
+  $at_times_p && times >"$at_times_file"
+) 5>&1 2>&1 7>&- | eval $at_tee_pipe
+read at_status <"$at_status_file"

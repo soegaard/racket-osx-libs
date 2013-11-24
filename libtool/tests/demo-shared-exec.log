@@ -1,0 +1,9 @@
+PASS: tests/demo-shared-exec.test (exit: 0)
+===========================================
+
+demo-shared-exec.test: ===  Running demo-shared-exec.test
+demo-shared-exec.test: ===  Running demo-shared-exec.test
+demo-shared-exec.test: ===  Executing uninstalled programs in libtool
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

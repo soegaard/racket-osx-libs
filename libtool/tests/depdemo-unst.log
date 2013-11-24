@@ -1,0 +1,18 @@
+PASS: tests/depdemo-unst.test (exit: 0)
+=======================================
+
+depdemo-unst.test: ===  Running depdemo-unst.test
+depdemo-unst.test: ===  Running `make uninstall' in depdemo
+Making uninstall in l1
+ /bin/sh ../libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.la /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.0.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.a
+Making uninstall in l2
+ /bin/sh ../libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.la /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.0.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl2.a
+Making uninstall in l3
+ /bin/sh ../libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.la /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.0.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.a
+Making uninstall in l4
+ /bin/sh ../libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.la /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.0.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl4.a
+ ( cd '/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/bin' && rm -f depdemo depdemo_static )

@@ -1,0 +1,102 @@
+Testing clip-twice-rectangle with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.test-fallback.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.test-fallback.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.test-fallback.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.test-fallback.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.test-paginated.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.test-paginated.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.test-paginated.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.test-paginated.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.test-wrapping.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.test-wrapping.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-twice-rectangle TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-twice-rectangle with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-twice-rectangle TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-twice-rectangle with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.ps2.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.ps2.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.ps2.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.ps2.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.ps3.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.ps3.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.ps3.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.ps3.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.quartz.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.quartz.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.quartz.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.quartz.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.image.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.image.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.image.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.image.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.image16.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.image16.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.recording.argb32.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.recording.argb32.diff.png
+TEST: clip-twice-rectangle TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-twice-rectangle with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-twice-rectangle.recording.rgb24.out.png
+REFERENCE: ./clip-twice-rectangle.ref.png
+DIFFERENCE: output/clip-twice-rectangle.recording.rgb24.diff.png
+TEST: clip-twice-rectangle TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

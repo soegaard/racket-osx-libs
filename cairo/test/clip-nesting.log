@@ -1,0 +1,102 @@
+Testing clip-nesting with test-fallback target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.test-fallback.argb32.out.png
+REFERENCE: ./clip-nesting.ref.png
+DIFFERENCE: output/clip-nesting.test-fallback.argb32.diff.png
+TEST: clip-nesting TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-nesting.test-fallback.rgb24.out.png
+REFERENCE: ./clip-nesting.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.test-fallback.rgb24.diff.png
+TEST: clip-nesting TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-nesting with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.test-paginated.argb32.out.png
+REFERENCE: ./clip-nesting.ref.png
+DIFFERENCE: output/clip-nesting.test-paginated.argb32.diff.png
+TEST: clip-nesting TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.test-paginated.rgb24.out.png
+REFERENCE: ./clip-nesting.test-paginated.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.test-paginated.rgb24.diff.png
+TEST: clip-nesting TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.test-wrapping.argb32.out.png
+REFERENCE: ./clip-nesting.ref.png
+DIFFERENCE: output/clip-nesting.test-wrapping.argb32.diff.png
+TEST: clip-nesting TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-nesting TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-nesting with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-nesting TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-nesting with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-nesting.ps2.argb32.out.png
+REFERENCE: ./clip-nesting.ps.argb32.ref.png
+DIFFERENCE: output/clip-nesting.ps2.argb32.diff.png
+TEST: clip-nesting TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-nesting.ps2.rgb24.out.png
+REFERENCE: ./clip-nesting.ps.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.ps2.rgb24.diff.png
+TEST: clip-nesting TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-nesting.ps3.argb32.out.png
+REFERENCE: ./clip-nesting.ps.argb32.ref.png
+DIFFERENCE: output/clip-nesting.ps3.argb32.diff.png
+TEST: clip-nesting TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-nesting.ps3.rgb24.out.png
+REFERENCE: ./clip-nesting.ps.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.ps3.rgb24.diff.png
+TEST: clip-nesting TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-nesting.quartz.argb32.out.png
+REFERENCE: ./clip-nesting.quartz.argb32.ref.png
+DIFFERENCE: output/clip-nesting.quartz.argb32.diff.png
+TEST: clip-nesting TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-nesting.quartz.rgb24.out.png
+REFERENCE: ./clip-nesting.quartz.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.quartz.rgb24.diff.png
+TEST: clip-nesting TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.image.argb32.out.png
+REFERENCE: ./clip-nesting.ref.png
+DIFFERENCE: output/clip-nesting.image.argb32.diff.png
+TEST: clip-nesting TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.image.rgb24.out.png
+REFERENCE: ./clip-nesting.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.image.rgb24.diff.png
+TEST: clip-nesting TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with image16 target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.image16.rgb24.out.png
+REFERENCE: ./clip-nesting.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.image16.rgb24.diff.png
+TEST: clip-nesting TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.recording.argb32.out.png
+REFERENCE: ./clip-nesting.ref.png
+DIFFERENCE: output/clip-nesting.recording.argb32.diff.png
+TEST: clip-nesting TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-nesting with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-nesting.recording.rgb24.out.png
+REFERENCE: ./clip-nesting.rgb24.ref.png
+DIFFERENCE: output/clip-nesting.recording.rgb24.diff.png
+TEST: clip-nesting TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

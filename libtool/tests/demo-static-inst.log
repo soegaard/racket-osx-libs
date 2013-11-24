@@ -1,0 +1,24 @@
+PASS: tests/demo-static-inst.test (exit: 0)
+===========================================
+
+demo-static-inst.test: ===  Running demo-static-inst.test
+demo-static-inst.test: ===  Running demo-static-inst.test
+demo-static-inst.test: ===  Running `make install' in demo
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib"
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libhello.la '/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib'
+libtool: install: /usr/bin/install -c .libs/libhello.lai /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.la
+libtool: install: /usr/bin/install -c .libs/libhello.a /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.a
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin"
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c hell hell_static helldl '/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin'
+libtool: install: /usr/bin/install -c hell /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin/hell
+libtool: install: /usr/bin/install -c hell_static /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin/hell_static
+libtool: install: /usr/bin/install -c helldl /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin/helldl
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin"
+test -z "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/include" || ../../libltdl/config/install-sh -c -d "/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/include"
+ /usr/bin/install -c -m 644 foo.h '/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/include'
+demo-static-inst.test: ===  Executing installed programs in demo
+Welcome to GNU Hell!
+Welcome to GNU Hell!
+Welcome to *modular* GNU Hell!

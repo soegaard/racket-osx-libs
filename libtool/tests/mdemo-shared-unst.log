@@ -1,0 +1,15 @@
+PASS: tests/mdemo-shared-unst.test (exit: 0)
+============================================
+
+mdemo-shared-unst.test: ===  Running mdemo-shared-unst.test
+mdemo-shared-unst.test: ===  Running mdemo-shared-unst.test
+mdemo-shared-unst.test: ===  Running `make uninstall' in mdemo
+ ( cd '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/bin' && rm -f mdemo mdemo_static )
+ /bin/sh ./libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.la /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.0.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libsub.dylib
+ /bin/sh ./libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.la /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.so /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/foo1.so
+ /bin/sh ./libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.la /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.0.so /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libfoo2.so
+ /bin/sh ./libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.la /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.0.dylib /Users/soegaard/BuildRacketLibs/libtool/_inst-mdemo/lib/libmlib.dylib

@@ -1,0 +1,36 @@
+#                             -*- compilation -*-
+50. archive-in-archive.at:26: testing static library contains static library ...
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c foo.c  -fno-common -DPIC -o .libs/foo.o
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c foo.c -o foo.o >/dev/null 2>&1
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c bar.c  -fno-common -DPIC -o .libs/bar.o
+libtool: compile:  /usr/bin/gcc-4.2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -c bar.c -o bar.o >/dev/null 2>&1
+libtool: link: ar cru .libs/libfoo.a  foo.o
+libtool: link: ranlib .libs/libfoo.a
+libtool: link: ( cd ".libs" && rm -f "libfoo.la" && ln -s "../libfoo.la" "libfoo.la" )
+libtool: install: cp .libs/libfoo.lai /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libfoo.la
+libtool: install: cp .libs/libfoo.a /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libfoo.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libfoo.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libfoo.a
+./archive-in-archive.at:50: $LIBTOOL --mode=link --tag=CC --tag=disable-shared $CC $CFLAGS $LDFLAGS \
+	 -o libbar.la bar.lo $libfoo -version-info 1:0:0 -rpath $thisdir
+stderr:
+stdout:
+
+*** Warning: Linking the shared library libbar.la against the
+*** static library libfoo.a is not portable!
+libtool: link: ar cru .libs/libbar.a libfoo.a  bar.o
+libtool: link: ranlib .libs/libbar.a
+libtool: link: ( cd ".libs" && rm -f "libbar.la" && ln -s "../libbar.la" "libbar.la" )
+./archive-in-archive.at:53: $LIBTOOL --mode=install cp libbar.la $thisdir
+stderr:
+stdout:
+libtool: install: cp .libs/libbar.lai /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libbar.la
+libtool: install: cp .libs/libbar.a /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libbar.a
+libtool: install: chmod 644 /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libbar.a
+libtool: install: ranlib /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/050/libbar.a
+./archive-in-archive.at:56: $AR -t $libbar | grep $libfoo
+stderr:
+stdout:
+libfoo.a
+./archive-in-archive.at:56: exit code was 0, expected 1
+50. archive-in-archive.at:26: 50. static library contains static library (archive-in-archive.at:26): expected failure (archive-in-archive.at:56)

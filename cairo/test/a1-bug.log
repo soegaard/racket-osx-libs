@@ -1,0 +1,84 @@
+Testing a1-bug with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/a1-bug.test-fallback.argb32.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.test-fallback.argb32.diff.png
+TEST: a1-bug TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing a1-bug with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/a1-bug.test-fallback.rgb24.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.test-fallback.rgb24.diff.png
+TEST: a1-bug TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing a1-bug with test-paginated target (dev offset 0)
+Error: Skipping for vector target test-paginated
+TEST: a1-bug TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with test-paginated target (dev offset 0)
+Error: Skipping for vector target test-paginated
+TEST: a1-bug TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/a1-bug.test-wrapping.argb32.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.test-wrapping.argb32.diff.png
+TEST: a1-bug TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing a1-bug with pdf target (dev offset 0)
+Error: Skipping for vector target pdf
+TEST: a1-bug TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with pdf target (dev offset 0)
+Error: Skipping for vector target pdf
+TEST: a1-bug TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with ps2 target (dev offset 0)
+Error: Skipping for vector target ps2
+TEST: a1-bug TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with ps2 target (dev offset 0)
+Error: Skipping for vector target ps2
+TEST: a1-bug TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with ps3 target (dev offset 0)
+Error: Skipping for vector target ps3
+TEST: a1-bug TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with ps3 target (dev offset 0)
+Error: Skipping for vector target ps3
+TEST: a1-bug TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: UNTESTED
+Testing a1-bug with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/a1-bug.quartz.argb32.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.quartz.argb32.diff.png
+TEST: a1-bug TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing a1-bug with quartz target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/a1-bug.quartz.rgb24.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.quartz.rgb24.diff.png
+TEST: a1-bug TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing a1-bug with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/a1-bug.image.argb32.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.image.argb32.diff.png
+TEST: a1-bug TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing a1-bug with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/a1-bug.image.rgb24.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.image.rgb24.diff.png
+TEST: a1-bug TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing a1-bug with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/a1-bug.image16.rgb24.out.png
+REFERENCE: ./a1-bug.image16.ref.png
+DIFFERENCE: output/a1-bug.image16.rgb24.diff.png
+TEST: a1-bug TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing a1-bug with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/a1-bug.recording.argb32.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.recording.argb32.diff.png
+TEST: a1-bug TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing a1-bug with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/a1-bug.recording.rgb24.out.png
+REFERENCE: ./a1-bug.ref.png
+DIFFERENCE: output/a1-bug.recording.rgb24.diff.png
+TEST: a1-bug TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

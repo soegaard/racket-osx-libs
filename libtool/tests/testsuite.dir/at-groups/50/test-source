@@ -1,0 +1,106 @@
+at_fn_group_banner 50 'archive-in-archive.at:26' \
+  "static library contains static library" "         " 3
+at_xfail=no
+      case $AR in ar-lib\ * | *[/\\]ar-lib\ *) false;; *) :;; esac && at_xfail=yes
+(
+  $as_echo "50. $at_setup_line: testing $at_desc ..."
+  $at_traceon
+
+
+
+# This test passes with MS lib.
+
+
+cat >foo.c <<'_ATEOF'
+
+int foo() { return 1;}
+_ATEOF
+
+
+cat >bar.c <<'_ATEOF'
+
+int bar() { return 1;}
+_ATEOF
+
+
+thisdir=`cd . && pwd`
+$LIBTOOL --mode=compile --tag=CC $CC $CPPFLAGS $CFLAGS -c -o foo.lo foo.c
+$LIBTOOL --mode=compile --tag=CC $CC $CPPFLAGS $CFLAGS -c -o bar.lo bar.c
+$LIBTOOL --mode=link --tag=CC --tag=disable-shared $CC $CFLAGS $LDFLAGS \
+-o libfoo.la foo.lo -version-info 1:0:0 -rpath $thisdir
+$LIBTOOL --mode=install cp libfoo.la $thisdir
+eval `$EGREP '^(old_library)=' < libfoo.la`
+libfoo=$old_library
+{ set +x
+$as_echo "$at_srcdir/archive-in-archive.at:50: \$LIBTOOL --mode=link --tag=CC --tag=disable-shared \$CC \$CFLAGS \$LDFLAGS \\
+	 -o libbar.la bar.lo \$libfoo -version-info 1:0:0 -rpath \$thisdir"
+at_fn_check_prepare_notrace 'an embedded newline' "archive-in-archive.at:50"
+( $at_check_trace; $LIBTOOL --mode=link --tag=CC --tag=disable-shared $CC $CFLAGS $LDFLAGS \
+	 -o libbar.la bar.lo $libfoo -version-info 1:0:0 -rpath $thisdir
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/archive-in-archive.at:50"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+{ set +x
+$as_echo "$at_srcdir/archive-in-archive.at:53: \$LIBTOOL --mode=install cp libbar.la \$thisdir"
+at_fn_check_prepare_dynamic "$LIBTOOL --mode=install cp libbar.la $thisdir" "archive-in-archive.at:53"
+( $at_check_trace; $LIBTOOL --mode=install cp libbar.la $thisdir
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/archive-in-archive.at:53"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+eval `$EGREP '^(old_library)=' < libbar.la`
+libbar=$old_library
+{ set +x
+$as_echo "$at_srcdir/archive-in-archive.at:56: \$AR -t \$libbar | grep \$libfoo"
+at_fn_check_prepare_notrace 'a shell pipeline' "archive-in-archive.at:56"
+( $at_check_trace; $AR -t $libbar | grep $libfoo
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 1 $at_status "$at_srcdir/archive-in-archive.at:56"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+{ set +x
+$as_echo "$at_srcdir/archive-in-archive.at:57: \$AR -t \$libbar | grep foo.\$OBJEXT"
+at_fn_check_prepare_notrace 'a shell pipeline' "archive-in-archive.at:57"
+( $at_check_trace; $AR -t $libbar | grep foo.$OBJEXT
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/archive-in-archive.at:57"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+{ set +x
+$as_echo "$at_srcdir/archive-in-archive.at:58: \$AR -t \$libbar | grep bar.\$OBJEXT"
+at_fn_check_prepare_notrace 'a shell pipeline' "archive-in-archive.at:58"
+( $at_check_trace; $AR -t $libbar | grep bar.$OBJEXT
+) >>"$at_stdout" 2>>"$at_stderr"
+at_status=$? at_failed=false
+$at_check_filter
+echo stderr:; cat "$at_stderr"
+echo stdout:; cat "$at_stdout"
+at_fn_check_status 0 $at_status "$at_srcdir/archive-in-archive.at:58"
+$at_failed && at_fn_log_failure
+$at_traceon; }
+
+  set +x
+  $at_times_p && times >"$at_times_file"
+) 5>&1 2>&1 7>&- | eval $at_tee_pipe
+read at_status <"$at_status_file"

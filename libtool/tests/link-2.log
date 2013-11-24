@@ -1,0 +1,5 @@
+PASS: tests/link-2.test (exit: 0)
+=================================
+
+link-2.test: ===  Running link-2.test
+libtool: link: /usr/bin/gcc-4.2 -o something foo.o hell.o 

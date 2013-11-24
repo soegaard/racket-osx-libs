@@ -1,0 +1,5 @@
+resident: 2
+local: 3
+global: 4
+depend: 5
+preload: 6

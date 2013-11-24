@@ -1,0 +1,102 @@
+Testing clip-fill with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-fill.test-fallback.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.test-fallback.argb32.diff.png
+TEST: clip-fill TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill with test-fallback target (dev offset 0)
+PNG file exactly matches last fail.
+OUTPUT: output/clip-fill.test-fallback.rgb24.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.test-fallback.rgb24.diff.png
+TEST: clip-fill TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.test-paginated.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.test-paginated.argb32.diff.png
+TEST: clip-fill TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with test-paginated target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.test-paginated.rgb24.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.test-paginated.rgb24.diff.png
+TEST: clip-fill TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with test-wrapping target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.test-wrapping.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.test-wrapping.argb32.diff.png
+TEST: clip-fill TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill.ps2.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.ps2.argb32.diff.png
+TEST: clip-fill TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill.ps2.rgb24.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.ps2.rgb24.diff.png
+TEST: clip-fill TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill.ps3.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.ps3.argb32.diff.png
+TEST: clip-fill TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill.ps3.rgb24.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.ps3.rgb24.diff.png
+TEST: clip-fill TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill.quartz.argb32.out.png
+REFERENCE: ./clip-fill.quartz.ref.png
+DIFFERENCE: output/clip-fill.quartz.argb32.diff.png
+TEST: clip-fill TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill.quartz.rgb24.out.png
+REFERENCE: ./clip-fill.quartz.ref.png
+DIFFERENCE: output/clip-fill.quartz.rgb24.diff.png
+TEST: clip-fill TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.image.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.image.argb32.diff.png
+TEST: clip-fill TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with image target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.image.rgb24.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.image.rgb24.diff.png
+TEST: clip-fill TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill.image16.rgb24.out.png
+REFERENCE: ./clip-fill.image16.ref.png
+DIFFERENCE: output/clip-fill.image16.rgb24.diff.png
+TEST: clip-fill TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.recording.argb32.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.recording.argb32.diff.png
+TEST: clip-fill TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill with recording target (dev offset 0)
+PNG file exactly matches last pass.
+OUTPUT: output/clip-fill.recording.rgb24.out.png
+REFERENCE: ./clip-fill.ref.png
+DIFFERENCE: output/clip-fill.recording.rgb24.diff.png
+TEST: clip-fill TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

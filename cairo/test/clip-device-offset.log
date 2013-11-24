@@ -1,0 +1,97 @@
+Testing clip-device-offset with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.test-fallback.argb32.out.png
+REFERENCE: ./clip-device-offset.argb32.ref.png
+DIFFERENCE: output/clip-device-offset.test-fallback.argb32.diff.png
+TEST: clip-device-offset TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.test-fallback.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.test-fallback.rgb24.diff.png
+TEST: clip-device-offset TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.test-paginated.argb32.out.png
+REFERENCE: ./clip-device-offset.argb32.ref.png
+DIFFERENCE: output/clip-device-offset.test-paginated.argb32.diff.png
+TEST: clip-device-offset TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.test-paginated.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.test-paginated.rgb24.diff.png
+TEST: clip-device-offset TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.test-wrapping.argb32.out.png
+REFERENCE: ./clip-device-offset.argb32.ref.png
+DIFFERENCE: output/clip-device-offset.test-wrapping.argb32.diff.png
+TEST: clip-device-offset TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-device-offset TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-device-offset with pdf target (dev offset 0)
+TEST: clip-device-offset TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-device-offset with ps2 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-device-offset.ps2.argb32.out.png
+TEST: clip-device-offset TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.ps2.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.ps2.rgb24.diff.png
+TEST: clip-device-offset TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with ps3 target (dev offset 0)
+Vector surface matches last pass.
+OUTPUT: output/clip-device-offset.ps3.argb32.out.png
+TEST: clip-device-offset TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.ps3.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.ps3.rgb24.diff.png
+TEST: clip-device-offset TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.quartz.argb32.out.png
+REFERENCE: ./clip-device-offset.argb32.ref.png
+DIFFERENCE: output/clip-device-offset.quartz.argb32.diff.png
+TEST: clip-device-offset TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.quartz.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.quartz.rgb24.diff.png
+TEST: clip-device-offset TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.image.argb32.out.png
+REFERENCE: ./clip-device-offset.argb32.ref.png
+DIFFERENCE: output/clip-device-offset.image.argb32.diff.png
+TEST: clip-device-offset TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.image.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.image.rgb24.diff.png
+TEST: clip-device-offset TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.image16.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.image16.rgb24.diff.png
+TEST: clip-device-offset TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.recording.argb32.out.png
+REFERENCE: ./clip-device-offset.argb32.ref.png
+DIFFERENCE: output/clip-device-offset.recording.argb32.diff.png
+TEST: clip-device-offset TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-device-offset with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-device-offset.recording.rgb24.out.png
+REFERENCE: ./clip-device-offset.rgb24.ref.png
+DIFFERENCE: output/clip-device-offset.recording.rgb24.diff.png
+TEST: clip-device-offset TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

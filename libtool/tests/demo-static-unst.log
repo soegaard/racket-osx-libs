@@ -1,0 +1,10 @@
+PASS: tests/demo-static-unst.test (exit: 0)
+===========================================
+
+demo-static-unst.test: ===  Running demo-static-unst.test
+demo-static-unst.test: ===  Running demo-static-unst.test
+demo-static-unst.test: ===  Running `make uninstall' in demo
+ ( cd '/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/bin' && rm -f hell hell_static helldl )
+ ( cd '/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/include' && rm -f foo.h )
+ /bin/sh ./libtool   --mode=uninstall rm -f '/Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.la'
+libtool: uninstall: rm -f /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.la /Users/soegaard/BuildRacketLibs/libtool/_inst-demo/lib/libhello.a

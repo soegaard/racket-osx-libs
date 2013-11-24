@@ -1,0 +1,6 @@
+TiffWriter.lo TiffWriter.o: TiffWriter.cc TiffWriter.h \
+  ../poppler/poppler-config.h
+
+TiffWriter.h:
+
+../poppler/poppler-config.h:

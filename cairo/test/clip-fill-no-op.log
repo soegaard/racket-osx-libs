@@ -1,0 +1,102 @@
+Testing clip-fill-no-op with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.test-fallback.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.test-fallback.argb32.diff.png
+TEST: clip-fill-no-op TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.test-fallback.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.test-fallback.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.test-paginated.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.test-paginated.argb32.diff.png
+TEST: clip-fill-no-op TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.test-paginated.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.test-paginated.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.test-wrapping.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.test-wrapping.argb32.diff.png
+TEST: clip-fill-no-op TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill-no-op TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill-no-op with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-fill-no-op TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-fill-no-op with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill-no-op.ps2.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.ps2.argb32.diff.png
+TEST: clip-fill-no-op TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-no-op with ps2 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill-no-op.ps2.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.ps2.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-no-op with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill-no-op.ps3.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.ps3.argb32.diff.png
+TEST: clip-fill-no-op TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-no-op with ps3 target (dev offset 0)
+Vector surface matches last fail.
+OUTPUT: output/clip-fill-no-op.ps3.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.ps3.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: FAIL
+Testing clip-fill-no-op with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.quartz.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.quartz.argb32.diff.png
+TEST: clip-fill-no-op TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.quartz.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.quartz.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.image.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.image.argb32.diff.png
+TEST: clip-fill-no-op TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.image.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.image.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.image16.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.image16.ref.png
+DIFFERENCE: output/clip-fill-no-op.image16.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.recording.argb32.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.recording.argb32.diff.png
+TEST: clip-fill-no-op TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-fill-no-op with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-fill-no-op.recording.rgb24.out.png
+REFERENCE: ./clip-fill-no-op.ref.png
+DIFFERENCE: output/clip-fill-no-op.recording.rgb24.diff.png
+TEST: clip-fill-no-op TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

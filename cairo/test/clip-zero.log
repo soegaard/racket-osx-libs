@@ -1,0 +1,36 @@
+Testing clip-zero with test-fallback target (dev offset 0)
+TEST: clip-zero TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with test-fallback target (dev offset 0)
+TEST: clip-zero TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with test-paginated target (dev offset 0)
+TEST: clip-zero TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with test-paginated target (dev offset 0)
+TEST: clip-zero TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with test-wrapping target (dev offset 0)
+TEST: clip-zero TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with pdf target (dev offset 0)
+TEST: clip-zero TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with pdf target (dev offset 0)
+TEST: clip-zero TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with ps2 target (dev offset 0)
+TEST: clip-zero TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with ps2 target (dev offset 0)
+TEST: clip-zero TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with ps3 target (dev offset 0)
+TEST: clip-zero TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with ps3 target (dev offset 0)
+TEST: clip-zero TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with quartz target (dev offset 0)
+TEST: clip-zero TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with quartz target (dev offset 0)
+TEST: clip-zero TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with image target (dev offset 0)
+TEST: clip-zero TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with image target (dev offset 0)
+TEST: clip-zero TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with image16 target (dev offset 0)
+TEST: clip-zero TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with recording target (dev offset 0)
+TEST: clip-zero TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-zero with recording target (dev offset 0)
+TEST: clip-zero TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS

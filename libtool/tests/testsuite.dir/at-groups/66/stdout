@@ -1,0 +1,1 @@
+libtool: install: /usr/bin/install -c -m 644 .libs/liba.lai /Users/soegaard/BuildRacketLibs/libtool/tests/testsuite.dir/066/inst/liba.la

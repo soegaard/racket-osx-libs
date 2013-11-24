@@ -1,0 +1,40 @@
+PASS: tests/depdemo-relink.test (exit: 0)
+=========================================
+
+depdemo-relink.test: ===  Running depdemo-relink.test
+dependencies:
+l1 (0)
+l2 (0)
+ l1 (1)
+l4 (0)
+ l3 (0)
+  l1 (2)
+  l2 (2)
+   l1 (3)
+ libm [sin(1.5) = 0.997495]
+var_l1(4) + var_l2(6) + var_l4(10) == 20
+depdemo-relink.test: ===  removing libl3.la from depdemo/l3
+depdemo-relink.test: ===  running depdemo/depdemo
+dependencies:
+l1 (0)
+l2 (0)
+ l1 (1)
+l4 (0)
+ l3 (0)
+  l1 (2)
+  l2 (2)
+   l1 (3)
+ libm [sin(1.5) = 0.997495]
+var_l1(4) + var_l2(6) + var_l4(10) == 20
+depdemo-relink.test: ===  linking a broken depdemo/l3/libl3.la
+/bin/sh ../libtool --tag=CC   --mode=link /usr/bin/gcc-4.2  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -no-undefined -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/soegaard/BuildRacketLibs/lib -o libl3.la -rpath /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib ../l2/l2.lo ../l1/libl1.la ../l2/libl2.la 
+libtool: link: /usr/bin/gcc-4.2 -dynamiclib  -o .libs/libl3.0.dylib  ../l2/.libs/l2.o   -L/Users/soegaard/BuildRacketLibs/lib ../l1/.libs/libl1.dylib ../l2/.libs/libl2.dylib /Users/soegaard/BuildRacketLibs/libtool/tests/depdemo/l1/.libs/libl1.dylib  -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -Wl,-dylib_file -Wl,/Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl1.0.dylib:/Users/soegaard/BuildRacketLibs/libtool/tests/depdemo/l1/.libs/libl1.dylib   -install_name  /Users/soegaard/BuildRacketLibs/libtool/_inst-depdemo/lib/libl3.0.dylib -compatibility_version 1 -current_version 1.0 -Wl,-single_module
+libtool: link: (cd ".libs" && rm -f "libl3.dylib" && ln -s "libl3.0.dylib" "libl3.dylib")
+libtool: link: ( cd ".libs" && rm -f "libl3.la" && ln -s "../libl3.la" "libl3.la" )
+depdemo-relink.test: ===  running depdemo/depdemo with broken libl3.la
+dyld: Symbol not found: _var_l3
+  Referenced from: /Users/soegaard/BuildRacketLibs/libtool/tests/depdemo/l4/.libs/libl4.0.dylib
+  Expected in: /Users/soegaard/BuildRacketLibs/libtool/tests/depdemo/l3/.libs/libl3.0.dylib
+ in /Users/soegaard/BuildRacketLibs/libtool/tests/depdemo/l4/.libs/libl4.0.dylib
+./tests/depdemo-relink.test: line 108: 15578 Trace/BPT trap: 5       ( ./depdemo$EXEEXT ) 2>&1
+depdemo-relink.test: ===  Failed, as expected

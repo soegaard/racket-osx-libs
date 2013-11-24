@@ -1,0 +1,102 @@
+Testing clip-group-shapes-aligned-rectangles with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.test-fallback.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.test-fallback.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: test-fallback FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with test-fallback target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.test-fallback.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.test-fallback.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: test-fallback FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.test-paginated.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.test-paginated.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: test-paginated FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with test-paginated target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.test-paginated.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.test-paginated.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: test-paginated FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with test-wrapping target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.test-wrapping.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.test-wrapping.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: test-wrapping FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-group-shapes-aligned-rectangles TARGET: pdf FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-group-shapes-aligned-rectangles with pdf target (dev offset 0)
+Error: Failed to extract image: invalid value for an input cairo_status_t
+TEST: clip-group-shapes-aligned-rectangles TARGET: pdf FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: CRASHED
+Testing clip-group-shapes-aligned-rectangles with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.ps2.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.ps2.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: ps2 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with ps2 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.ps2.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.ps2.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: ps2 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.ps3.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.ps3.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: ps3 FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with ps3 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.ps3.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.ps3.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: ps3 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.quartz.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.quartz.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: quartz FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with quartz target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.quartz.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.quartz.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: quartz FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.image.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.image.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: image FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with image target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.image.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.image.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: image FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with image16 target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.image16.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.image16.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: image16 FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.recording.argb32.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.recording.argb32.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: recording FORMAT: argb32 OFFSET: 0 SIMILAR: 0 RESULT: PASS
+Testing clip-group-shapes-aligned-rectangles with recording target (dev offset 0)
+PNG file exactly matches reference image.
+OUTPUT: output/clip-group-shapes-aligned-rectangles.recording.rgb24.out.png
+REFERENCE: ./clip-group-shapes-aligned-rectangles.ref.png
+DIFFERENCE: output/clip-group-shapes-aligned-rectangles.recording.rgb24.diff.png
+TEST: clip-group-shapes-aligned-rectangles TARGET: recording FORMAT: rgb24 OFFSET: 0 SIMILAR: 0 RESULT: PASS
