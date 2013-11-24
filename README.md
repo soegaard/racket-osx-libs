@@ -58,7 +58,7 @@ cd BuildRacketLibs
 export BuildRacketLibs=${HOME}/BuildRacketLibs
 
 2. Download sources
-
+-------------------
 curl http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz -o pkg-config.tgz
 curl -L http://sourceforge.net/projects/libpng/files/libpng15/1.5.17/libpng-1.5.17.tar.gz/download -o libpng.tgz
 curl http://cairographics.org/releases/pixman-0.24.4.tar.gz -o pixman.tar.tgz
@@ -85,7 +85,19 @@ Note: Using libffi-3.0.11 rather than 3.0.10 due to a problem fixed in 3.0.11.
       (see https://github.com/atgreen/libffi/pull/5 for details in the problem)
 
 Note: Used libjpeg-9 due to a problem building libjpeg-6b on OS X Mavericks.
-     
+
+3. Download patches
+-------------------
+
+If you have the exact same version you can use premade patches.
+
+Patches for Pango 1.29.5:
+
+cd ~/BuildRacketLibs
+mkdir patches
+cd patches
+(32 bit only) curl https://raw.github.com/plt/racket/master/racket/src/mac/atsui.patch -o atsui.patch
+(64 bit only) curl https://raw.github.com/plt/racket/master/racket/src/mac/atsui.patch -o coretext.patch
 
 3. Unpack and rename
 --------------------
@@ -359,6 +371,12 @@ make install
 pango
 -----
 cd pango
+
+Patch if version 1.29.5 and 64 bit: 
+  patch -p1 <../patches/coretext.patch 
+Patch if version 1.29.5 and 32 bit:
+  patch -p1 <../patches/atsui.patch
+
 ./configure --prefix=${BuildRacketLibs} --without-x --with-included-modules=yes --with-dynamic-modules=no
 
 freetype

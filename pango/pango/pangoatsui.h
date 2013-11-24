@@ -71,6 +71,8 @@ struct _PangoATSUIFontClass
 CGFontRef  pango_atsui_font_get_cgfont  (PangoATSUIFont *font);
 ATSFontRef pango_atsui_font_get_atsfont (PangoATSUIFont *font);
 
+int pango_atsui_font_get_size (PangoATSUIFont *font);
+
 #endif /* PANGO_ENABLE_ENGINE || PANGO_ENABLE_BACKEND */
 
 GType      pango_atsui_font_get_type         (void) G_GNUC_CONST;

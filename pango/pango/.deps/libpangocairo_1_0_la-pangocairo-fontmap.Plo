@@ -813,7 +813,23 @@ libpangocairo_1_0_la-pangocairo-fontmap.lo \
   /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Frameworks/ImageCapture.framework/Headers/ICADevice.h \
   /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Frameworks/ImageCapture.framework/Headers/ICACamera.h \
   /Users/soegaard/BuildRacketLibs/include/cairo/cairo-quartz.h \
-  /Users/soegaard/BuildRacketLibs/include/cairo/cairo.h
+  /Users/soegaard/BuildRacketLibs/include/cairo/cairo.h pangocairo-fc.h \
+  ../pango/pangofc-fontmap.h \
+  /Users/soegaard/BuildRacketLibs/include/fontconfig/fontconfig.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h \
+  ../pango/pangofc-decoder.h ../pango/pangofc-font.h \
+  /Users/soegaard/BuildRacketLibs/include/ft2build.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftheader.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/freetype.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftconfig.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftoption.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftstdlib.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fttypes.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftsystem.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftimage.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrors.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftmoderr.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrdef.h
 
 ../config.h:
 
@@ -2480,3 +2496,39 @@ pangocoretext.h:
 /Users/soegaard/BuildRacketLibs/include/cairo/cairo-quartz.h:
 
 /Users/soegaard/BuildRacketLibs/include/cairo/cairo.h:
+
+pangocairo-fc.h:
+
+../pango/pangofc-fontmap.h:
+
+/Users/soegaard/BuildRacketLibs/include/fontconfig/fontconfig.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h:
+
+../pango/pangofc-decoder.h:
+
+../pango/pangofc-font.h:
+
+/Users/soegaard/BuildRacketLibs/include/ft2build.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftheader.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/freetype.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftconfig.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftoption.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftstdlib.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fttypes.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftsystem.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftimage.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrors.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftmoderr.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrdef.h:

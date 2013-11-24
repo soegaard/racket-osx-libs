@@ -44,12 +44,12 @@ bin_PROGRAMS = pango-view$(EXEEXT)
 #	../pango/libpangox-$(PANGO_API_VERSION).la	\
 #	$(X_LIBS)
 
-#am__append_3 = \
-#	viewer-pangoft2.c
+am__append_3 = \
+	viewer-pangoft2.c
 
-#am__append_4 = \
-#	../pango/libpangoft2-$(PANGO_API_VERSION).la	\
-#	$(FREETYPE_LIBS)
+am__append_4 = \
+	../pango/libpangoft2-$(PANGO_API_VERSION).la	\
+	$(FREETYPE_LIBS)
 
 #am__append_5 = \
 #	viewer-pangoxft.c
@@ -87,7 +87,7 @@ am__pango_view_SOURCES_DIST = viewer-render.h viewer-render.c viewer.h \
 	viewer-cairo.h viewer-cairo.c viewer-pangocairo.c
 #am__objects_1 = viewer-x.$(OBJEXT) \
 #	viewer-pangox.$(OBJEXT)
-#am__objects_2 = viewer-pangoft2.$(OBJEXT)
+am__objects_2 = viewer-pangoft2.$(OBJEXT)
 #am__objects_3 = viewer-pangoxft.$(OBJEXT)
 am__objects_4 = viewer-cairo.$(OBJEXT) \
 	viewer-pangocairo.$(OBJEXT)
@@ -99,8 +99,8 @@ am__DEPENDENCIES_1 =
 #am__DEPENDENCIES_2 =  \
 #	../pango/libpangox-$(PANGO_API_VERSION).la \
 #	$(am__DEPENDENCIES_1)
-#am__DEPENDENCIES_3 = ../pango/libpangoft2-$(PANGO_API_VERSION).la \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_3 = ../pango/libpangoft2-$(PANGO_API_VERSION).la \
+	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_4 =  \
 #	../pango/libpangoft2-$(PANGO_API_VERSION).la \
 #	../pango/libpangoxft-$(PANGO_API_VERSION).la \
@@ -178,8 +178,8 @@ AUTOCONF = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoconf
 AUTOHEADER = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoheader
 AUTOMAKE = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run automake-1.11
 AWK = awk
-CAIRO_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/cairo -I/Users/soegaard/BuildRacketLibs/include/pixman-1 -I/Users/soegaard/BuildRacketLibs/include/libpng15 
-CAIRO_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lcairo 
+CAIRO_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/cairo
+CAIRO_LIBS = -lcairo
 CAIRO_PREFIX = /Users/soegaard/BuildRacketLibs
 CC = /usr/bin/gcc-4.2
 CCDEPMODE = depmode=gcc3
@@ -189,7 +189,7 @@ CPPFLAGS = -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5
 CXX = c++
 CXXCPP = c++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -fno-rtti -fno-exceptions
+CXXFLAGS = -I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -202,10 +202,10 @@ ECHO_T =
 EGREP = /usr/bin/grep -E
 EXEEXT = 
 FGREP = /usr/bin/grep -F
-FONTCONFIG_CFLAGS = 
-FONTCONFIG_LIBS = 
-FREETYPE_CFLAGS = 
-FREETYPE_LIBS = 
+FONTCONFIG_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include 
+FONTCONFIG_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype 
+FREETYPE_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include 
+FREETYPE_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype 
 GLIB_CFLAGS = -D_REENTRANT -I/Users/soegaard/BuildRacketLibs/include/glib-2.0 -I/Users/soegaard/BuildRacketLibs/lib/glib-2.0/include 
 GLIB_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl 
 GLIB_MKENUMS = glib-mkenums
@@ -279,7 +279,7 @@ PATH_SEPARATOR = :
 PKGCONFIG_CAIRO_REQUIRES = 
 PKGCONFIG_MATH_LIBS = 
 PKG_CONFIG = /Users/soegaard/BuildRacketLibs/bin/pkg-config
-PKG_CONFIG_LIBDIR = 
+PKG_CONFIG_LIBDIR = /Users/soegaard/BuildRacketLibs/lib/pkg-config
 PKG_CONFIG_PATH = /Users/soegaard/BuildRacketLibs/lib/pkgconfig
 RANLIB = ranlib
 SED = /usr/bin/sed

@@ -8,7 +8,7 @@
 #define HAVE_CAIRO_ATSUI 1
 
 /* Whether Cairo can use FreeType for fonts */
-/* #undef HAVE_CAIRO_FREETYPE */
+#define HAVE_CAIRO_FREETYPE 1
 
 /* Whether Cairo has PDF support */
 #define HAVE_CAIRO_PDF 1
@@ -39,7 +39,7 @@
 #define HAVE_FLOCKFILE 1
 
 /* Have FreeType 2 library */
-/* #undef HAVE_FREETYPE */
+#define HAVE_FREETYPE 1
 
 /* Define to 1 if you have the `getpagesize' function. */
 #define HAVE_GETPAGESIZE 1

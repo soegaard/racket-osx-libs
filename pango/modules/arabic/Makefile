@@ -36,9 +36,9 @@ build_triplet = x86_64-apple-darwin13.0.0
 host_triplet = x86_64-apple-darwin13.0.0
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/modules/Module.mk
-#am__append_1 = $(FREETYPE_CFLAGS)
-#am__append_2 = libpango-arabic-fc.la
-###am__append_3 = pango-arabic-fc.la
+am__append_1 = $(FREETYPE_CFLAGS)
+am__append_2 = libpango-arabic-fc.la
+##am__append_3 = pango-arabic-fc.la
 am__append_4 = libpango-arabic-lang.la
 ##am__append_5 = pango-arabic-lang.la
 subdir = modules/arabic
@@ -86,7 +86,7 @@ libpango_arabic_fc_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(libpango_arabic_fc_la_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
-#am_libpango_arabic_fc_la_rpath =
+am_libpango_arabic_fc_la_rpath =
 libpango_arabic_lang_la_LIBADD =
 am__objects_2 = libpango_arabic_lang_la-arabic-lang.lo
 am_libpango_arabic_lang_la_OBJECTS = $(am__objects_2)
@@ -111,8 +111,8 @@ pango_arabic_fc_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(AM_CFLAGS) $(CFLAGS) $(pango_arabic_fc_la_LDFLAGS) \
 	$(LDFLAGS) -o $@
-###am_pango_arabic_fc_la_rpath = -rpath \
-###	$(moduledir)
+##am_pango_arabic_fc_la_rpath = -rpath \
+##	$(moduledir)
 pango_arabic_lang_la_DEPENDENCIES = $(am__DEPENDENCIES_2)
 am__objects_4 = arabic-lang.lo
 am_pango_arabic_lang_la_OBJECTS = $(am__objects_4)
@@ -168,8 +168,8 @@ AUTOCONF = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoconf
 AUTOHEADER = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoheader
 AUTOMAKE = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run automake-1.11
 AWK = awk
-CAIRO_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/cairo -I/Users/soegaard/BuildRacketLibs/include/pixman-1 -I/Users/soegaard/BuildRacketLibs/include/libpng15 
-CAIRO_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lcairo 
+CAIRO_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/cairo
+CAIRO_LIBS = -lcairo
 CAIRO_PREFIX = /Users/soegaard/BuildRacketLibs
 CC = /usr/bin/gcc-4.2
 CCDEPMODE = depmode=gcc3
@@ -179,7 +179,7 @@ CPPFLAGS = -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5
 CXX = c++
 CXXCPP = c++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -fno-rtti -fno-exceptions
+CXXFLAGS = -I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -192,10 +192,10 @@ ECHO_T =
 EGREP = /usr/bin/grep -E
 EXEEXT = 
 FGREP = /usr/bin/grep -F
-FONTCONFIG_CFLAGS = 
-FONTCONFIG_LIBS = 
-FREETYPE_CFLAGS = 
-FREETYPE_LIBS = 
+FONTCONFIG_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include 
+FONTCONFIG_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype 
+FREETYPE_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include 
+FREETYPE_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype 
 GLIB_CFLAGS = -D_REENTRANT -I/Users/soegaard/BuildRacketLibs/include/glib-2.0 -I/Users/soegaard/BuildRacketLibs/lib/glib-2.0/include 
 GLIB_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl 
 GLIB_MKENUMS = glib-mkenums
@@ -269,7 +269,7 @@ PATH_SEPARATOR = :
 PKGCONFIG_CAIRO_REQUIRES = 
 PKGCONFIG_MATH_LIBS = 
 PKG_CONFIG = /Users/soegaard/BuildRacketLibs/bin/pkg-config
-PKG_CONFIG_LIBDIR = 
+PKG_CONFIG_LIBDIR = /Users/soegaard/BuildRacketLibs/lib/pkg-config
 PKG_CONFIG_PATH = /Users/soegaard/BuildRacketLibs/lib/pkgconfig
 RANLIB = ranlib
 SED = /usr/bin/sed

@@ -136,6 +136,12 @@ pango_cairo_atsui_font_create_base_metrics_for_context (PangoCairoFont *font,
   metrics->strikethrough_position = metrics->ascent / 3;
   metrics->strikethrough_thickness = ats_metrics.underlineThickness * cafont->size * PANGO_SCALE;
 
+  metrics->underline_position = -metrics->underline_position;
+  pango_quantize_line_geometry (&metrics->underline_thickness,
+                                &metrics->underline_position);
+  metrics->underline_position = -(metrics->underline_position 
+                                  + metrics->underline_thickness);
+
   return metrics;
 }
 

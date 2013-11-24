@@ -229,3 +229,10 @@ pango_atsui_font_get_atsfont (PangoATSUIFont *font)
 
   return priv->font_ref;
 }
+
+int pango_atsui_font_get_size (PangoATSUIFont *font)
+{
+  PangoATSUIFontPrivate *priv = font->priv;
+
+  return pango_font_description_get_size(priv->desc);
+}

@@ -1,0 +1,131 @@
+***************
+*** 53,62 ****
+  	   PangoGlyphString *glyphs,
+  	   int               i,
+  	   int               offset,
+- 	   PangoGlyph        glyph)
+  {
+    PangoRectangle logical_rect;
+  
+    glyphs->glyphs[i].glyph = G_UNLIKELY (glyph == kATSDeletedGlyphcode) ?
+  			    PANGO_GLYPH_EMPTY : glyph;
+  
+--- 53,65 ----
+  	   PangoGlyphString *glyphs,
+  	   int               i,
+  	   int               offset,
++ 	   PangoGlyph        glyph,
++            ATSUTextLayout    text_layout)
+  {
+    PangoRectangle logical_rect;
+  
++   if (!glyph) { glyph = PANGO_GET_UNKNOWN_GLYPH(glyph); }
++ 
+    glyphs->glyphs[i].glyph = G_UNLIKELY (glyph == kATSDeletedGlyphcode) ?
+  			    PANGO_GLYPH_EMPTY : glyph;
+  
+***************
+*** 64,72 ****
+    glyphs->glyphs[i].geometry.y_offset = 0;
+  
+    glyphs->log_clusters[i] = offset;
+-   pango_font_get_glyph_extents (font, glyphs->glyphs[i].glyph, NULL, &logical_rect);
+-   glyphs->glyphs[i].geometry.width = logical_rect.width;
+- }
+  
+  static void
+  basic_engine_shape (PangoEngineShape    *engine,
+--- 67,96 ----
+    glyphs->glyphs[i].geometry.y_offset = 0;
+  
+    glyphs->log_clusters[i] = offset;
++   if (text_layout) {
++     ATSTrapezoid bounds;
++     ItemCount actual;
++     double w;
++ 
++     ATSUGetGlyphBounds(text_layout,
++                        0, 0,
++                        i,
++                        1,
++                        kATSUseFractionalOrigins,
++                        1,
++                        &bounds,
++                        &actual);
++     w = (Fix2X(bounds.upperRight.x) - Fix2X(bounds.upperLeft.x));
++     glyphs->glyphs[i].geometry.width = w * PANGO_SCALE;
++   } else {
++     pango_font_get_glyph_extents (font, glyphs->glyphs[i].glyph, NULL, &logical_rect);
++     glyphs->glyphs[i].geometry.width = logical_rect.width;
++   }
++ }
++ 
++ #ifndef DoubleToFixed
++ # define DoubleToFixed(a) ((Fixed)((double) (a) * fixed1)) 
++ #endif
+  
+  static void
+  basic_engine_shape (PangoEngineShape    *engine,
+***************
+*** 87,95 ****
+    PangoATSUIFont *afont = PANGO_ATSUI_FONT (font);
+    ATSUStyle style;
+    ATSUFontID fontID;
+-   ATSUAttributeTag styleTags[] = { kATSUFontTag };
+-   ATSUAttributeValuePtr styleValues[] = { &fontID };
+-   ByteCount styleSizes[] = { sizeof (ATSUFontID) };
+  
+    utf16 = g_utf8_to_utf16 (text, length, NULL, &n16, NULL);
+  
+--- 111,120 ----
+    PangoATSUIFont *afont = PANGO_ATSUI_FONT (font);
+    ATSUStyle style;
+    ATSUFontID fontID;
++   Fixed fontSize;
++   ATSUAttributeTag styleTags[] = { kATSUFontTag, kATSUSizeTag };
++   ATSUAttributeValuePtr styleValues[] = { &fontID, &fontSize };
++   ByteCount styleSizes[] = { sizeof (ATSUFontID), sizeof(Fixed) };
+  
+    utf16 = g_utf8_to_utf16 (text, length, NULL, &n16, NULL);
+  
+***************
+*** 101,106 ****
+  
+    err = ATSUCreateStyle(&style);
+    fontID = pango_atsui_font_get_atsfont (afont);
+  
+    err = ATSUSetAttributes(style,
+  			  (ItemCount)(sizeof(styleTags) / sizeof(styleTags[0])),
+--- 126,132 ----
+  
+    err = ATSUCreateStyle(&style);
+    fontID = pango_atsui_font_get_atsfont (afont);
++   fontSize = DoubleToFixed((double)pango_atsui_font_get_size(afont) / PANGO_SCALE);
+  
+    err = ATSUSetAttributes(style,
+  			  (ItemCount)(sizeof(styleTags) / sizeof(styleTags[0])),
+***************
+*** 133,143 ****
+  
+        if (pango_is_zero_width (wc))
+  	{
+- 	  set_glyph (font, glyphs, i, p - text, PANGO_GLYPH_EMPTY);
+  	}
+        else
+  	{
+- 	  set_glyph (font, glyphs, i, p - text, layout_records[i].glyphID);
+  
+  	  if (g_unichar_type (wc) == G_UNICODE_NON_SPACING_MARK)
+  	    {
+--- 159,169 ----
+  
+        if (pango_is_zero_width (wc))
+  	{
++ 	  set_glyph (font, glyphs, i, p - text, PANGO_GLYPH_EMPTY, NULL);
+  	}
+        else
+  	{
++ 	  set_glyph (font, glyphs, i, p - text, layout_records[i].glyphID, text_layout);
+  
+  	  if (g_unichar_type (wc) == G_UNICODE_NON_SPACING_MARK)
+  	    {

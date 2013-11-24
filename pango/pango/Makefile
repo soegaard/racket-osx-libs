@@ -47,9 +47,9 @@ host_triplet = x86_64-apple-darwin13.0.0
 #am__append_6 = pangox-win32-res.o pangox.def
 
 # ------------------- libpangoft2 -------------------
-#am__append_7 = $(pangoft2_headers)
-#am__append_8 = libpangoft2-1.0.la
-#am__append_9 = PangoFT2-1.0.gir
+am__append_7 = $(pangoft2_headers)
+am__append_8 = libpangoft2-1.0.la
+am__append_9 = PangoFT2-1.0.gir
 #am__append_10 = -export-symbols $(srcdir)/pangoft2.def -Wl,pangoft2-win32-res.o
 #am__append_11 = pangoft2-win32-res.o pangoft2.def
 
@@ -69,12 +69,12 @@ am__append_19 = PangoCairo-1.0.gir
 #am__append_22 = libpangowin32-$(PANGO_API_VERSION).la $(WIN32_LIBS)
 #am__append_23 = libpangowin32-$(PANGO_API_VERSION).la 
 #am__append_24 = pangocairo-win32font.c pangocairo-win32fontmap.c pangocairo-win32.h
-#am__append_25 = libpangoft2-$(PANGO_API_VERSION).la $(FREETYPE_LIBS)
-#am__append_26 = libpangoft2-$(PANGO_API_VERSION).la 
-#am__append_27 = \
-#	pangocairo-fcfont.c	\
-#	pangocairo-fcfontmap.c  \
-#	pangocairo-fc.h
+am__append_25 = libpangoft2-$(PANGO_API_VERSION).la $(FREETYPE_LIBS)
+am__append_26 = libpangoft2-$(PANGO_API_VERSION).la 
+am__append_27 = \
+	pangocairo-fcfont.c	\
+	pangocairo-fcfontmap.c  \
+	pangocairo-fc.h
 
 am__append_28 = \
 	modules.h		\
@@ -112,11 +112,11 @@ am__append_31 = $(INCLUDED_CORE_TEXT_MODULES)
 #am__append_37 = libpangowin32-1.0.la
 #am__append_38 = -export-symbols $(srcdir)/pangowin32.def -Wl,pangowin32-win32-res.o
 #am__append_39 = pangowin32-win32-res.o pangowin32.def
-##am__append_40 = pangoft2-$(PANGO_API_VERSION).lib 
+#am__append_40 = pangoft2-$(PANGO_API_VERSION).lib 
 bin_PROGRAMS = pango-querymodules$(EXEEXT)
 #am__append_41 = libpangox-$(PANGO_API_VERSION).la
 #am__append_42 = libpangoxft-$(PANGO_API_VERSION).la
-#am__append_43 = libpangoft2-$(PANGO_API_VERSION).la
+am__append_43 = libpangoft2-$(PANGO_API_VERSION).la
 #am__append_44 = libpangowin32-$(PANGO_API_VERSION).la
 subdir = pango
 DIST_COMMON = $(am__pangoinclude_HEADERS_DIST) $(srcdir)/Makefile.am \
@@ -180,9 +180,9 @@ libpango_1_0_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 #am__DEPENDENCIES_2 =  \
 #	libpangowin32-$(PANGO_API_VERSION).la \
 #	$(am__DEPENDENCIES_1)
-#am__DEPENDENCIES_3 =  \
-#	libpangoft2-$(PANGO_API_VERSION).la \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_3 =  \
+	libpangoft2-$(PANGO_API_VERSION).la \
+	$(am__DEPENDENCIES_1)
 am__DEPENDENCIES_4 = $(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_5 = $(am__DEPENDENCIES_1)
 am__libpangocairo_1_0_la_SOURCES_DIST = pangocairo-context.c \
@@ -204,8 +204,8 @@ am__objects_1 = libpangocairo_1_0_la-pangocairo-context.lo \
 	libpangocairo_1_0_la-pangocairo-render.lo
 #am__objects_2 = libpangocairo_1_0_la-pangocairo-win32font.lo \
 #	libpangocairo_1_0_la-pangocairo-win32fontmap.lo
-#am__objects_3 = libpangocairo_1_0_la-pangocairo-fcfont.lo \
-#	libpangocairo_1_0_la-pangocairo-fcfontmap.lo
+am__objects_3 = libpangocairo_1_0_la-pangocairo-fcfont.lo \
+	libpangocairo_1_0_la-pangocairo-fcfontmap.lo
 am__objects_4 = libpangocairo_1_0_la-module-defs-coretext.lo \
 	libpangocairo_1_0_la-pangocoretext.lo \
 	libpangocairo_1_0_la-pangocoretext-fontmap.lo \
@@ -234,7 +234,7 @@ libpangoft2_1_0_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
 	$(AM_CFLAGS) $(CFLAGS) $(libpangoft2_1_0_la_LDFLAGS) \
 	$(LDFLAGS) -o $@
-#am_libpangoft2_1_0_la_rpath = -rpath $(libdir)
+am_libpangoft2_1_0_la_rpath = -rpath $(libdir)
 am_libpangowin32_1_0_la_OBJECTS = module-defs-win32.lo pangowin32.lo \
 	pangowin32-fontcache.lo pangowin32-fontmap.lo
 libpangowin32_1_0_la_OBJECTS = $(am_libpangowin32_1_0_la_OBJECTS)
@@ -365,8 +365,8 @@ AUTOCONF = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoconf
 AUTOHEADER = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoheader
 AUTOMAKE = ${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run automake-1.11
 AWK = awk
-CAIRO_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/cairo -I/Users/soegaard/BuildRacketLibs/include/pixman-1 -I/Users/soegaard/BuildRacketLibs/include/libpng15 
-CAIRO_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lcairo 
+CAIRO_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/cairo
+CAIRO_LIBS = -lcairo
 CAIRO_PREFIX = /Users/soegaard/BuildRacketLibs
 CC = /usr/bin/gcc-4.2
 CCDEPMODE = depmode=gcc3
@@ -376,7 +376,7 @@ CPPFLAGS = -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5
 CXX = c++
 CXXCPP = c++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -fno-rtti -fno-exceptions
+CXXFLAGS = -I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -389,10 +389,10 @@ ECHO_T =
 EGREP = /usr/bin/grep -E
 EXEEXT = 
 FGREP = /usr/bin/grep -F
-FONTCONFIG_CFLAGS = 
-FONTCONFIG_LIBS = 
-FREETYPE_CFLAGS = 
-FREETYPE_LIBS = 
+FONTCONFIG_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include 
+FONTCONFIG_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype 
+FREETYPE_CFLAGS = -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include 
+FREETYPE_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype 
 GLIB_CFLAGS = -D_REENTRANT -I/Users/soegaard/BuildRacketLibs/include/glib-2.0 -I/Users/soegaard/BuildRacketLibs/lib/glib-2.0/include 
 GLIB_LIBS = -L/Users/soegaard/BuildRacketLibs/lib -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl 
 GLIB_MKENUMS = glib-mkenums
@@ -466,7 +466,7 @@ PATH_SEPARATOR = :
 PKGCONFIG_CAIRO_REQUIRES = 
 PKGCONFIG_MATH_LIBS = 
 PKG_CONFIG = /Users/soegaard/BuildRacketLibs/bin/pkg-config
-PKG_CONFIG_LIBDIR = 
+PKG_CONFIG_LIBDIR = /Users/soegaard/BuildRacketLibs/lib/pkg-config
 PKG_CONFIG_PATH = /Users/soegaard/BuildRacketLibs/lib/pkgconfig
 RANLIB = ranlib
 SED = /usr/bin/sed
@@ -548,7 +548,7 @@ INTROSPECTION_GIRS = Pango-1.0.gir $(am__append_9) $(am__append_14) \
 	$(am__append_19)
 INTROSPECTION_SCANNER_ARGS = --warn-all --add-include-path=$(srcdir) --add-include-path=.
 INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir) --includedir=.
-#OPENTYPE_SUBDIR = opentype
+OPENTYPE_SUBDIR = opentype
 FRIBIDI_SUBDIR = mini-fribidi
 SUBDIRS = $(OPENTYPE_SUBDIR) $(FRIBIDI_SUBDIR)
 DIST_SUBDIRS = mini-fribidi opentype
@@ -784,7 +784,7 @@ libpangocairo_1_0_la_SOURCES = $(pangocairo_core_sources) \
 #PANGOCAIRO_FONT_BACKEND_GI_MODULE = PangoATSUI-1.0
 # We don't have an CoreText GIR right now, so this is just hypothetical
 PANGOCAIRO_FONT_BACKEND_GI_MODULE = PangoCoreText-1.0
-#PANGOCAIRO_FONT_BACKEND_GI_MODULE = PangoFT2-1.0
+PANGOCAIRO_FONT_BACKEND_GI_MODULE = PangoFT2-1.0
 #libpangocairo_1_0_la_CFLAGS = -xobjective-c
 pangocairo_introspection_files = \
     $(libpangocairo_1_0_la_SOURCES) \
@@ -1876,14 +1876,14 @@ pangowin32-win32-res.o: pangowin32.rc
 #install-def-files:
 #	$(AM_V_GEN) mkdir -p $(DESTDIR)$(libdir) && \
 #	$(INSTALL) $(srcdir)/pango.def $(DESTDIR)$(libdir)/pango-$(PANGO_API_VERSION).def
-##	$(INSTALL) $(srcdir)/pangoft2.def $(DESTDIR)$(libdir)/pangoft2-$(PANGO_API_VERSION).def
+#	$(INSTALL) $(srcdir)/pangoft2.def $(DESTDIR)$(libdir)/pangoft2-$(PANGO_API_VERSION).def
 #	$(INSTALL) $(srcdir)/pangowin32.def $(DESTDIR)$(libdir)/pangowin32-$(PANGO_API_VERSION).def
 #	$(INSTALL) $(srcdir)/pangocairo.def $(DESTDIR)$(libdir)/pangocairo-$(PANGO_API_VERSION).def
 ##	$(INSTALL) $(srcdir)/pangox.def $(DESTDIR)$(libdir)/pangox-$(PANGO_API_VERSION).def
 ##	$(INSTALL) $(srcdir)/pangoxft.def $(DESTDIR)$(libdir)/pangoxft-$(PANGO_API_VERSION).def
 #uninstall-def-files:
 #	-rm $(DESTDIR)$(libdir)/pango$(PANGO_API_VERSION).def
-##	-rm $(DESTDIR)$(libdir)/pangoft2-$(PANGO_API_VERSION).def
+#	-rm $(DESTDIR)$(libdir)/pangoft2-$(PANGO_API_VERSION).def
 #	-rm $(DESTDIR)$(libdir)/pangowin32-$(PANGO_API_VERSION).def
 #	-rm $(DESTDIR)$(libdir)/pangocairo-$(PANGO_API_VERSION).def
 ##	-rm $(DESTDIR)$(libdir)/pangox-$(PANGO_API_VERSION).def
@@ -1893,7 +1893,7 @@ uninstall-def-files:
 
 #install-ms-lib: $(MS_LIB_FILES)
 #	$(INSTALL) pango-$(PANGO_API_VERSION).lib $(DESTDIR)$(libdir)
-##	$(INSTALL) pangoft2-$(PANGO_API_VERSION).lib $(DESTDIR)$(libdir)
+#	$(INSTALL) pangoft2-$(PANGO_API_VERSION).lib $(DESTDIR)$(libdir)
 #	$(INSTALL) pangowin32-$(PANGO_API_VERSION).lib $(DESTDIR)$(libdir)
 #	$(INSTALL) pangocairo-$(PANGO_API_VERSION).lib $(DESTDIR)$(libdir)
 

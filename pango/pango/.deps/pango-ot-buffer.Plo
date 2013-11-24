@@ -1,1 +1,585 @@
-# dummy
+pango-ot-buffer.lo .libs/pango-ot-buffer.o: pango-ot-buffer.c ../config.h \
+  pango-ot-private.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib-object.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gbinding.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/galloca.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtypes.h \
+  /Users/soegaard/BuildRacketLibs/lib/glib-2.0/include/glibconfig.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmacros.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/garray.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gasyncqueue.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gthread.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gatomic.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gerror.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gquark.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbacktrace.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/appleapiopts.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/signal.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_structs.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/mach/i386/_structs.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbase64.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbitlock.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbookmarkfile.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbytes.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gcharset.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gchecksum.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gconvert.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdataset.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdate.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdatetime.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtimezone.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdir.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/genviron.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gfileutils.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ggettext.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghash.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/glist.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmem.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghmac.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gchecksum.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghook.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghostutils.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/giochannel.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmain.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gpoll.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gslist.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gstring.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gunicode.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gutils.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gkeyfile.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmappedfile.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmarkup.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmessages.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gnode.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/goption.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gpattern.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gprimes.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gqsort.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gqueue.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/grand.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gregex.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gscanner.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gsequence.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gshell.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gslice.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gspawn.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gstrfuncs.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gstringchunk.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtestutils.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gthreadpool.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtimer.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtrashstack.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtree.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gurifuncs.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gvarianttype.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gvariant.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gversion.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gallocator.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gcache.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gcompletion.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gmain.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/grel.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gthread.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gobject.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gtype.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gvalue.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gparam.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gclosure.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gsignal.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gmarshal.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gboxed.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/glib-types.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/genums.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gparamspecs.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gsourceclosure.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gtypemodule.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gtypeplugin.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gvaluearray.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gvaluetypes.h \
+  ../pango/pango-ot.h ../pango/pangofc-font.h \
+  /Users/soegaard/BuildRacketLibs/include/ft2build.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftheader.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/freetype.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftconfig.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftoption.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftstdlib.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/available.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/wait.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/resource.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_endian.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/alloca.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/setjmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/setjmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/setjmp.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/errno.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/errno.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/AvailabilityMacros.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fttypes.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftsystem.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftimage.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrors.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftmoderr.h \
+  /Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrdef.h \
+  /Users/soegaard/BuildRacketLibs/include/fontconfig/fontconfig.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/types.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h \
+  ../pango/pango-font.h ../pango/pango-coverage.h ../pango/pango-types.h \
+  ../pango/pango-gravity.h ../pango/pango-matrix.h \
+  ../pango/pango-script.h ../pango/pango-language.h \
+  ../pango/pango-bidi-type.h ../pango/pango-fontmap.h \
+  ../pango/pango-fontset.h ../pango/pango-glyph.h ../pango/pango-item.h \
+  opentype/hb-ot.h opentype/hb.h opentype/hb-common.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  opentype/hb-blob.h opentype/hb-buffer.h opentype/hb-font.h \
+  opentype/hb-unicode.h opentype/hb-ot-layout.h opentype/hb-glib.h \
+  pangofc-private.h pangofc-fontmap.h ../pango/pangofc-decoder.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h \
+  /Developer/SDKs/MacOSX10.5.sdk/usr/include/architecture/i386/math.h \
+  pango-impl-utils.h ../pango/pango.h ../pango/pango-attributes.h \
+  ../pango/pango-break.h ../pango/pango-context.h ../pango/pango-engine.h \
+  /Users/soegaard/BuildRacketLibs/include/glib-2.0/gmodule.h \
+  ../pango/pango-enum-types.h ../pango/pango-features.h \
+  ../pango/pango-glyph-item.h ../pango/pango-layout.h \
+  ../pango/pango-tabs.h ../pango/pango-renderer.h ../pango/pango-utils.h
+
+../config.h:
+
+pango-ot-private.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib-object.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gbinding.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/galloca.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtypes.h:
+
+/Users/soegaard/BuildRacketLibs/lib/glib-2.0/include/glibconfig.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmacros.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_limits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/syslimits.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_structs.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/garray.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gasyncqueue.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gthread.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gatomic.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gerror.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gquark.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbacktrace.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/appleapiopts.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/signal.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/_structs.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/mach/i386/_structs.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbase64.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbitlock.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbookmarkfile.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gbytes.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gcharset.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gchecksum.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gconvert.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdataset.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdate.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdatetime.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtimezone.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gdir.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/genviron.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gfileutils.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ggettext.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghash.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/glist.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmem.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghmac.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gchecksum.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghook.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/ghostutils.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/giochannel.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmain.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gpoll.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gslist.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gstring.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gunicode.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gutils.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gkeyfile.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmappedfile.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmarkup.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gmessages.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gnode.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/goption.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gpattern.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gprimes.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gqsort.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gqueue.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/grand.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gregex.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gscanner.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gsequence.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gshell.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gslice.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gspawn.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gstrfuncs.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gstringchunk.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtestutils.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gthreadpool.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtimer.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtrashstack.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gtree.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gurifuncs.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gvarianttype.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gvariant.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/gversion.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gallocator.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gcache.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gcompletion.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gmain.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/grel.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/glib/deprecated/gthread.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread_impl.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sched.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gobject.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gtype.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gvalue.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gparam.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gclosure.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gsignal.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gmarshal.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gboxed.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/glib-types.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/genums.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gparamspecs.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gsourceclosure.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gtypemodule.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gtypeplugin.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gvaluearray.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gobject/gvaluetypes.h:
+
+../pango/pango-ot.h:
+
+../pango/pangofc-font.h:
+
+/Users/soegaard/BuildRacketLibs/include/ft2build.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftheader.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/freetype.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftconfig.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftoption.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/config/ftstdlib.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/available.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/wait.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/resource.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/_endian.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/_OSByteOrder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/libkern/i386/_OSByteOrder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/alloca.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/_types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/setjmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/machine/setjmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/i386/setjmp.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/errno.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/errno.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/AvailabilityMacros.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fttypes.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftsystem.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftimage.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrors.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/ftmoderr.h:
+
+/Users/soegaard/BuildRacketLibs/include/freetype2/freetype/fterrdef.h:
+
+/Users/soegaard/BuildRacketLibs/include/fontconfig/fontconfig.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/types.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/stat.h:
+
+../pango/pango-font.h:
+
+../pango/pango-coverage.h:
+
+../pango/pango-types.h:
+
+../pango/pango-gravity.h:
+
+../pango/pango-matrix.h:
+
+../pango/pango-script.h:
+
+../pango/pango-language.h:
+
+../pango/pango-bidi-type.h:
+
+../pango/pango-fontmap.h:
+
+../pango/pango-fontset.h:
+
+../pango/pango-glyph.h:
+
+../pango/pango-item.h:
+
+opentype/hb-ot.h:
+
+opentype/hb.h:
+
+opentype/hb-common.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+opentype/hb-blob.h:
+
+opentype/hb-buffer.h:
+
+opentype/hb-font.h:
+
+opentype/hb-unicode.h:
+
+opentype/hb-ot-layout.h:
+
+opentype/hb-glib.h:
+
+pangofc-private.h:
+
+pangofc-fontmap.h:
+
+../pango/pangofc-decoder.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h:
+
+/Developer/SDKs/MacOSX10.5.sdk/usr/include/architecture/i386/math.h:
+
+pango-impl-utils.h:
+
+../pango/pango.h:
+
+../pango/pango-attributes.h:
+
+../pango/pango-break.h:
+
+../pango/pango-context.h:
+
+../pango/pango-engine.h:
+
+/Users/soegaard/BuildRacketLibs/include/glib-2.0/gmodule.h:
+
+../pango/pango-enum-types.h:
+
+../pango/pango-features.h:
+
+../pango/pango-glyph-item.h:
+
+../pango/pango-layout.h:
+
+../pango/pango-tabs.h:
+
+../pango/pango-renderer.h:
+
+../pango/pango-utils.h:

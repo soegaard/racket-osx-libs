@@ -37,7 +37,7 @@ relink_command=""
 if test "$libtool_install_magic" = "%%%MAGIC variable%%%"; then
   # install mode needs the following variables:
   generated_by_libtool_version='2.4'
-  notinst_deplibs=' ../pango/libpango-1.0.la ../pango/libpangocairo-1.0.la /Users/soegaard/BuildRacketLibs/pango/pango/libpango-1.0.la'
+  notinst_deplibs=' ../pango/libpango-1.0.la ../pango/libpangocairo-1.0.la /Users/soegaard/BuildRacketLibs/pango/pango/libpangoft2-1.0.la ../pango/libpangoft2-1.0.la /Users/soegaard/BuildRacketLibs/pango/pango/libpango-1.0.la'
 else
   # When we are sourced in execute mode, $file and $ECHO are already set.
   if test "$libtool_execute_magic" != "%%%MAGIC variable%%%"; then

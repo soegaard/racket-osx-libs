@@ -30,12 +30,13 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 4.00 gigabytes
-Default processor set: 312 tasks, 1930 threads, 4 processors
-Load average: 4.60, Mach factor: 1.25
+Default processor set: 316 tasks, 2182 threads, 4 processors
+Load average: 4.59, Mach factor: 1.55
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /Users/soegaard/BuildRacketLibs/bin
 PATH: /opt/local/bin
 PATH: /opt/local/sbin
 PATH: /opt/local/bin
@@ -159,7 +160,7 @@ configure:4419: c++ -qversion >&5
 i686-apple-darwin10-llvm-g++-4.2: no input files
 configure:4430: $? = 1
 configure:4434: checking whether we are using the GNU C++ compiler
-configure:4453: c++ -c  -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.cpp >&5
+configure:4453: c++ -c -I/Users/soegaard/BuildRacketLibs/include -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.cpp >&5
 configure:4453: $? = 0
 configure:4462: result: yes
 configure:4471: checking whether c++ accepts -g
@@ -168,7 +169,7 @@ configure:4491: $? = 0
 configure:4532: result: yes
 configure:4557: checking dependency style of c++
 configure:4667: result: gcc3
-configure:4694: c++ -c -g -O2 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.cpp >&5
+configure:4694: c++ -c -I/Users/soegaard/BuildRacketLibs/include -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.cpp >&5
 configure:4694: $? = 0
 configure:4831: checking for C++ compiler version
 configure:4840: c++ --version >&5
@@ -553,18 +554,18 @@ configure:13246: checking if the linker (/usr/libexec/gcc/i686-apple-darwin10/4.
 configure:13261: result: no
 configure:13316: checking whether the c++ linker (/usr/libexec/gcc/i686-apple-darwin10/4.2.1/ld) supports shared libraries
 configure:14320: result: yes
-configure:14355: c++ -c -g -O2 -fno-rtti -fno-exceptions -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.cpp >&5
+configure:14355: c++ -c -I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.cpp >&5
 configure:14358: $? = 0
 configure:14878: checking for c++ option to produce PIC
 configure:14885: result: -fno-common -DPIC
 configure:14893: checking if c++ PIC flag -fno-common -DPIC works
-configure:14911: c++ -c -g -O2 -fno-rtti -fno-exceptions -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -fno-common -DPIC -DPIC conftest.cpp >&5
+configure:14911: c++ -c -I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -fno-common -DPIC -DPIC conftest.cpp >&5
 configure:14915: $? = 0
 configure:14928: result: yes
 configure:14951: checking if c++ static flag -static works
 configure:14979: result: no
 configure:14991: checking if c++ supports -c -o file.o
-configure:15012: c++ -c -g -O2 -fno-rtti -fno-exceptions -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -o out/conftest2.o conftest.cpp >&5
+configure:15012: c++ -c -I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -o out/conftest2.o conftest.cpp >&5
 configure:15016: $? = 0
 configure:15038: result: yes
 configure:15043: checking if c++ supports -c -o file.o
@@ -590,20 +591,16 @@ configure:18800: checking pkg-config is at least version 0.9.0
 configure:18803: result: yes
 configure:18813: checking for FONTCONFIG
 configure:18820: $PKG_CONFIG --exists --print-errors "fontconfig >= 2.5.0"
-Package fontconfig was not found in the pkg-config search path.
-Perhaps you should add the directory containing `fontconfig.pc'
-to the PKG_CONFIG_PATH environment variable
-No package 'fontconfig' found
-configure:18823: $? = 1
+configure:18823: $? = 0
 configure:18836: $PKG_CONFIG --exists --print-errors "fontconfig >= 2.5.0"
-Package fontconfig was not found in the pkg-config search path.
-Perhaps you should add the directory containing `fontconfig.pc'
-to the PKG_CONFIG_PATH environment variable
-No package 'fontconfig' found
-configure:18839: $? = 1
-configure:18852: result: no
-No package 'fontconfig' found
-configure:18868: result: no
+configure:18839: $? = 0
+configure:18878: result: yes
+configure:18891: checking for FREETYPE
+configure:18898: $PKG_CONFIG --exists --print-errors "freetype2"
+configure:18901: $? = 0
+configure:18914: $PKG_CONFIG --exists --print-errors "freetype2"
+configure:18917: $? = 0
+configure:18956: result: yes
 configure:19137: checking Carbon/Carbon.h usability
 configure:19137: /usr/bin/gcc-4.2 -c -Os -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -I/Users/soegaard/BuildRacketLibs/include -Wall -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 conftest.c >&5
 configure:19137: $? = 0
@@ -619,15 +616,13 @@ configure:19165: /usr/bin/gcc-4.2 -o conftest -Os -arch x86_64 -isysroot /Develo
 configure:19165: $? = 0
 configure:19180: result: yes
 configure:19207: checking for CAIRO
-configure:19214: $PKG_CONFIG --exists --print-errors "cairo >= $cairo_required"
-configure:19217: $? = 0
-configure:19230: $PKG_CONFIG --exists --print-errors "cairo >= $cairo_required"
-configure:19233: $? = 0
 configure:19272: result: yes
+configure:19288: $PKG_CONFIG --exists --print-errors "cairo-ft >= $cairo_required"
+configure:19291: $? = 0
 configure:19328: $PKG_CONFIG --exists --print-errors "cairo-quartz-font >= $cairo_required"
 configure:19331: $? = 0
 configure:19346: checking which cairo font backends could be used
-configure:19349: result: quartz 
+configure:19349: result: quartz freetype 
 configure:19364: $PKG_CONFIG --exists --print-errors "cairo-png >= $cairo_required"
 configure:19367: $? = 0
 configure:19380: $PKG_CONFIG --exists --print-errors "cairo-ps >= $cairo_required"
@@ -721,64 +716,64 @@ generated by GNU Autoconf 2.68.  Invocation command line was
 
 on mba-5.local
 
-config.status:1425: creating Makefile
-config.status:1425: creating pango/Makefile
-config.status:1425: creating pango/mini-fribidi/Makefile
-config.status:1425: creating pango/opentype/Makefile
-config.status:1425: creating pango/pango.rc
-config.status:1425: creating pango/pangoft2.rc
-config.status:1425: creating pango/pangowin32.rc
-config.status:1425: creating pango/pangocairo.rc
-config.status:1425: creating pango/pangox.rc
-config.status:1425: creating pango/pangoxft.rc
-config.status:1425: creating pango-view/Makefile
-config.status:1425: creating modules/Makefile
-config.status:1425: creating modules/arabic/Makefile
-config.status:1425: creating modules/basic/Makefile
-config.status:1425: creating modules/hangul/Makefile
-config.status:1425: creating modules/hebrew/Makefile
-config.status:1425: creating modules/indic/Makefile
-config.status:1425: creating modules/khmer/Makefile
-config.status:1425: creating modules/syriac/Makefile
-config.status:1425: creating modules/thai/Makefile
-config.status:1425: creating modules/tibetan/Makefile
-config.status:1425: creating examples/Makefile
-config.status:1425: creating docs/Makefile
-config.status:1425: creating docs/version.xml
-config.status:1425: creating tools/Makefile
-config.status:1425: creating tests/Makefile
-config.status:1425: creating build/Makefile
-config.status:1425: creating build/win32/Makefile
-config.status:1425: creating build/win32/vs9/Makefile
-config.status:1425: creating build/win32/vs10/Makefile
-config.status:1425: creating pango.pc
-config.status:1425: creating pangox.pc
-config.status:1425: creating pangowin32.pc
-config.status:1425: creating pangoft2.pc
-config.status:1425: creating pangoxft.pc
-config.status:1425: creating pangocairo.pc
-config.status:1425: creating pango-uninstalled.pc
-config.status:1425: creating pangox-uninstalled.pc
-config.status:1425: creating pangowin32-uninstalled.pc
-config.status:1425: creating pangoft2-uninstalled.pc
-config.status:1425: creating pangoxft-uninstalled.pc
-config.status:1425: creating pangocairo-uninstalled.pc
-config.status:1425: creating pango-zip.sh
-config.status:1425: creating config.h.win32
-config.status:1425: creating tests/runtests.sh
-config.status:1425: creating config.h
-config.status:1654: executing depfiles commands
-config.status:1654: executing libtool commands
-config.status:1654: executing pango/module-defs.h commands
-config.status:1654: executing pango/module-defs-x.c commands
-config.status:1654: executing pango/module-defs-fc.c commands
-config.status:1654: executing pango/module-defs-win32.c commands
-config.status:1654: executing pango/module-defs-atsui.c commands
-config.status:1654: executing pango/module-defs-coretext.c commands
-config.status:1654: executing pango/module-defs-lang.c commands
-config.status:1654: executing pango/pango-features.h commands
-config.status:2747: creating pango/pango-features.h
-config.status:2767: pango/pango-features.h is unchanged
+config.status:1429: creating Makefile
+config.status:1429: creating pango/Makefile
+config.status:1429: creating pango/mini-fribidi/Makefile
+config.status:1429: creating pango/opentype/Makefile
+config.status:1429: creating pango/pango.rc
+config.status:1429: creating pango/pangoft2.rc
+config.status:1429: creating pango/pangowin32.rc
+config.status:1429: creating pango/pangocairo.rc
+config.status:1429: creating pango/pangox.rc
+config.status:1429: creating pango/pangoxft.rc
+config.status:1429: creating pango-view/Makefile
+config.status:1429: creating modules/Makefile
+config.status:1429: creating modules/arabic/Makefile
+config.status:1429: creating modules/basic/Makefile
+config.status:1429: creating modules/hangul/Makefile
+config.status:1429: creating modules/hebrew/Makefile
+config.status:1429: creating modules/indic/Makefile
+config.status:1429: creating modules/khmer/Makefile
+config.status:1429: creating modules/syriac/Makefile
+config.status:1429: creating modules/thai/Makefile
+config.status:1429: creating modules/tibetan/Makefile
+config.status:1429: creating examples/Makefile
+config.status:1429: creating docs/Makefile
+config.status:1429: creating docs/version.xml
+config.status:1429: creating tools/Makefile
+config.status:1429: creating tests/Makefile
+config.status:1429: creating build/Makefile
+config.status:1429: creating build/win32/Makefile
+config.status:1429: creating build/win32/vs9/Makefile
+config.status:1429: creating build/win32/vs10/Makefile
+config.status:1429: creating pango.pc
+config.status:1429: creating pangox.pc
+config.status:1429: creating pangowin32.pc
+config.status:1429: creating pangoft2.pc
+config.status:1429: creating pangoxft.pc
+config.status:1429: creating pangocairo.pc
+config.status:1429: creating pango-uninstalled.pc
+config.status:1429: creating pangox-uninstalled.pc
+config.status:1429: creating pangowin32-uninstalled.pc
+config.status:1429: creating pangoft2-uninstalled.pc
+config.status:1429: creating pangoxft-uninstalled.pc
+config.status:1429: creating pangocairo-uninstalled.pc
+config.status:1429: creating pango-zip.sh
+config.status:1429: creating config.h.win32
+config.status:1429: creating tests/runtests.sh
+config.status:1429: creating config.h
+config.status:1658: executing depfiles commands
+config.status:1658: executing libtool commands
+config.status:1658: executing pango/module-defs.h commands
+config.status:1658: executing pango/module-defs-x.c commands
+config.status:1658: executing pango/module-defs-fc.c commands
+config.status:1658: executing pango/module-defs-win32.c commands
+config.status:1658: executing pango/module-defs-atsui.c commands
+config.status:1658: executing pango/module-defs-coretext.c commands
+config.status:1658: executing pango/module-defs-lang.c commands
+config.status:1658: executing pango/pango-features.h commands
+config.status:2751: creating pango/pango-features.h
+config.status:2771: pango/pango-features.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -787,10 +782,10 @@ config.status:2767: pango/pango-features.h is unchanged
 ac_cv_build=x86_64-apple-darwin13.0.0
 ac_cv_c_compiler_gnu=yes
 ac_cv_cxx_compiler_gnu=yes
-ac_cv_env_CAIRO_CFLAGS_set=
-ac_cv_env_CAIRO_CFLAGS_value=
-ac_cv_env_CAIRO_LIBS_set=
-ac_cv_env_CAIRO_LIBS_value=
+ac_cv_env_CAIRO_CFLAGS_set=set
+ac_cv_env_CAIRO_CFLAGS_value=-I/Users/soegaard/BuildRacketLibs/include/cairo
+ac_cv_env_CAIRO_LIBS_set=set
+ac_cv_env_CAIRO_LIBS_value=-lcairo
 ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
 ac_cv_env_CC_set=set
@@ -803,8 +798,8 @@ ac_cv_env_CPP_set=
 ac_cv_env_CPP_value=
 ac_cv_env_CXXCPP_set=
 ac_cv_env_CXXCPP_value=
-ac_cv_env_CXXFLAGS_set=
-ac_cv_env_CXXFLAGS_value=
+ac_cv_env_CXXFLAGS_set=set
+ac_cv_env_CXXFLAGS_value=-I/Users/soegaard/BuildRacketLibs/include
 ac_cv_env_CXX_set=
 ac_cv_env_CXX_value=
 ac_cv_env_FONTCONFIG_CFLAGS_set=
@@ -831,8 +826,8 @@ ac_cv_env_LIBTHAI_CFLAGS_set=
 ac_cv_env_LIBTHAI_CFLAGS_value=
 ac_cv_env_LIBTHAI_LIBS_set=
 ac_cv_env_LIBTHAI_LIBS_value=
-ac_cv_env_PKG_CONFIG_LIBDIR_set=
-ac_cv_env_PKG_CONFIG_LIBDIR_value=
+ac_cv_env_PKG_CONFIG_LIBDIR_set=set
+ac_cv_env_PKG_CONFIG_LIBDIR_value=/Users/soegaard/BuildRacketLibs/lib/pkg-config
 ac_cv_env_PKG_CONFIG_PATH_set=set
 ac_cv_env_PKG_CONFIG_PATH_value=/Users/soegaard/BuildRacketLibs/lib/pkgconfig
 ac_cv_env_PKG_CONFIG_set=set
@@ -932,8 +927,12 @@ lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();
 lt_cv_sys_max_cmd_len=196608
 lt_cv_to_host_file_cmd=func_convert_file_noop
 lt_cv_to_tool_file_cmd=func_convert_file_noop
-pkg_cv_CAIRO_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include/cairo -I/Users/soegaard/BuildRacketLibs/include/pixman-1 -I/Users/soegaard/BuildRacketLibs/include/libpng15 '
-pkg_cv_CAIRO_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lcairo '
+pkg_cv_CAIRO_CFLAGS=-I/Users/soegaard/BuildRacketLibs/include/cairo
+pkg_cv_CAIRO_LIBS=-lcairo
+pkg_cv_FONTCONFIG_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include '
+pkg_cv_FONTCONFIG_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype '
+pkg_cv_FREETYPE_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include '
+pkg_cv_FREETYPE_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lfreetype '
 pkg_cv_GLIB_CFLAGS='-D_REENTRANT -I/Users/soegaard/BuildRacketLibs/include/glib-2.0 -I/Users/soegaard/BuildRacketLibs/lib/glib-2.0/include '
 pkg_cv_GLIB_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl '
 
@@ -954,8 +953,8 @@ AUTOCONF='${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoconf'
 AUTOHEADER='${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run autoheader'
 AUTOMAKE='${SHELL} /Users/soegaard/BuildRacketLibs/pango/missing --run automake-1.11'
 AWK='awk'
-CAIRO_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include/cairo -I/Users/soegaard/BuildRacketLibs/include/pixman-1 -I/Users/soegaard/BuildRacketLibs/include/libpng15 '
-CAIRO_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lcairo '
+CAIRO_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include/cairo'
+CAIRO_LIBS='-lcairo'
 CAIRO_PREFIX='/Users/soegaard/BuildRacketLibs'
 CC='/usr/bin/gcc-4.2'
 CCDEPMODE='depmode=gcc3'
@@ -967,7 +966,7 @@ CROSS_COMPILING_TRUE='#'
 CXX='c++'
 CXXCPP='c++ -E'
 CXXDEPMODE='depmode=gcc3'
-CXXFLAGS='-g -O2 -fno-rtti -fno-exceptions'
+CXXFLAGS='-I/Users/soegaard/BuildRacketLibs/include -fno-rtti -fno-exceptions'
 CYGPATH_W='echo'
 DEFS='-DHAVE_CONFIG_H'
 DEPDIR='.deps'
@@ -1020,10 +1019,10 @@ ENABLE_MAN_FALSE=''
 ENABLE_MAN_TRUE='#'
 EXEEXT=''
 FGREP='/usr/bin/grep -F'
-FONTCONFIG_CFLAGS=''
-FONTCONFIG_LIBS=''
-FREETYPE_CFLAGS=''
-FREETYPE_LIBS=''
+FONTCONFIG_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include '
+FONTCONFIG_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype '
+FREETYPE_CFLAGS='-I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include  -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include -I/Users/soegaard/BuildRacketLibs/include/freetype2 -I/Users/soegaard/BuildRacketLibs/include '
+FREETYPE_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lfreetype  -L/Users/soegaard/BuildRacketLibs/lib -lfontconfig -lfreetype '
 GLIB_CFLAGS='-D_REENTRANT -I/Users/soegaard/BuildRacketLibs/include/glib-2.0 -I/Users/soegaard/BuildRacketLibs/lib/glib-2.0/include '
 GLIB_LIBS='-L/Users/soegaard/BuildRacketLibs/lib -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl '
 GLIB_MKENUMS='glib-mkenums'
@@ -1045,8 +1044,8 @@ GTK_DOC_USE_REBASE_TRUE=''
 HAVE_CAIRO_ATSUI_FALSE='#'
 HAVE_CAIRO_ATSUI_TRUE=''
 HAVE_CAIRO_FALSE='#'
-HAVE_CAIRO_FREETYPE_FALSE=''
-HAVE_CAIRO_FREETYPE_TRUE='#'
+HAVE_CAIRO_FREETYPE_FALSE='#'
+HAVE_CAIRO_FREETYPE_TRUE=''
 HAVE_CAIRO_PDF_FALSE='#'
 HAVE_CAIRO_PDF_TRUE=''
 HAVE_CAIRO_PNG_FALSE='#'
@@ -1064,8 +1063,8 @@ HAVE_CXX_FALSE='#'
 HAVE_CXX_TRUE=''
 HAVE_DYNAMIC_MODULES_FALSE=''
 HAVE_DYNAMIC_MODULES_TRUE='#'
-HAVE_FREETYPE_FALSE=''
-HAVE_FREETYPE_TRUE='#'
+HAVE_FREETYPE_FALSE='#'
+HAVE_FREETYPE_TRUE=''
 HAVE_INCLUDED_MODULES_FALSE='#'
 HAVE_INCLUDED_MODULES_TRUE=''
 HAVE_INTROSPECTION_FALSE=''
@@ -1174,7 +1173,7 @@ PATH_SEPARATOR=':'
 PKGCONFIG_CAIRO_REQUIRES=''
 PKGCONFIG_MATH_LIBS=''
 PKG_CONFIG='/Users/soegaard/BuildRacketLibs/bin/pkg-config'
-PKG_CONFIG_LIBDIR=''
+PKG_CONFIG_LIBDIR='/Users/soegaard/BuildRacketLibs/lib/pkg-config'
 PKG_CONFIG_PATH='/Users/soegaard/BuildRacketLibs/lib/pkgconfig'
 PLATFORM_WIN32_FALSE=''
 PLATFORM_WIN32_TRUE='#'
@@ -1286,7 +1285,9 @@ target_alias=''
 #define HAVE_DLFCN_H 1
 #define LT_OBJDIR ".libs/"
 #define X_DISPLAY_MISSING 1
+#define HAVE_FREETYPE 1
 #define HAVE_CORE_TEXT 1
+#define HAVE_CAIRO_FREETYPE 1
 #define HAVE_CAIRO_ATSUI 1
 #define HAVE_CAIRO 1
 #define HAVE_CAIRO_PNG 1
