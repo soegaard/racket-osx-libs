@@ -377,6 +377,11 @@ Patch if version 1.29.5 and 64 bit:
 Patch if version 1.29.5 and 32 bit:
   patch -p1 <../patches/atsui.patch
 
+For version 1.29.5 (both):
+  patch <../patches/pango-modules.patch 
+
+The patch in pango-modules uncomments the call read_modules() on line 573 in pango/pango/modules.c
+
 ./configure --prefix=${BuildRacketLibs} --without-x --with-included-modules=yes --with-dynamic-modules=no
 
 freetype
