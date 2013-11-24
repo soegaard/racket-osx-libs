@@ -359,9 +359,17 @@ make install
 
 glib
 ----
-patch: 
-  glib/glib/gconvert.c:61: comment out #error near
-   #if defined(USE_LIBICONV_GNU) && !defined (_LIBICONV_H)
+Patch: 
+  glib/glib/gconvert.c line :6: comment out #error
+  That is, change it to:
+
+#if defined(USE_LIBICONV_GNU) && !defined (_LIBICONV_H)
+  /* #error GNU libiconv in use but included iconv.h not from libiconv */
+#endif
+#if !defined(USE_LIBICONV_GNU) && defined (_LIBICONV_H)
+  /* #error GNU libiconv not in use but included iconv.h is from libiconv */
+#endif
+
 
 cd glib
 ./configure --prefix=${BuildRacketLibs} 
@@ -428,7 +436,6 @@ Note:
   Building openjpeg requires cmake
   I skipped openjpeg even though it is recommended for Poppler.
 
-
 poppler
 -------
 Note: --enable-zlib to use zlib  (but enabling this gives a warning: Warning: Using zlib is not totally safe )
@@ -438,6 +445,7 @@ export CXXFLAGS="-I${BuildRacketLibs}/include"
 
 cd poppler
 ./configure --prefix=${BuildRacketLibs} --enable-poppler-glib --disable-poppler-qt4 --disable-silent-rules --disable-splash-output --disable-static --disable-poppler-cpp
+
 
 
 Finally
