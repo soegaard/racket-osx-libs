@@ -518,7 +518,7 @@ Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
 1   libpoppler-glib.dylib               0x00000001081c795e _poppler_page_render(_PopplerPage*, _cairo*, bool, PopplerPrintFlags) + 94 (CairoOutputDev.h:259)
 2   Racket                              0x0000000105901a6c ffi_call_unix64 + 76
 
-One see that cairo_get_matrix caused a crash. That the function is at adress 0x000000012eb20251 and is from libcairo.
+One see that cairo_get_matrix caused a crash, that the function is at adress 0x000000012eb20251, and that is is from libcairo.
 
 The last part of the crash log contains a list of the loaded dynamic binaries.
 
@@ -527,9 +527,9 @@ Two lines from the crash above:
 0x108f80000 - 0x109010fef +libcairo.2.dylib (11003.2) <B7DD599A-C397-EDB2-F40B-D1140E51826C> /Users/USER/*/libcairo.2.dylib
 0x12eb15000 - 0x12ebcfff7 +libcairo.2.dylib (11203.16) <01FBE82F-ACED-3EF4-8448-72B2D29C0970> /Users/USER/*/libcairo.2.dylib
 
-First comes the adress range (not that cairo_get_matrix is from the second range), then the library name then version information.
+First comes the adress range (note that cairo_get_matrix is from the second range), then the library name then version information.
 Here the problem is that two different versions of the same library was loaded in the same process.
-The full paths of the dynamic libaries are now shown.
+The full paths of the dynamic libaries are not shown.
 
 To see them use gdb.
 
