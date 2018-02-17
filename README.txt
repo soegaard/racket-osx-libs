@@ -1,14 +1,14 @@
 How to build dynamic libraries for Racket on OS X.
 ==================================================
 
-This document describes how to build the libraries need for Racket on OS X.
-The approach taken here is to first to compile tools needed for the build:
+This document describes how to build the libraries needed for Racket on OS X.
+The approach taken here is first to compile the tools needed for the build:
 
-    pkg-config, autoconf, automake and libtools
+    pkg-config, autoconf, automake, and, libtools
 
-Although not strictly neccessary it makes is *much* easier not to accidently
-run into problems due to existing libaries already on your system.
-For example: If you spot /opt/local/lib/ in any of you paths, then you are 
+Although not strictly neccessary this approavh makes it *much* easier not 
+to accidently run into problems due to existing libaries already on your system.
+For example: If you spot /opt/local/lib/ in any of your paths, then you are 
 probably linking agains the macports versions rather than your own.
 
 Building your own version of pkg-config is important - so if you decide
@@ -22,24 +22,24 @@ Most C projects use a three step process.
     make install
 
 Since we want to keep our libraries together we will use an
-enviroment variable BuildRacketLibs to store where we keep our build
+enviroment variable BuildRacketLibs to store where we keep our build.
 The configuration then becomes:
     ./configure --prefix=${BuildRacketLibs}
 
-This will store the dylibs in ${BuildRacketLibs}/lib,
-the include files in ${BuildRacketLibs}/include
-and binaries in ${BuildRacketLibs}/bin .
+This will store the dylibs        in ${BuildRacketLibs}/lib,
+                the include files in ${BuildRacketLibs}/include
+            and the binaries      in ${BuildRacketLibs}/bin .
 
 After you have built a library you can check that it links to the correct libraries with otool:
 
     otool -L foo.dylib
 
-will show the paths of the libaries that foo.dylib depends on. If you see any  /opt/local paths here, 
-you have made a mistake (you have linked with a macport library).
+The command will show the paths of the libaries that foo.dylib depends on. 
+If you see any  /opt/local paths here, you have made a mistake (you have linked with a macport library).
 
 During the build the dylibs in ${BuildRacketLibs}/lib will contain full paths.
-If you need to distribute the libraries, they need to be changed with install_name_tool .
-Instead of doing this manually use the sccript install-libs.rkt.
+If you need to distribute the libraries, they need to be changed to relative paths with install_name_tool .
+Instead of doing this manually use the script install-libs.rkt.
 
 These instructions follow the approach from
 
@@ -538,39 +538,4 @@ To see them use gdb.
   (Provoke a crash)
   info sharedlibrary
 
-This will give you a list with full paths.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This will give you a list of full paths.
