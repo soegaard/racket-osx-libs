@@ -6,7 +6,7 @@ The approach taken here is first to compile the tools needed for the build:
 
     pkg-config, autoconf, automake, and, libtools
 
-Although not strictly neccessary this approavh makes it *much* easier not 
+Although not strictly neccessary this approach makes it *much* easier not 
 to accidently run into problems due to existing libaries already on your system.
 For example: If you spot /opt/local/lib/ in any of your paths, then you are 
 probably linking agains the macports versions rather than your own.
